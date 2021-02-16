@@ -1,21 +1,26 @@
-import React, { useContext } from "react";
-import { LanguageContext } from "../data/LanguageContext";
+import React from "react";
+import { Consumer } from "../data/LanguageContext";
 
 import polishFlag from "../images/poland.svg";
 import ukFlag from "../images/uk.svg";
 
-const LanguageChose = () => {
-  const { handleLanguageChange } = useContext(LanguageContext);
+const LanguageChoice = () => {
   return (
-    <div className="languages">
-      <div className="polish" onClick={handleLanguageChange}>
-        <img src={polishFlag} alt="Polish flag" className="poland" />
-      </div>
-      <div className="english" onClick={handleLanguageChange}>
-        <img src={ukFlag} alt="UK flag" className="uk" />
-      </div>
-    </div>
+    <Consumer>
+      {({ language, setLanguage }) => {
+        return (
+          <div className="languages">
+            <div className="polish" onClick={() => setLanguage("polish")}>
+              <img src={polishFlag} alt="Polish flag" className="poland" />
+            </div>
+            <div className="english" onClick={() => setLanguage("english")}>
+              <img src={ukFlag} alt="UK flag" className="uk" />
+            </div>
+          </div>
+        );
+      }}
+    </Consumer>
   );
 };
 
-export default LanguageChose;
+export default LanguageChoice;
