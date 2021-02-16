@@ -14,7 +14,9 @@ const MainPage = () => {
               <h1 className="profession">{label.profession}</h1>
               <h2 className="invitation">{label.invitation}</h2>
             </div>
-            <img src={avatar} alt="avatar" className="avatar" />
+            <div className="avatar">
+              <img src={avatar} alt="avatar" className="avatarImg" />
+            </div>
           </section>
         );
       }}
