@@ -1,0 +1,14 @@
+.languages {
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-around;
+  .poland {
+    flex-basis: 50%;
+    height: 40px;
+  }
+  .uk {
+    flex-grow: 1;
+    height: 40px;
+  }
+}

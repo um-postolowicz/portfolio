@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +9,35 @@
 
 html {
   font-size: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.languages {
+  width: 100%;
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.languages .poland {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  height: 40px;
+}
+
+.languages .uk {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 40px;
 }
 
 .mainPage {
