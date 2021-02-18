@@ -1,4 +1,5 @@
 import React from "react";
+import TechPiece from "../components/TechPiece";
 import { Consumer } from "../data/LanguageContext";
 import { AiFillHtml5 } from "react-icons/ai";
 import { DiCss3Full, DiNpm, DiSass } from "react-icons/di";
@@ -13,30 +14,42 @@ const Technologies = () => {
           <section className="technologies">
             <h3 className="technologiesTitle">{label.technologies}</h3>
             <div className="technologiesContainer">
-              <div className="html">
-                <AiFillHtml5 />
-                <p className="htmlTitle">HTML5</p>
-              </div>
-              <div className="css">
-                <DiCss3Full />
-                <p className="cssTitle">CSS3</p>
-              </div>
-              <div className="sass">
-                <DiSass />
-                <p className="sassTitle">Sass/Scss</p>
-              </div>
-              <div className="javascript">
-                <SiJavascript />
-                <p className="jsTitle">JavaScript</p>
-              </div>
-              <div className="react">
-                <FaReact />
-                <p className="reactTitle">ReactJS</p>
-              </div>
-              <div className="npm">
-                <DiNpm />
-                <p className="npmTitle">NPM</p>
-              </div>
+              <TechPiece
+                techClassName="htmlTitle"
+                techIcon={<AiFillHtml5 />}
+                techMain="html"
+                techName="HTML5"
+              />
+              <TechPiece
+                techClassName="cssTitle"
+                techIcon={<DiCss3Full />}
+                techMain="css"
+                techName="CSS3"
+              />
+              <TechPiece
+                techClassName="sassTitle"
+                techIcon={<DiSass />}
+                techMain="sass"
+                techName="Sass/Scss"
+              />
+              <TechPiece
+                techClassName="jsTitle"
+                techIcon={<SiJavascript />}
+                techMain="javascript"
+                techName="JavaScript"
+              />
+              <TechPiece
+                techClassName="reactTitle"
+                techIcon={<FaReact />}
+                techMain="react"
+                techName="ReactJS"
+              />
+              <TechPiece
+                techClassName="npmTitle"
+                techIcon={<DiNpm />}
+                techMain="npm"
+                techName="NPM"
+              />
             </div>
           </section>
         );

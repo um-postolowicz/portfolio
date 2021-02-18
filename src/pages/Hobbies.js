@@ -1,5 +1,6 @@
 import React from "react";
 import { Consumer } from "../data/LanguageContext";
+import Hobby from "../components/Hobby";
 
 import plane from "../images/plane.jpg";
 import stitch from "../images/stitch.jpg";
@@ -24,30 +25,46 @@ const Hobbies = () => {
         return (
           <section className="hobbies">
             <h3 className="hobbiesTitle">{hobbiesTitle}</h3>
-            <div className="aviation">
-              <div className="darkHover"></div>
-              <img src={plane} alt="A plane" className="aviationImg" />
-              <h4 className="aviationTitle">{aviationTitle}</h4>
-              <p className="aviationTxt">{aviationTxt}</p>
-            </div>
-            <div className="crossStitch">
-              <div className="darkHover"></div>
-              <img src={stitch} alt="Embroidery" className="crossStitchImg" />
-              <h4 className="crossStitchTitle">{crossStitchTitle}</h4>
-              <p className="crossStitchTxt">{crossStitchTxt}</p>
-            </div>
-            <div className="fantasyBooks">
-              <div className="darkHover"></div>
-              <img src={fantasy} alt="Embroidery" className="fantasyBooksImg" />
-              <h4 className="fantasyBooksTitle">{fantasyBooksTitle}</h4>
-              <p className="fantasyBooksTxt">{fantasyBooksTxt}</p>
-            </div>
-            <div className="jigsaw">
-              <div className="darkHover"></div>
-              <img src={jigsaw} alt="Jigsaw puzzles" className="jigsawImg" />
-              <h4 className="jigsawTitle">{jigsawTitle}</h4>
-              <p className="jigsawTxt">{jigsawTxt}</p>
-            </div>
+            <Hobby
+              alt="A plane"
+              descClassName="aviationTxt"
+              hobbyDesc={aviationTxt}
+              hobbyName={aviationTitle}
+              imgClassName="aviationImg"
+              imgSrc={plane}
+              mainClassName="aviation"
+              titleClassName="aviationTitle"
+            />
+            <Hobby
+              alt="Embroidery"
+              descClassName="crossStitchTxt"
+              hobbyDesc={crossStitchTxt}
+              hobbyName={crossStitchTitle}
+              imgClassName="crossStitchImg"
+              imgSrc={stitch}
+              mainClassName="crossStitch"
+              titleClassName="crossStitchTitle"
+            />
+            <Hobby
+              alt="Fantasy Img"
+              descClassName="fantasyBooksTxt"
+              hobbyDesc={fantasyBooksTxt}
+              hobbyName={fantasyBooksTitle}
+              imgClassName="fantasyBooksImg"
+              imgSrc={fantasy}
+              mainClassName="fantasyBooks"
+              titleClassName="fantasyBooksTitle"
+            />
+            <Hobby
+              alt="Jigsaw puzzles"
+              descClassName="jigsawTxt"
+              hobbyDesc={jigsawTxt}
+              hobbyName={jigsawTitle}
+              imgClassName="jigsawImg"
+              imgSrc={jigsaw}
+              mainClassName="jigsaw"
+              titleClassName="jigsawTitle"
+            />
           </section>
         );
       }}

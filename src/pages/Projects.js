@@ -1,5 +1,6 @@
 import React from "react";
 import { Consumer } from "../data/LanguageContext";
+import Project from "../components/Project";
 
 import portfolioImg from "../images/avatar.svg";
 import rateMovieImg from "../images/rateamovie.PNG";
@@ -24,38 +25,46 @@ const Projects = () => {
         return (
           <section className="projects">
             <h3 className="projectsTitle">{projectsTitle}</h3>
-            <div className="portfolio">
-              <h4 className="portfolioTitle">{portfolioTitle}</h4>
-              <img
-                src={portfolioImg}
-                alt="Portfolio IMG"
-                className="portfolioImg"
-              />
-              <p className="portfolioDesc">{portfolioTxt}</p>
-            </div>
-            <div className="rateMovie">
-              <h4 className="rateMovieTitle">{rateMovieTitle}</h4>
-              <img
-                src={rateMovieImg}
-                alt="Rate a movie IMG"
-                className="rateMovieImg"
-              />
-              <p className="rateMovieDesc">{rateMovieTxt}</p>
-            </div>
-            <div className="toDo">
-              <h4 className="toDoTitle">{toDoTitle}</h4>
-              <img src={toDoImg} alt="To Do IMG" className="toDoImg" />
-              <p className="toDoDesc">{toDoTxt}</p>
-            </div>
-            <div className="calculator">
-              <h4 className="calculatorTitle">{calculatorTitle}</h4>
-              <img
-                src={calculatorImg}
-                alt="To Do IMG"
-                className="calculatorImg"
-              />
-              <p className="calculatorDesc">{calculatorTxt}</p>
-            </div>
+            <Project
+              alt="Portfolio IMG"
+              descClassName="portfolioDesc"
+              descTxt={portfolioTxt}
+              imgClassName="portfolioImg"
+              imgSrc={portfolioImg}
+              mainClassName="portfolio"
+              projectName={portfolioTitle}
+              titleClassName="portfolioTitle"
+            />
+            <Project
+              alt="Rate a movie IMG"
+              descClassName="rateMovieDesc"
+              descTxt={rateMovieTxt}
+              imgClassName="rateMovieImg"
+              imgSrc={rateMovieImg}
+              mainClassName="rateMovie"
+              projectName={rateMovieTitle}
+              titleClassName="rateMovieTitle"
+            />
+            <Project
+              alt="To Do IMG"
+              descClassName="toDoDesc"
+              descTxt={toDoTxt}
+              imgClassName="toDoImg"
+              imgSrc={toDoImg}
+              mainClassName="toDo"
+              projectName={toDoTitle}
+              titleClassName="toDoTitle"
+            />
+            <Project
+              alt="The Calculator IMG"
+              descClassName="calculatorDesc"
+              descTxt={calculatorTxt}
+              imgClassName="calculatorImg"
+              imgSrc={calculatorImg}
+              mainClassName="calculator"
+              projectName={calculatorTitle}
+              titleClassName="calculatorTitle"
+            />
           </section>
         );
       }}
