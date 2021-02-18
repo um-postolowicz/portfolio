@@ -10,6 +10,7 @@ import Technologies from "./pages/Technologies";
 import { dictionary } from "./data/dictionary";
 
 import "./styles/style.css";
+import Hobbies from "./pages/Hobbies";
 
 function App() {
   const [language, setLanguage] = useState("english");
@@ -30,6 +31,7 @@ function App() {
         <About />
         <Technologies />
         <Projects />
+        <Hobbies />
       </Provider>
     </div>
   );

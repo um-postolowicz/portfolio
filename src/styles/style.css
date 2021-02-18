@@ -192,4 +192,18 @@ html {
 .projects img {
   width: 50%;
 }
+
+.projects .calculatorImg {
+  height: 20vh;
+  width: auto;
+}
+
+.hobbies {
+  height: 100vh;
+}
+
+.hobbies img {
+  max-width: 90%;
+  max-height: 15vh;
+}
 /*# sourceMappingURL=style.css.map */

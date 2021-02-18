@@ -49,7 +49,11 @@ const Projects = () => {
             </div>
             <div className="calculator">
               <h4 className="calculatorTitle">{calculatorTitle}</h4>
-              <img src={calculatorImg} alt="To Do IMG" className="toDoImg" />
+              <img
+                src={calculatorImg}
+                alt="To Do IMG"
+                className="calculatorImg"
+              />
               <p className="calculatorDesc">{calculatorTxt}</p>
             </div>
           </section>
