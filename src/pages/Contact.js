@@ -12,24 +12,32 @@ const Contact = () => {
         return (
           <section className="contact">
             <h3 className="contactTitle">{contactTitle}</h3>
-            <div className="email">
+            <div className="email contactTile">
               <h4 className="emailTitle">Email</h4>
-              <HiOutlineMailOpen />
+              <div className="icon">
+                <HiOutlineMailOpen />
+              </div>
               <p className="emailTxt">u.postolowicz@gmail.com</p>
             </div>
-            <div className="facebook">
+            <div className="facebook contactTile">
               <h4 className="facebookTitle">Facebook</h4>
-              <FaFacebookSquare />
+              <div className="icon">
+                <FaFacebookSquare />
+              </div>
               <p className="facebookTxt">Ula Postołowicz</p>
             </div>
-            <div className="linkedin">
+            <div className="linkedin contactTile">
               <h4 className="linkedinTitle">LinkedIn</h4>
-              <FaLinkedin />
+              <div className="icon">
+                <FaLinkedin />
+              </div>
               <p className="linkedinTxt">Urszula Maria Postołowicz</p>
             </div>
-            <div className="github">
+            <div className="github contactTile">
               <h4 className="githubTitle">GitHub</h4>
-              <FaGithubSquare />
+              <div className="icon">
+                <FaGithubSquare />
+              </div>
               <p className="githubTxt">um-postolowicz</p>
             </div>
           </section>

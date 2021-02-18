@@ -1,3 +1,60 @@
 .contact {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  &Title {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.8rem;
+    flex-basis: 8%;
+  }
+  &Tile {
+    flex-basis: 21%;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    letter-spacing: 1px;
+    text-shadow: -2px 2px #000;
+    transition: 0.3s;
+    h4 {
+      font-size: 1.5rem;
+    }
+    .icon {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+.email {
+  background-color: rgb(224, 81, 71);
+  border-radius: 10px 10px 0 0;
+  &:active {
+    background-color: lighten(rgb(224, 81, 71), 20%);
+  }
+}
+
+.facebook {
+  background-color: rgb(66, 103, 178);
+  &:active {
+    background-color: lighten(rgb(66, 103, 178), 20%);
+  }
+}
+.linkedin {
+  background-color: rgb(31, 139, 178);
+  &:active {
+    background-color: lighten(rgb(31, 139, 178), 20%);
+  }
+}
+.github {
+  background-color: rgb(0, 0, 0);
+  text-shadow: -2px 2px #555;
+  border-radius: 0 0 10px 10px;
+  &:active {
+    background-color: lighten(rgb(0, 0, 0), 20%);
+  }
 }

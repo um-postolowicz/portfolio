@@ -265,6 +265,89 @@ html {
 
 .contact {
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contactTitle {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.8rem;
+  -ms-flex-preferred-size: 8%;
+      flex-basis: 8%;
+}
+
+.contactTile {
+  -ms-flex-preferred-size: 21%;
+      flex-basis: 21%;
+  text-align: center;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  letter-spacing: 1px;
+  text-shadow: -2px 2px #000;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.contactTile h4 {
+  font-size: 1.5rem;
+}
+
+.contactTile .icon {
+  font-size: 3rem;
+}
+
+.contactTile p {
+  font-size: 1.3rem;
+}
+
+.email {
+  background-color: #e05147;
+  border-radius: 10px 10px 0 0;
+}
+
+.email:active {
+  background-color: #efa49e;
+}
+
+.facebook {
+  background-color: #4267b2;
+}
+
+.facebook:active {
+  background-color: #87a0d3;
+}
+
+.linkedin {
+  background-color: #1f8bb2;
+}
+
+.linkedin:active {
+  background-color: #56bce1;
+}
+
+.github {
+  background-color: black;
+  text-shadow: -2px 2px #555;
+  border-radius: 0 0 10px 10px;
+}
+
+.github:active {
+  background-color: #333333;
 }
 
 .footer {
