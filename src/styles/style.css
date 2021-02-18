@@ -130,4 +130,58 @@ html {
   -ms-grid-row-span: 3;
   grid-row: 2/5;
 }
+
+.technologies {
+  height: 100vh;
+}
+
+.technologiesTitle {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.technologiesContainer {
+  height: 80%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px auto;
+  font-size: 6rem;
+  text-align: center;
+}
+
+.technologiesContainer p {
+  font-size: 2rem;
+}
+
+.technologiesContainer .html {
+  color: #f04626;
+}
+
+.technologiesContainer .css {
+  color: #1482ea;
+}
+
+.technologiesContainer .sass {
+  color: #dc215b;
+}
+
+.technologiesContainer .javascript {
+  color: #fbd601;
+}
+
+.technologiesContainer .react {
+  color: #61dafb;
+}
+
+.technologiesContainer .npm {
+  color: #cc0000;
+}
 /*# sourceMappingURL=style.css.map */

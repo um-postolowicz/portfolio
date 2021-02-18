@@ -1,0 +1,39 @@
+.technologies {
+  height: 100vh;
+  &Title {
+    text-align: center;
+    margin-top: 20px;
+  }
+  &Container {
+    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    margin: 20px auto;
+    font-size: 6rem;
+    text-align: center;
+    p {
+      font-size: 2rem;
+    }
+    .html {
+      color: rgb(240, 70, 38);
+    }
+    .css {
+      color: rgb(20, 130, 234);
+    }
+    .sass {
+      color: rgb(220, 33, 91);
+    }
+    .javascript {
+      color: rgb(251, 214, 1);
+    }
+    .react {
+      color: rgb(97, 218, 251);
+    }
+    .npm {
+      color: rgb(204, 0, 0);
+    }
+  }
+}

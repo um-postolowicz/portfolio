@@ -6,6 +6,7 @@ export const dictionary = {
     invitation: "Zapraszam na moją stronę!",
     aboutTitle: "O mnie",
     about: "Opis",
+    technologies: "Technologie, które znam",
   },
   english: {
     welcome: "Hi!",
@@ -14,5 +15,6 @@ export const dictionary = {
     invitation: "Be my guest!",
     aboutTitle: "About me",
     about: "Description",
+    technologies: "Technologies I've learned",
   },
 };
