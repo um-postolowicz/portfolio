@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import { Provider } from "./data/LanguageContext";
 
 import About from "./pages/About";
-import MainPage from "./pages/MainPage";
 import LanguageChoice from "./components/LanguageChoice";
+import MainPage from "./pages/MainPage";
+import Projects from "./pages/Projects";
 import Technologies from "./pages/Technologies";
 
 import { dictionary } from "./data/dictionary";
@@ -28,6 +29,7 @@ function App() {
         <MainPage />
         <About />
         <Technologies />
+        <Projects />
       </Provider>
     </div>
   );

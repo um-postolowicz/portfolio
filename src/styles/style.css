@@ -184,4 +184,12 @@ html {
 .technologiesContainer .npm {
   color: #cc0000;
 }
+
+.projects {
+  height: 100vh;
+}
+
+.projects img {
+  width: 50%;
+}
 /*# sourceMappingURL=style.css.map */
