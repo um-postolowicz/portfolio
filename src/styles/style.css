@@ -17,6 +17,10 @@ html {
   margin: 0 auto;
 }
 
+.menuClose {
+  display: none;
+}
+
 .languages {
   width: 100%;
   margin-top: 15px;

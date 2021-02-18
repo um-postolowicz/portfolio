@@ -1,5 +1,11 @@
 export const dictionary = {
   polish: {
+    listWelcome: "Strona powitalna",
+    listAbout: "O mnie",
+    listTech: "Znane technologie",
+    listProjects: "Projekty",
+    listHobbies: "Zainteresowania",
+    listContact: "Kontakt",
     welcome: "Hej!",
     name: "Nazywam się Urszula Maria Postołowicz",
     profession: "Jestem FrontEnd Developerem",
@@ -33,6 +39,12 @@ export const dictionary = {
     hobbiesText: "Zdjęcia związane z zainteresowaniami pochodzą ze strony:",
   },
   english: {
+    listWelcome: "Welcome Page",
+    listAbout: "About me",
+    listTech: "Known Technologies",
+    listProjects: "Projects",
+    listHobbies: "Hobbies",
+    listContact: "Contact",
     welcome: "Hi!",
     name: "My name is Urszula Maria Postołowicz",
     profession: "I'm a FrontEnd Developer",

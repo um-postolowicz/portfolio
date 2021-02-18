@@ -4,8 +4,8 @@ import { Provider } from "./data/LanguageContext";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
+import Header from "./components/Header";
 import Hobbies from "./pages/Hobbies";
-import LanguageChoice from "./components/LanguageChoice";
 import MainPage from "./pages/MainPage";
 import Projects from "./pages/Projects";
 import Technologies from "./pages/Technologies";
@@ -28,13 +28,13 @@ function App() {
           setLanguage: handleLanguageChange,
         }}
       >
-        <LanguageChoice />
-        <MainPage />
-        <About />
-        <Technologies />
-        <Projects />
-        <Hobbies />
-        <Contact />
+        <Header />
+        <MainPage id="welcome" />
+        <About id="about" />
+        <Technologies id="technologies" />
+        <Projects id="projects" />
+        <Hobbies id="hobbies" />
+        <Contact id="contact" />
         <Footer />
       </Provider>
     </div>
