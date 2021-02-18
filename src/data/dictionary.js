@@ -26,6 +26,7 @@ export const dictionary = {
     fantasyBooksTxt: "Kocham czytać książki fantasy",
     jigsawTitle: "Puzzle",
     jigsawTxt: "Kocham układać puzzle",
+    contactTitle: "Jak się ze mną skontaktować?",
   },
   english: {
     welcome: "Hi!",
@@ -53,5 +54,6 @@ export const dictionary = {
     fantasyBooksTxt: "I love reading fantasy books",
     jigsawTitle: "Jigsaw puzzles",
     jigsawTxt: "I love jigsaw puzzles",
+    contactTitle: "How to contact me?",
   },
 };
