@@ -17,8 +17,59 @@ html {
   margin: 0 auto;
 }
 
-.menuClose {
-  display: none;
+.header {
+  position: relative;
+}
+
+.menu {
+  top: 15px;
+  right: 15px;
+  position: fixed;
+  font-size: 2.5rem;
+  color: #aaa;
+  z-index: 5;
+}
+
+.menuWhite {
+  color: white;
+}
+
+.menuList {
+  position: fixed;
+  top: 0;
+  left: 100vw;
+  width: 100vw;
+  height: 100vh;
+  list-style: none;
+  padding-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  background-color: blue;
+  color: white;
+  font-size: 2rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.menuOpen {
+  left: 0;
+}
+
+.listElement {
+  -ms-flex-preferred-size: 13%;
+      flex-basis: 13%;
 }
 
 .languages {
@@ -82,6 +133,7 @@ html {
 
 .about .borderDiv {
   width: 90%;
+  z-index: -1;
 }
 
 .about .borderTopLeft {
