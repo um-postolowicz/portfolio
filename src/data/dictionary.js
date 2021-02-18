@@ -27,6 +27,10 @@ export const dictionary = {
     jigsawTitle: "Puzzle",
     jigsawTxt: "Kocham układać puzzle",
     contactTitle: "Jak się ze mną skontaktować?",
+    creditsTitle: "Informacje o stronie",
+    avatarText: "Awatar stworzony za pomocą: ",
+    borderText: "Flagi oraz ramka pochodzą ze strony:",
+    hobbiesText: "Zdjęcia związane z zainteresowaniami pochodzą ze strony:",
   },
   english: {
     welcome: "Hi!",
@@ -55,5 +59,9 @@ export const dictionary = {
     jigsawTitle: "Jigsaw puzzles",
     jigsawTxt: "I love jigsaw puzzles",
     contactTitle: "How to contact me?",
+    creditsTitle: "Page Info",
+    avatarText: "Avatar created via: ",
+    borderText: "Flags and border come from: ",
+    hobbiesText: "Hobbies' pictures come from: ",
   },
 };
