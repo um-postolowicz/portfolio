@@ -4,7 +4,6 @@ import { Provider } from "./data/LanguageContext";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
-import Header from "./components/Header";
 import Hobbies from "./pages/Hobbies";
 import MainPage from "./pages/MainPage";
 import Projects from "./pages/Projects";
@@ -28,7 +27,6 @@ function App() {
           setLanguage: handleLanguageChange,
         }}
       >
-        <Header />
         <MainPage id="welcome" />
         <About id="about" />
         <Technologies id="technologies" />

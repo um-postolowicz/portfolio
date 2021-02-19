@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;500&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -9,12 +9,8 @@
 
 html {
   font-size: 10px;
-  font-family: "Montserrat", sans-serif;
-}
-
-.wrapper {
-  width: 90%;
-  margin: 0 auto;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
 }
 
 .header {
@@ -49,15 +45,15 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   list-style: none;
-  background-color: blue;
+  background-color: #051335;
   color: white;
+  text-shadow: none;
+  font-weight: bold;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 2rem;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -68,18 +64,39 @@ html {
 }
 
 .listElement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  margin: 0 auto;
   -ms-flex-preferred-size: 13%;
       flex-basis: 13%;
+  border-bottom: 1px solid white;
+}
+
+.listElement:nth-last-of-type(1) {
+  border: none;
 }
 
 .languages {
   width: 100%;
-  margin-top: 15px;
+  padding-top: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.languages .flag img {
+  -webkit-box-shadow: 0 0 4px 2px #ddd;
+          box-shadow: 0 0 4px 2px #ddd;
 }
 
 .languages .poland {
@@ -93,17 +110,24 @@ html {
       -ms-flex-positive: 1;
           flex-grow: 1;
   height: 30px;
+  background-color: white;
 }
 
 .mainPage {
-  font-size: 1.8rem;
-  font-family: "Lobster", cursive;
+  font-size: 2rem;
+  font-family: "Amatic SC", cursive;
   height: 100vh;
+  background-color: #071843;
+  color: #e5eafa;
+  letter-spacing: 2px;
+  text-shadow: 3px 3px black;
 }
 
 .mainPage .introduction {
   height: 40vh;
   text-align: center;
+  width: 95%;
+  margin: 0 auto;
 }
 
 .mainPage .introduction h1 {
@@ -112,11 +136,13 @@ html {
 
 .mainPage .avatar {
   width: 90%;
-  margin: 0 auto;
+  margin: 35px auto 0;
+  text-align: center;
 }
 
 .mainPage .avatarImg {
-  width: 100%;
+  margin: 0 auto;
+  width: 85%;
 }
 
 .about {

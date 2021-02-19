@@ -7,13 +7,16 @@ import ukFlag from "../images/uk.svg";
 const LanguageChoice = () => {
   return (
     <Consumer>
-      {({ language, setLanguage }) => {
+      {({ setLanguage }) => {
         return (
           <div className="languages">
-            <div className="polish" onClick={() => setLanguage("polish")}>
+            <div className="polish flag" onClick={() => setLanguage("polish")}>
               <img src={polishFlag} alt="Polish flag" className="poland" />
             </div>
-            <div className="english" onClick={() => setLanguage("english")}>
+            <div
+              className="english flag"
+              onClick={() => setLanguage("english")}
+            >
               <img src={ukFlag} alt="UK flag" className="uk" />
             </div>
           </div>

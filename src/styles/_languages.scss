@@ -1,8 +1,11 @@
 .languages {
   width: 100%;
-  margin-top: 15px;
+  padding-top: 15px;
   display: flex;
   justify-content: space-around;
+  .flag img {
+    box-shadow: 0 0 4px 2px #ddd;
+  }
   .poland {
     flex-basis: 50%;
     height: 30px;
@@ -10,5 +13,6 @@
   .uk {
     flex-grow: 1;
     height: 30px;
+    background-color: white;
   }
 }

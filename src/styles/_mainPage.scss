@@ -1,19 +1,27 @@
 .mainPage {
-  font-size: 1.8rem;
-  font-family: "Lobster", cursive;
+  font-size: 2rem;
+  font-family: "Amatic SC", cursive;
   height: 100vh;
+  background-color: darken(#0a2463, 7%);
+  color: #e5eafa;
+  letter-spacing: 2px;
+  text-shadow: 3px 3px black;
   .introduction {
     height: 40vh;
     text-align: center;
+    width: 95%;
+    margin: 0 auto;
     h1 {
       margin-top: 10px;
     }
   }
   .avatar {
     width: 90%;
-    margin: 0 auto;
+    margin: 35px auto 0;
+    text-align: center;
     &Img {
-      width: 100%;
+      margin: 0 auto;
+      width: 85%;
     }
   }
 }
