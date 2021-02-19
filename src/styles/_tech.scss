@@ -1,11 +1,11 @@
 .technologies {
   height: 100vh;
   background-color: $dark-blue;
-  padding-top: 20px;
+  padding-top: $page-padding-top;
   &Title {
     text-align: center;
     color: white;
-    font-size: 2rem;
+    font-size: $page-title-size;
   }
   &Container {
     height: 80%;

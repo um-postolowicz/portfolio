@@ -1,7 +1,48 @@
 .hobbies {
   height: 100vh;
-  img {
-    max-width: 90%;
-    max-height: 15vh;
+  padding: $page-padding-top 0;
+  background-color: $dark-blue;
+  color: white;
+  &Title {
+    font-size: $page-title-size;
+    text-align: center;
+  }
+  &Tiles {
+    padding-top: 12px;
+    @include flex(column, flex-start, stretch);
+    height: 90vh;
+  }
+}
+
+.hobby {
+  @include flex(row);
+  height: 23.5%;
+  padding-left: 54px;
+  width: 100%;
+  position: relative;
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+    text-align: right;
+    padding-right: 54px;
+    padding-left: 0;
+  }
+  .hexagon {
+    height: 150px;
+    width: 140px;
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    background-size: cover;
+  }
+  &Text {
+    width: 47%;
+    align-self: center;
+    padding: 0 10px;
+    h4 {
+      font-size: 1.3rem;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+  }
+  .showTxt {
   }
 }

@@ -1,21 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Hobby = ({
-  alt,
   descClassName,
   hobbyDesc,
   hobbyName,
-  imgClassName,
   imgSrc,
   mainClassName,
   titleClassName,
 }) => {
+  const [isClicked, setIsClicked] = useState(false);
+
+  const handleClick = () => setIsClicked(!isClicked);
+
   return (
     <div className={mainClassName}>
       <div className="darkHover"></div>
-      <img src={imgSrc} alt={alt} className={imgClassName} />
-      <h4 className={titleClassName}>{hobbyName}</h4>
-      <p className={descClassName}>{hobbyDesc}</p>
+      <div
+        className="hexagon"
+        onClick={handleClick}
+        style={{ backgroundImage: `url(${imgSrc})` }}
+      ></div>
+      <div className={isClicked ? "hobbyText showTxt" : "hobbyText"}>
+        <h4 className={titleClassName}>{hobbyName}</h4>
+        <p className={descClassName}>{hobbyDesc}</p>
+      </div>
     </div>
   );
 };

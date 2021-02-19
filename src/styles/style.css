@@ -322,11 +322,90 @@ html {
 
 .hobbies {
   height: 100vh;
+  padding: 20px 0;
+  background-color: #071843;
+  color: white;
 }
 
-.hobbies img {
-  max-width: 90%;
-  max-height: 15vh;
+.hobbiesTitle {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.hobbiesTiles {
+  padding-top: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  height: 90vh;
+}
+
+.hobby {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: 23.5%;
+  padding-left: 54px;
+  width: 100%;
+  position: relative;
+}
+
+.hobby:nth-child(even) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  text-align: right;
+  padding-right: 54px;
+  padding-left: 0;
+}
+
+.hobby .hexagon {
+  height: 150px;
+  width: 140px;
+  -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+          clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  background-size: cover;
+}
+
+.hobbyText {
+  width: 47%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 0 10px;
+}
+
+.hobbyText h4 {
+  font-size: 1.3rem;
+}
+
+.hobbyText p {
+  font-size: 1.2rem;
 }
 
 .contact {
@@ -346,19 +425,19 @@ html {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  padding-top: 20px;
 }
 
 .contactTitle {
-  margin-top: 20px;
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 2rem;
   -ms-flex-preferred-size: 8%;
       flex-basis: 8%;
 }
 
 .contactTile {
-  -ms-flex-preferred-size: 21%;
-      flex-basis: 21%;
+  -ms-flex-preferred-size: 22%;
+      flex-basis: 22%;
   text-align: center;
   color: white;
   display: -webkit-box;

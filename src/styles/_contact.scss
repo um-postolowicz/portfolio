@@ -1,14 +1,14 @@
 .contact {
   height: 100vh;
   @include flex($flex-direction: column);
+  padding-top: $page-padding-top;
   &Title {
-    margin-top: 20px;
     text-align: center;
-    font-size: 1.8rem;
+    font-size: $page-title-size;
     flex-basis: 8%;
   }
   &Tile {
-    flex-basis: 21%;
+    flex-basis: 22%;
     text-align: center;
     color: white;
     @include flex(column, stretch, space-evenly);

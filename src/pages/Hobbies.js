@@ -25,46 +25,40 @@ const Hobbies = () => {
         return (
           <section className="hobbies">
             <h3 className="hobbiesTitle">{hobbiesTitle}</h3>
-            <Hobby
-              alt="A plane"
-              descClassName="aviationTxt"
-              hobbyDesc={aviationTxt}
-              hobbyName={aviationTitle}
-              imgClassName="aviationImg"
-              imgSrc={plane}
-              mainClassName="aviation"
-              titleClassName="aviationTitle"
-            />
-            <Hobby
-              alt="Embroidery"
-              descClassName="crossStitchTxt"
-              hobbyDesc={crossStitchTxt}
-              hobbyName={crossStitchTitle}
-              imgClassName="crossStitchImg"
-              imgSrc={stitch}
-              mainClassName="crossStitch"
-              titleClassName="crossStitchTitle"
-            />
-            <Hobby
-              alt="Fantasy Img"
-              descClassName="fantasyBooksTxt"
-              hobbyDesc={fantasyBooksTxt}
-              hobbyName={fantasyBooksTitle}
-              imgClassName="fantasyBooksImg"
-              imgSrc={fantasy}
-              mainClassName="fantasyBooks"
-              titleClassName="fantasyBooksTitle"
-            />
-            <Hobby
-              alt="Jigsaw puzzles"
-              descClassName="jigsawTxt"
-              hobbyDesc={jigsawTxt}
-              hobbyName={jigsawTitle}
-              imgClassName="jigsawImg"
-              imgSrc={jigsaw}
-              mainClassName="jigsaw"
-              titleClassName="jigsawTitle"
-            />
+            <div className="hobbiesTiles">
+              <Hobby
+                descClassName="aviationTxt"
+                hobbyDesc={aviationTxt}
+                hobbyName={aviationTitle}
+                imgSrc={plane}
+                mainClassName="aviation hobby"
+                titleClassName="aviationTitle"
+              />
+              <Hobby
+                descClassName="crossStitchTxt"
+                hobbyDesc={crossStitchTxt}
+                hobbyName={crossStitchTitle}
+                imgSrc={stitch}
+                mainClassName="crossStitch hobby"
+                titleClassName="crossStitchTitle"
+              />
+              <Hobby
+                descClassName="fantasyBooksTxt"
+                hobbyDesc={fantasyBooksTxt}
+                hobbyName={fantasyBooksTitle}
+                imgSrc={fantasy}
+                mainClassName="fantasyBooks hobby"
+                titleClassName="fantasyBooksTitle"
+              />
+              <Hobby
+                descClassName="jigsawTxt"
+                hobbyDesc={jigsawTxt}
+                hobbyName={jigsawTitle}
+                imgSrc={jigsaw}
+                mainClassName="jigsaw hobby"
+                titleClassName="jigsawTitle"
+              />
+            </div>
           </section>
         );
       }}
