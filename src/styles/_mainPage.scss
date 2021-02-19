@@ -2,8 +2,8 @@
   font-size: 2rem;
   font-family: "Amatic SC", cursive;
   height: 100vh;
-  background-color: darken(#0a2463, 7%);
-  color: #e5eafa;
+  background-color: $dark-blue;
+  color: $light-blue;
   letter-spacing: 2px;
   text-shadow: 3px 3px black;
   .introduction {

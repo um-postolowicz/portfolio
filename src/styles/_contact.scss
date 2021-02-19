@@ -1,7 +1,6 @@
 .contact {
   height: 100vh;
-  display: flex;
-  flex-direction: column;
+  @include flex($flex-direction: column);
   &Title {
     margin-top: 20px;
     text-align: center;
@@ -12,9 +11,7 @@
     flex-basis: 21%;
     text-align: center;
     color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    @include flex(column, stretch, space-evenly);
     letter-spacing: 1px;
     text-shadow: -2px 2px #000;
     transition: 0.3s;
@@ -25,36 +22,34 @@
       font-size: 3rem;
     }
     p {
-      font-size: 1.3rem;
+      font-size: 1.4rem;
     }
   }
 }
 
 .email {
-  background-color: rgb(224, 81, 71);
-  border-radius: 10px 10px 0 0;
+  background-color: $gmail-color;
   &:active {
-    background-color: lighten(rgb(224, 81, 71), 20%);
+    background-color: lighten($gmail-color, 20%);
   }
 }
 
 .facebook {
-  background-color: rgb(66, 103, 178);
+  background-color: $facebook-color;
   &:active {
-    background-color: lighten(rgb(66, 103, 178), 20%);
+    background-color: lighten($facebook-color, 20%);
   }
 }
 .linkedin {
-  background-color: rgb(31, 139, 178);
+  background-color: $linkedin-color;
   &:active {
-    background-color: lighten(rgb(31, 139, 178), 20%);
+    background-color: lighten($linkedin-color, 20%);
   }
 }
 .github {
-  background-color: rgb(0, 0, 0);
+  background-color: $github-color;
   text-shadow: -2px 2px #555;
-  border-radius: 0 0 10px 10px;
   &:active {
-    background-color: lighten(rgb(0, 0, 0), 20%);
+    background-color: lighten($github-color, 20%);
   }
 }

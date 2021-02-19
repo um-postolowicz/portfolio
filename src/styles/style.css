@@ -18,9 +18,11 @@ html {
 }
 
 .menu {
+  position: fixed;
   top: 15px;
   right: 15px;
-  position: fixed;
+  width: auto;
+  height: auto;
   font-size: 2.5rem;
   color: #aaa;
   z-index: 5;
@@ -33,21 +35,26 @@ html {
 .menuList {
   position: fixed;
   top: 0;
-  left: 100vw;
+  right: -100vw;
   width: 100vw;
   height: 100vh;
-  list-style: none;
-  padding-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  list-style: none;
+  padding-top: 40px;
   list-style: none;
   background-color: #051335;
   color: white;
@@ -60,19 +67,25 @@ html {
 }
 
 .menuOpen {
-  left: 0;
+  right: 0;
 }
 
 .listElement {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 90%;
   margin: 0 auto;
   -ms-flex-preferred-size: 13%;
@@ -294,10 +307,18 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .contactTitle {
@@ -316,10 +337,15 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -338,12 +364,11 @@ html {
 }
 
 .contactTile p {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 
 .email {
   background-color: #e05147;
-  border-radius: 10px 10px 0 0;
 }
 
 .email:active {
@@ -369,7 +394,6 @@ html {
 .github {
   background-color: black;
   text-shadow: -2px 2px #555;
-  border-radius: 0 0 10px 10px;
 }
 
 .github:active {
