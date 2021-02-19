@@ -228,11 +228,14 @@ html {
 
 .technologies {
   height: 100vh;
+  background-color: #071843;
+  padding-top: 20px;
 }
 
 .technologiesTitle {
   text-align: center;
-  margin-top: 20px;
+  color: white;
+  font-size: 2rem;
 }
 
 .technologiesContainer {
@@ -254,6 +257,30 @@ html {
 
 .technologiesContainer p {
   font-size: 2rem;
+}
+
+.technologiesContainer .tech {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 80%;
+  height: 80%;
+  border-radius: 30%;
+  -webkit-box-shadow: -4px 4px 4px 2px #000;
+          box-shadow: -4px 4px 4px 2px #000;
+  background-color: white;
 }
 
 .technologiesContainer .html {

@@ -17,37 +17,37 @@ const Technologies = () => {
               <TechPiece
                 techClassName="htmlTitle"
                 techIcon={<AiFillHtml5 />}
-                techMain="html"
+                techMain="html tech"
                 techName="HTML5"
               />
               <TechPiece
                 techClassName="cssTitle"
                 techIcon={<DiCss3Full />}
-                techMain="css"
+                techMain="css tech"
                 techName="CSS3"
               />
               <TechPiece
                 techClassName="sassTitle"
                 techIcon={<DiSass />}
-                techMain="sass"
+                techMain="sass tech"
                 techName="Sass/Scss"
               />
               <TechPiece
                 techClassName="jsTitle"
                 techIcon={<SiJavascript />}
-                techMain="javascript"
+                techMain="javascript tech"
                 techName="JavaScript"
               />
               <TechPiece
                 techClassName="reactTitle"
                 techIcon={<FaReact />}
-                techMain="react"
+                techMain="react tech"
                 techName="ReactJS"
               />
               <TechPiece
                 techClassName="npmTitle"
                 techIcon={<DiNpm />}
-                techMain="npm"
+                techMain="npm tech"
                 techName="NPM"
               />
             </div>

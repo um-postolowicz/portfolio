@@ -1,8 +1,11 @@
 .technologies {
   height: 100vh;
+  background-color: $dark-blue;
+  padding-top: 20px;
   &Title {
     text-align: center;
-    margin-top: 20px;
+    color: white;
+    font-size: 2rem;
   }
   &Container {
     height: 80%;
@@ -16,6 +19,14 @@
     text-align: center;
     p {
       font-size: 2rem;
+    }
+    .tech {
+      @include flex(column, center, space-evenly);
+      width: 80%;
+      height: 80%;
+      border-radius: 30%;
+      box-shadow: -4px 4px 4px 2px #000;
+      background-color: white;
     }
     .html {
       color: rgb(240, 70, 38);
