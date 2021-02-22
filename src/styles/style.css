@@ -460,8 +460,11 @@ html {
   z-index: -1;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+}
+
+.hobbyText:nth-last-child(even) {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
 }
 
 .hobbyText h4 {

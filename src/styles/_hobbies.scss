@@ -48,7 +48,9 @@
     transform: translateX(-100%);
     z-index: -1;
     transition: 0.3s;
-    box-shadow: none;
+    &:nth-last-child(even) {
+      transform: translateX(100%);
+    }
     h4 {
       font-size: 1.3rem;
     }
