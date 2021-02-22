@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import LanguageContext, { Consumer } from "../data/LanguageContext";
+import { Consumer } from "../data/LanguageContext";
 import LanguageChoice from "./LanguageChoice";
 
 import { Link } from "react-scroll";
