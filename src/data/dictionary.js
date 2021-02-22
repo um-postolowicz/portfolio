@@ -12,7 +12,12 @@ export const dictionary = {
     invitation: "Zapraszam na moją stronę!",
     avatarAlt: "Awatar",
     aboutTitle: "Kim jestem?",
-    about: "Opis",
+    aboutProf:
+      "Z wykształcenia inżynier robotyki. Programowaniem i frontendem zainteresowałam się niedawno, jednak stosunkowo szybko polubiłam tworzenie stron internetowych. Technologie, których używam to React, JS, CSS i HTML.",
+    aboutDev:
+      "Zarówno w życiu prywatnym, jak i zawodowym, stawiam na rozwój i naukę, dlatego też w przyszłości chciałabym nauczyć się Vue.js, a także języków norweskiego oraz włoskiego.",
+    aboutFree:
+      "Wolny czas poświęcam między innymi na czytanie (więcej informacji w sekcji 'Moje zainteresowania'. Uwielbiam tworzyć obrazy techniką haftu krzyżykowego, a także jestem miłośniczką kotów.",
     technologies: "Technologie, które znam",
     projectsTitle: "Moje projekty",
     projectsComment:
@@ -63,7 +68,12 @@ export const dictionary = {
     invitation: "Be my guest and browse my page!",
     avatarAlt: "Avatar",
     aboutTitle: "Who am I?",
-    about: "Description",
+    aboutProf:
+      "I studied robotics, and I gained the title of engineer of robotics. I've started learning programming and frontend recently, but I found it very interesting quite quickly. I am using technologies like React, JS, HTML and CSS.",
+    aboutDev:
+      "One of important things in my career and personal life is constant development. That is why I would love to learn Vue.js, norwegian and italian languages in the future.",
+    aboutFree:
+      "Reading is one of my hobbies (there are more info about my hobbies in 'My hobbies' section). I love embroidering, especially cross stitch embroidery. I am also a cat lover.",
     technologies: "Technologies I've learned",
     projectsTitle: "My projects",
     projectsComment:

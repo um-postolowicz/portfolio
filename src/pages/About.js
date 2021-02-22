@@ -5,13 +5,15 @@ const About = () => {
   return (
     <Consumer>
       {({ label }) => {
-        const { about, aboutTitle } = label;
+        const { aboutProf, aboutDev, aboutFree, aboutTitle } = label;
         return (
           <section className="about">
             <div className="aboutBorder">
               <div className="aboutTxt">
                 <h3 className="aboutHeader">{aboutTitle}</h3>
-                <p className="aboutDesc">{about}</p>
+                <p className="aboutDesc">{aboutProf}</p>
+                <p className="aboutDesc">{aboutDev}</p>
+                <p className="aboutDesc">{aboutFree}</p>
               </div>
             </div>
           </section>

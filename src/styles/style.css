@@ -210,11 +210,14 @@ html {
 
 .aboutHeader {
   font-size: 2rem;
-  padding: 20px;
+  padding: 30px;
 }
 
 .aboutDesc {
   font-size: 1.5rem;
+  width: 85%;
+  margin: 0 auto;
+  padding-bottom: 20px;
 }
 
 .technologies {
