@@ -15,14 +15,17 @@ export const dictionary = {
     technologies: "Technologie, które znam",
     projectsTitle: "Moje projekty",
     portfolioTitle: "Portfolio",
-    portfolioTxt: "Ta strona",
+    portfolioTxt:
+      "To jest ta strona! Przedstawia ona mnie, moje zainteresowania oraz projekty. Można tu także znaleźć informacje kontaktowe.",
     rateMovieTitle: "Oceń film!",
-    rateMovieTxt: "Strona, na której można ocenić obejrzany film.",
+    rateMovieTxt:
+      "Aplikacja, oparta na OMDb API, za pomocą której możesz znaleźć film, dowiedzieć się szczegółowych informacji (na przykład o przyznanych nagrodach), oraz ocenić tytuł.",
     toDoTitle: "Lista zadań",
-    toDoTxt: "Aplikacja, która pomoże zarządzać czasem i zadaniami.",
+    toDoTxt:
+      "Jedna ze standardowych aplikacji - lista zadań z opcjami dodawania, usuwania, edytowania zadań, oraz oznaczania zadań wykonanych oraz priorytetowych.",
     calculatorTitle: "Kalkulator",
     calculatorTxt:
-      "Prosty kalkulator z kilkoma bardziej zaawansowanymi funkcjami.",
+      "Prosty kalkulator obliczeniowy, który oprócz dodawania, odejmowania itd. umożliwia potęgowanie, pierwiastkowanie oraz wyliczanie procentów.",
     hobbiesTitle: "Moje zainteresowania",
     aviationTitle: "Lotnictwo",
     aviationTxt: "Kocham samoloty",
@@ -48,19 +51,23 @@ export const dictionary = {
     welcome: "Hi!",
     name: "My name is Urszula Maria Postołowicz",
     profession: "I'm a FrontEnd Developer",
-    invitation: "Be my guest!",
+    invitation: "Be my guest and browse my page!",
     aboutTitle: "About me",
     about: "Description",
     technologies: "Technologies I've learned",
     projectsTitle: "My projects",
     portfolioTitle: "Portfolio",
-    portfolioTxt: "This one",
+    portfolioTxt:
+      "It's this page! You can learn more about me, my hobbies and projects, I've made. There are also a bunch of contact information.",
     rateMovieTitle: "Rate a Movie!",
-    rateMovieTxt: "The page, where you can rate a movie you just have watched.",
+    rateMovieTxt:
+      "The app based on OMDb API, where you can find a movie by it's title, learn some details about it (like starring actors or rewards) and rate it.",
     toDoTitle: "To Do List",
-    toDoTxt: "The app, where you can manage your time and tasks.",
+    toDoTxt:
+      "One of the standard tasks - to do list with adding, deleting and editing tasks. You can also mark task as done or add priority ones.",
     calculatorTitle: "The Calculator",
-    calculatorTxt: "A simple calculator with a few more advanced options.",
+    calculatorTxt:
+      "A simple calculator. Besides of addition, subtraction etc. you also have powers, roots and percents.",
     hobbiesTitle: "My hobbies",
     aviationTitle: "Aviation",
     aviationTxt: "I love planes",
