@@ -533,5 +533,47 @@ html {
 
 .footer {
   height: 20vh;
+  background-color: #071843;
+  color: white;
+}
+
+.credits {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.creditsTitle {
+  padding-top: 10px;
+  font-size: 1.2rem;
+}
+
+.credits p,
+.credits a {
+  font-size: 1.2rem;
+}
+
+.credits p {
+  display: inline;
+}
+
+.credits a {
+  color: white;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=style.css.map */
