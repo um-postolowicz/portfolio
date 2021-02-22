@@ -52,8 +52,8 @@ export const dictionary = {
     contactTitle: "Jak się ze mną skontaktować?",
     creditsTitle: "Informacje o stronie",
     avatarText: "Awatar stworzony za pomocą: ",
-    borderText: "Flagi oraz ramka pochodzą ze strony:",
-    hobbiesText: "Zdjęcia związane z zainteresowaniami pochodzą ze strony:",
+    borderText: "Flagi oraz ramka pochodzą ze strony: ",
+    hobbiesText: "Zdjęcia związane z zainteresowaniami pochodzą ze strony: ",
   },
   english: {
     listWelcome: "Welcome Page",
