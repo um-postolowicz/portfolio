@@ -25,11 +25,12 @@ html {
   height: auto;
   font-size: 2.5rem;
   color: #aaa;
-  z-index: 5;
+  z-index: 101;
 }
 
 .menuWhite {
   color: white;
+  z-index: 101;
 }
 
 .menuList {
@@ -62,6 +63,7 @@ html {
   font-weight: bold;
   font-family: "Josefin Sans", sans-serif;
   font-size: 2rem;
+  z-index: 100;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -396,6 +398,7 @@ html {
 }
 
 .hobby {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -414,9 +417,8 @@ html {
   height: 23.5%;
   padding-left: 54px;
   width: 100%;
-  -webkit-filter: drop-shadow(0 0 8px white);
-          filter: drop-shadow(0 0 8px white);
-  position: relative;
+  -webkit-filter: drop-shadow(0 0 6px white);
+          filter: drop-shadow(0 0 6px white);
 }
 
 .hobby:nth-child(even) {

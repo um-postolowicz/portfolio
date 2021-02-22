@@ -15,12 +15,12 @@
 }
 
 .hobby {
+  position: relative;
   @include flex(row);
   height: 23.5%;
   padding-left: 54px;
   width: 100%;
-  filter: drop-shadow(0 0 8px rgb(255, 255, 255));
-  position: relative;
+  filter: drop-shadow(0 0 6px rgb(255, 255, 255));
   &:nth-child(even) {
     flex-direction: row-reverse;
     text-align: right;
