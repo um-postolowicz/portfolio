@@ -14,6 +14,8 @@ export const dictionary = {
     about: "Opis",
     technologies: "Technologie, które znam",
     projectsTitle: "Moje projekty",
+    projectsComment:
+      "Kliknij tytuł projektu, aby wejść na jego stronę. Po kliknięciu w miniaturkę pojawi się link do projektu na GitHubie.",
     portfolioTitle: "Portfolio",
     portfolioTxt:
       "To jest ta strona! Przedstawia ona mnie, moje zainteresowania oraz projekty. Można tu także znaleźć informacje kontaktowe.",
@@ -58,9 +60,11 @@ export const dictionary = {
     about: "Description",
     technologies: "Technologies I've learned",
     projectsTitle: "My projects",
+    projectsComment:
+      "Click on the project's title to see it's website. If you want to see project on GitHub, click on the project's image to display the link.",
     portfolioTitle: "Portfolio",
     portfolioTxt:
-      "It's this page! You can learn more about me, my hobbies and projects, I've made. There are also a bunch of contact information.",
+      "It's this page! You can learn more about me, my hobbies and projects I've made. There is also a bunch of contact information.",
     rateMovieTitle: "Rate a Movie!",
     rateMovieTxt:
       "The app based on OMDb API, where you can find a movie by it's title, learn some details about it (like starring actors or rewards) and rate it.",

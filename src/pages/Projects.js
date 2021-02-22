@@ -13,6 +13,7 @@ const Projects = () => {
       {({ label }) => {
         const {
           projectsTitle,
+          projectsComment,
           portfolioTitle,
           portfolioTxt,
           rateMovieTitle,
@@ -25,14 +26,17 @@ const Projects = () => {
         return (
           <section className="projects">
             <h3 className="projectsTitle">{projectsTitle}</h3>
+            <p className="projectsComment">{projectsComment}</p>
             <div className="projectsContainer">
               <Project
                 alt="Portfolio IMG"
                 descClassName="portfolioDesc"
                 descTxt={portfolioTxt}
+                githubLink="https://github.com/um-postolowicz/portfolio"
                 imgClassName="portfolioImg"
                 imgSrc={portfolioImg}
                 mainClassName="portfolio project"
+                projectLink="https://github.com/um-postolowicz/portfolio"
                 projectName={portfolioTitle}
                 titleClassName="portfolioTitle"
               />
@@ -40,9 +44,11 @@ const Projects = () => {
                 alt="Rate a movie IMG"
                 descClassName="rateMovieDesc"
                 descTxt={rateMovieTxt}
+                githubLink="https://github.com/um-postolowicz/rate-a-movie"
                 imgClassName="rateMovieImg"
                 imgSrc={rateMovieImg}
                 mainClassName="rateMovie project"
+                projectLink="https://rateamovie-ump.herokuapp.com"
                 projectName={rateMovieTitle}
                 titleClassName="rateMovieTitle"
               />
@@ -50,9 +56,11 @@ const Projects = () => {
                 alt="To Do IMG"
                 descClassName="toDoDesc"
                 descTxt={toDoTxt}
+                githubLink="https://github.com/um-postolowicz/todo"
                 imgClassName="toDoImg"
                 imgSrc={toDoImg}
                 mainClassName="toDo project"
+                projectLink="https://todo-ump.herokuapp.com"
                 projectName={toDoTitle}
                 titleClassName="toDoTitle"
               />
@@ -60,9 +68,11 @@ const Projects = () => {
                 alt="The Calculator IMG"
                 descClassName="calculatorDesc"
                 descTxt={calculatorTxt}
+                githubLink="https://github.com/um-postolowicz/calculator"
                 imgClassName="calculatorImg"
                 imgSrc={calculatorImg}
                 mainClassName="calculator project"
+                projectLink="https://calculator-ump.herokuapp.com"
                 projectName={calculatorTitle}
                 titleClassName="calculatorTitle"
               />
