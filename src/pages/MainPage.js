@@ -7,7 +7,7 @@ const MainPage = ({ id }) => {
   return (
     <Consumer>
       {({ label }) => {
-        const { welcome, name, profession, invitation } = label;
+        const { welcome, name, profession, invitation, avatarAlt } = label;
         return (
           <>
             <section className="mainPage">
@@ -19,7 +19,7 @@ const MainPage = ({ id }) => {
                 <h2 className="invitation">{invitation}</h2>
               </div>
               <div className="avatar">
-                <img src={avatar} alt="avatar" className="avatarImg" />
+                <img src={avatar} alt={avatarAlt} className="avatarImg" />
               </div>
             </section>
           </>

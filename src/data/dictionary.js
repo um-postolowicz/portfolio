@@ -10,6 +10,7 @@ export const dictionary = {
     name: "Nazywam się Urszula Maria Postołowicz",
     profession: "Jestem FrontEnd Developerem",
     invitation: "Zapraszam na moją stronę!",
+    avatarAlt: "Awatar",
     aboutTitle: "Kim jestem?",
     about: "Opis",
     technologies: "Technologie, które znam",
@@ -19,15 +20,19 @@ export const dictionary = {
     portfolioTitle: "Portfolio",
     portfolioTxt:
       "To jest ta strona! Przedstawia ona mnie, moje zainteresowania oraz projekty. Można tu także znaleźć informacje kontaktowe.",
+    portfolioAlt: "Miniaturka projektu Portfolio",
     rateMovieTitle: "Oceń film!",
     rateMovieTxt:
       "Aplikacja, oparta na OMDb API, za pomocą której możesz znaleźć film, dowiedzieć się szczegółowych informacji (na przykład o przyznanych nagrodach), oraz ocenić tytuł.",
+    rateMovieAlt: "Miniaturka projektu 'Oceń film!'",
     toDoTitle: "Lista zadań",
     toDoTxt:
       "Jedna ze standardowych aplikacji - lista zadań z opcjami dodawania, usuwania, edytowania zadań, oraz oznaczania zadań wykonanych oraz priorytetowych.",
+    todoAlt: "Miniaturka projektu Lista zadań",
     calculatorTitle: "Kalkulator",
     calculatorTxt:
       "Prosty kalkulator obliczeniowy, który oprócz dodawania, odejmowania itd. umożliwia potęgowanie, pierwiastkowanie oraz wyliczanie procentów.",
+    calculatorAlt: "Miniaturka projektu Kalkulator",
     hobbiesTitle: "Moje zainteresowania",
     aviationTitle: "Lotnictwo",
     aviationTxt:
@@ -56,6 +61,7 @@ export const dictionary = {
     name: "My name is Urszula Maria Postołowicz",
     profession: "I'm a FrontEnd Developer",
     invitation: "Be my guest and browse my page!",
+    avatarAlt: "Avatar",
     aboutTitle: "Who am I?",
     about: "Description",
     technologies: "Technologies I've learned",
@@ -65,15 +71,19 @@ export const dictionary = {
     portfolioTitle: "Portfolio",
     portfolioTxt:
       "It's this page! You can learn more about me, my hobbies and projects I've made. There is also a bunch of contact information.",
+    portfolioAlt: "Image of 'Portfolio' project",
     rateMovieTitle: "Rate a Movie!",
     rateMovieTxt:
       "The app based on OMDb API, where you can find a movie by it's title, learn some details about it (like starring actors or rewards) and rate it.",
+    rateMovieAlt: "Image of 'Rate a movie' project",
     toDoTitle: "To Do List",
     toDoTxt:
       "One of the standard tasks - to do list with adding, deleting and editing tasks. You can also mark task as done or add priority ones.",
+    todoAlt: "Image of ToDo App",
     calculatorTitle: "The Calculator",
     calculatorTxt:
       "A simple calculator. Besides of addition, subtraction etc. you also have powers, roots and percents.",
+    calculatorAlt: "Image of 'Calculator' project",
     hobbiesTitle: "My hobbies",
     aviationTitle: "Aviation",
     aviationTxt:

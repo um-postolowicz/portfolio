@@ -12,14 +12,18 @@ const Projects = () => {
     <Consumer>
       {({ label }) => {
         const {
+          portfolioAlt,
           projectsTitle,
           projectsComment,
           portfolioTitle,
           portfolioTxt,
+          rateMovieAlt,
           rateMovieTitle,
           rateMovieTxt,
+          todoAlt,
           toDoTitle,
           toDoTxt,
+          calculatorAlt,
           calculatorTitle,
           calculatorTxt,
         } = label;
@@ -29,7 +33,7 @@ const Projects = () => {
             <p className="projectsComment">{projectsComment}</p>
             <div className="projectsContainer">
               <Project
-                alt="Portfolio IMG"
+                alt={portfolioAlt}
                 descClassName="portfolioDesc"
                 descTxt={portfolioTxt}
                 githubLink="https://github.com/um-postolowicz/portfolio"
@@ -41,7 +45,7 @@ const Projects = () => {
                 titleClassName="portfolioTitle"
               />
               <Project
-                alt="Rate a movie IMG"
+                alt={rateMovieAlt}
                 descClassName="rateMovieDesc"
                 descTxt={rateMovieTxt}
                 githubLink="https://github.com/um-postolowicz/rate-a-movie"
@@ -53,7 +57,7 @@ const Projects = () => {
                 titleClassName="rateMovieTitle"
               />
               <Project
-                alt="To Do IMG"
+                alt={todoAlt}
                 descClassName="toDoDesc"
                 descTxt={toDoTxt}
                 githubLink="https://github.com/um-postolowicz/todo"
@@ -65,7 +69,7 @@ const Projects = () => {
                 titleClassName="toDoTitle"
               />
               <Project
-                alt="The Calculator IMG"
+                alt={calculatorAlt}
                 descClassName="calculatorDesc"
                 descTxt={calculatorTxt}
                 githubLink="https://github.com/um-postolowicz/calculator"
