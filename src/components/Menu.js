@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Consumer } from "../data/LanguageContext";
+import LanguageContext, { Consumer } from "../data/LanguageContext";
+import LanguageChoice from "./LanguageChoice";
 
 import { Link } from "react-scroll";
 
@@ -29,7 +30,9 @@ const Menu = () => {
             >
               {isMenuOpen ? <FaTimes /> : <FaBars />}
             </div>
+
             <ul className={isMenuOpen ? "menuList menuOpen" : "menuList"}>
+              <LanguageChoice />
               <li className="listElement listWelcome">
                 <Link
                   activeClass="active"

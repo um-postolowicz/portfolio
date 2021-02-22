@@ -19,6 +19,14 @@
     font-family: "Josefin Sans", sans-serif;
     font-size: 2rem;
     transition: $transition;
+    .languages {
+      margin: -60px 0 40px;
+      .poland,
+      .uk {
+        box-shadow: none;
+        border: 1px solid white;
+      }
+    }
   }
   &Open {
     right: 0;
