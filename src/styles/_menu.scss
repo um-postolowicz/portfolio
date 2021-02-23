@@ -36,8 +36,7 @@
 }
 .listElement {
   @include flex(row, center, center);
-  width: 90%;
-  margin: 0 auto;
+  @include size($width: 90%, $margin: 0 auto);
   flex-basis: 13%;
   border-bottom: 1px solid white;
   &:nth-last-of-type(1) {

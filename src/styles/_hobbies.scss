@@ -15,11 +15,9 @@
 }
 
 .hobby {
-  position: relative;
+  @include position(relative, auto, auto, 100%, 23.5%);
   @include flex(row);
-  height: 23.5%;
   padding-left: 54px;
-  width: 100%;
   filter: drop-shadow(0 0 6px rgb(255, 255, 255));
   &:nth-child(even) {
     flex-direction: row-reverse;
@@ -28,16 +26,12 @@
     padding-left: 0;
   }
   .hexagon {
-    position: relative;
-    height: 150px;
-    width: 140px;
+    @include position(relative, auto, auto, 140px, 150px);
     clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     background-size: cover;
   }
   .darkHover {
-    position: absolute;
-    height: 150px;
-    width: 140px;
+    @include position(absolute, auto, auto, 140px, 150px);
     clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     background-color: rgba(0, 0, 0, 0.7);
   }

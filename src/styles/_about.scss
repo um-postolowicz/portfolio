@@ -2,9 +2,7 @@
   height: 100vh;
   @include flex(column, center, center);
   &Border {
-    margin: 30px auto;
-    height: 90%;
-    width: 85%;
+    @include size(85%, 90%, 30px auto, 0);
     background: rgb(248, 248, 255);
     background: linear-gradient(
       135deg,
@@ -27,9 +25,7 @@
     padding: 30px;
   }
   &Desc {
+    @include size(85%, auto, 0 auto, 0 0 20px 0);
     font-size: 1.5rem;
-    width: 85%;
-    margin: 0 auto;
-    padding-bottom: 20px;
   }
 }

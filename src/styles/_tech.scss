@@ -8,13 +8,8 @@
     font-size: $page-title-size;
   }
   &Container {
-    height: 80%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    justify-items: center;
-    align-items: center;
-    margin: 20px auto;
+    @include size($height: 80%, $margin: 20px auto);
+    @include grid(repeat(3, 1fr), repeat(2, 1fr));
     font-size: 6rem;
     text-align: center;
     p {
@@ -22,29 +17,28 @@
     }
     .tech {
       @include flex(column, center, space-evenly);
-      width: 80%;
-      height: 80%;
+      @include size(80%, 80%);
       border-radius: 30%;
       box-shadow: -4px 4px 4px 2px #000;
       background-color: white;
     }
     .html {
-      color: rgb(240, 70, 38);
+      color: $html-color;
     }
     .css {
-      color: rgb(20, 130, 234);
+      color: $css-color;
     }
     .sass {
-      color: rgb(220, 33, 91);
+      color: $sass-color;
     }
     .javascript {
-      color: rgb(251, 214, 1);
+      color: $js-color;
     }
     .react {
-      color: rgb(97, 218, 251);
+      color: $react-color;
     }
     .npm {
-      color: rgb(204, 0, 0);
+      color: $npm-color;
     }
   }
 }

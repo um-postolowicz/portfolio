@@ -7,21 +7,17 @@
   letter-spacing: 2px;
   text-shadow: 3px 3px black;
   .introduction {
-    height: 40vh;
+    @include size(95%, 40vh, 0 auto);
     text-align: center;
-    width: 95%;
-    margin: 0 auto;
     h1 {
       margin-top: 10px;
     }
   }
   .avatar {
-    width: 90%;
-    margin: 35px auto 0;
+    @include size($width: 90%, $margin: 35px auto 0);
     text-align: center;
     &Img {
-      margin: 0 auto;
-      width: 85%;
+      @include size($width: 85%, $margin: 0 auto);
     }
   }
 }

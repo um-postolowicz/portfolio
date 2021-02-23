@@ -7,8 +7,7 @@
     margin-bottom: 5px;
   }
   &Comment {
-    width: 90%;
-    margin: 0 auto 15px;
+    @include size($width: 90%, $margin: 0 auto 15px);
     font-style: italic;
   }
   &Container {
@@ -17,15 +16,9 @@
 }
 
 .project {
-  position: relative;
-  height: 20vh;
-  width: 90vw;
-  display: grid;
-  grid-template-columns: 40% 60%;
-  grid-template-rows: 20px 1fr;
-  align-items: center;
+  @include position(relative, auto, auto, 90vw, 20vh);
+  @include grid(20px 1fr, 40% 60%);
   border-bottom: 1px solid #ddd;
-  justify-items: center;
   padding: 10px 0;
   &:nth-last-child(1) {
     border-bottom: none;
@@ -46,11 +39,8 @@
 
 .link {
   position: absolute;
+  @include position(absolute, 30px, 0, 60%, calc(100% - 31px));
   @include flex(row, center, center);
-  top: 30px;
-  left: 40%;
-  width: 59%;
-  height: calc(100% - 31px);
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.8);
   a {

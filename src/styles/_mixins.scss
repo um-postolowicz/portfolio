@@ -10,6 +10,18 @@
   justify-content: $justify-content;
 }
 
+@mixin grid(
+  $grid-rows,
+  $grid-columns,
+  $align-items: center,
+  $justify-items: center
+) {
+  display: grid;
+  grid: $grid-rows/$grid-columns;
+  align-items: $align-items;
+  justify-items: $justify-items;
+}
+
 @mixin position(
   $position: fixed,
   $top: 0,
@@ -22,4 +34,11 @@
   right: $right;
   width: $width;
   height: $height;
+}
+
+@mixin size($width: auto, $height: auto, $margin: auto, $padding: auto) {
+  width: $width;
+  height: $height;
+  margin: $margin;
+  padding: $padding;
 }

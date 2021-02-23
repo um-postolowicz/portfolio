@@ -1,8 +1,7 @@
 .languages {
   width: 100%;
   padding-top: 15px;
-  display: flex;
-  justify-content: space-around;
+  @include flex($justify-content: space-around);
   .flag img {
     box-shadow: 0 0 4px 2px #ddd;
   }
