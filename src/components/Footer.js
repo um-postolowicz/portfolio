@@ -12,19 +12,34 @@ const Footer = () => {
               <h5 className="creditsTitle">{creditsTitle}</h5>
               <div className="avatarInfo">
                 <p className="avatarText">{avatarText}</p>
-                <a className="avatarLink" href="https://avatarmaker.com">
+                <a
+                  className="avatarLink"
+                  href="https://avatarmaker.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Avatar Maker
                 </a>
               </div>
               <div className="borderInfo">
                 <p className="borderText">{borderText}</p>
-                <a href="https://freesvg.org" className="borderLink">
+                <a
+                  href="https://freesvg.org"
+                  className="borderLink"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Free SVG
                 </a>
               </div>
               <div className="hobbiesInfo">
                 <p className="hobbiesText">{hobbiesText}</p>
-                <a href="https://www.pexels.com" className="hobbiesLink">
+                <a
+                  href="https://www.pexels.com"
+                  className="hobbiesLink"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Pexels
                 </a>
               </div>
