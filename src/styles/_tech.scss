@@ -6,12 +6,21 @@
     text-align: center;
     color: white;
     font-size: $page-title-size;
+    @include mq(xxsmall, $portrait) {
+      font-size: $title-size-xxsmall;
+    }
   }
   &Container {
     @include size($height: 80%, $margin: 20px auto);
     @include grid(repeat(3, 1fr), repeat(2, 1fr));
     font-size: 6rem;
     text-align: center;
+    @include mq(xxsmall, $portrait) {
+      margin-top: 30px;
+    }
+    @include mq(xsmall, $portrait) {
+      margin-top: 50px;
+    }
     p {
       font-size: 2rem;
     }
@@ -21,6 +30,9 @@
       border-radius: 30%;
       box-shadow: -4px 4px 4px 2px #000;
       background-color: white;
+      @include mq(xsmall, $portrait) {
+        height: 70%;
+      }
     }
     .html {
       color: $html-color;

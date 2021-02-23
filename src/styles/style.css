@@ -131,6 +131,18 @@ html {
       justify-content: space-around;
 }
 
+@media (orientation: portrait) and (min-width: 359px) {
+  .languages {
+    padding-top: 30px;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 410px) {
+  .languages {
+    padding-top: 40px;
+  }
+}
+
 .languages .flag img {
   -webkit-box-shadow: 0 0 4px 2px #ddd;
           box-shadow: 0 0 4px 2px #ddd;
@@ -142,12 +154,24 @@ html {
   height: 30px;
 }
 
+@media (orientation: portrait) and (min-width: 410px) {
+  .languages .poland {
+    height: 40px;
+  }
+}
+
 .languages .uk {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   height: 30px;
   background-color: white;
+}
+
+@media (orientation: portrait) and (min-width: 410px) {
+  .languages .uk {
+    height: 40px;
+  }
 }
 
 .mainPage {
@@ -160,6 +184,12 @@ html {
   text-shadow: 3px 3px black;
 }
 
+@media (orientation: portrait) and (min-width: 359px) {
+  .mainPage {
+    font-size: 2.2rem;
+  }
+}
+
 .mainPage .introduction {
   width: 95%;
   height: 40vh;
@@ -168,8 +198,22 @@ html {
   text-align: center;
 }
 
+@media (orientation: portrait) and (min-width: 410px) {
+  .mainPage .introduction {
+    margin-top: 50px;
+    width: 80%;
+    font-size: 2.4rem;
+  }
+}
+
 .mainPage .introduction h1 {
   margin-top: 10px;
+}
+
+@media (orientation: portrait) and (min-width: 410px) {
+  .mainPage .introduction h1 {
+    margin-bottom: 15px;
+  }
 }
 
 .mainPage .avatar {
@@ -178,6 +222,19 @@ html {
   margin: 35px auto 0;
   padding: auto;
   text-align: center;
+}
+
+@media (orientation: portrait) and (min-width: 359px) {
+  .mainPage .avatar {
+    margin-top: 32px;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 410px) {
+  .mainPage .avatar {
+    width: 95%;
+    margin-top: 37px;
+  }
 }
 
 .mainPage .avatarImg {
@@ -216,6 +273,12 @@ html {
   border-radius: 15px 80px;
 }
 
+@media (orientation: portrait) and (min-width: 410px) {
+  .aboutBorder {
+    height: 80%;
+  }
+}
+
 .aboutTxt {
   margin: 10px;
   height: calc(100% - 20px);
@@ -225,9 +288,21 @@ html {
   text-align: center;
 }
 
+@media (orientation: portrait) and (min-width: 410px) {
+  .aboutTxt {
+    padding: 50px 10px;
+  }
+}
+
 .aboutHeader {
   font-size: 2rem;
   padding: 30px;
+}
+
+@media (orientation: portrait) and (min-width: 359px) {
+  .aboutHeader {
+    font-size: 2.2rem;
+  }
 }
 
 .aboutDesc {
@@ -236,6 +311,18 @@ html {
   margin: 0 auto;
   padding: 0 0 20px 0;
   font-size: 1.5rem;
+}
+
+@media (orientation: portrait) and (min-width: 359px) {
+  .aboutDesc {
+    font-size: 1.8rem;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 410px) {
+  .aboutDesc {
+    width: 75%;
+  }
 }
 
 .technologies {
@@ -248,6 +335,12 @@ html {
   text-align: center;
   color: white;
   font-size: 2rem;
+}
+
+@media (orientation: portrait) and (min-width: 359px) {
+  .technologiesTitle {
+    font-size: 2.2rem;
+  }
 }
 
 .technologiesContainer {
@@ -264,6 +357,18 @@ html {
   justify-items: center;
   font-size: 6rem;
   text-align: center;
+}
+
+@media (orientation: portrait) and (min-width: 359px) {
+  .technologiesContainer {
+    margin-top: 30px;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 410px) {
+  .technologiesContainer {
+    margin-top: 50px;
+  }
 }
 
 .technologiesContainer p {
@@ -294,6 +399,12 @@ html {
   -webkit-box-shadow: -4px 4px 4px 2px #000;
           box-shadow: -4px 4px 4px 2px #000;
   background-color: white;
+}
+
+@media (orientation: portrait) and (min-width: 410px) {
+  .technologiesContainer .tech {
+    height: 70%;
+  }
 }
 
 .technologiesContainer .html {
@@ -331,12 +442,39 @@ html {
   margin-bottom: 5px;
 }
 
+@media (orientation: portrait) and (min-width: 359px) {
+  .projectsTitle {
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 410px) {
+  .projectsTitle {
+    margin-bottom: 15px;
+  }
+}
+
 .projectsComment {
   width: 90%;
   height: auto;
   margin: 0 auto 15px;
   padding: auto;
   font-style: italic;
+  text-align: center;
+}
+
+@media (orientation: portrait) and (min-width: 359px) {
+  .projectsComment {
+    font-size: 1.2rem;
+    width: 80%;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 410px) {
+  .projectsComment {
+    font-size: 1.3rem;
+  }
 }
 
 .projectsContainer {
@@ -387,12 +525,30 @@ html {
   color: #071843;
 }
 
+@media (orientation: portrait) and (min-width: 410px) {
+  .project a {
+    font-size: 1.5rem;
+  }
+}
+
 .project p {
   font-size: 1.3rem;
 }
 
+@media (orientation: portrait) and (min-width: 410px) {
+  .project p {
+    font-size: 1.4rem;
+  }
+}
+
 .project img {
   width: 65%;
+}
+
+@media (orientation: portrait) and (min-width: 410px) {
+  .project img {
+    width: 70%;
+  }
 }
 
 .link {
@@ -438,6 +594,12 @@ html {
   text-align: center;
 }
 
+@media (orientation: portrait) and (min-width: 359px) {
+  .hobbiesTitle {
+    font-size: 2.2rem;
+  }
+}
+
 .hobbiesTiles {
   padding-top: 12px;
   display: -webkit-box;
@@ -456,6 +618,12 @@ html {
       -ms-flex-pack: stretch;
           justify-content: stretch;
   height: 90vh;
+}
+
+@media (orientation: portrait) and (min-width: 410px) {
+  .hobbiesTiles {
+    padding-top: 30px;
+  }
 }
 
 .hobby {
@@ -484,6 +652,18 @@ html {
           filter: drop-shadow(0 0 6px white);
 }
 
+@media (orientation: portrait) and (min-width: 359px) {
+  .hobby {
+    padding-left: 65px;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 410px) {
+  .hobby {
+    padding-left: 60px;
+  }
+}
+
 .hobby:nth-child(even) {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
@@ -492,6 +672,20 @@ html {
   text-align: right;
   padding-right: 54px;
   padding-left: 0;
+}
+
+@media (orientation: portrait) and (min-width: 359px) {
+  .hobby:nth-child(even) {
+    padding-right: 65px;
+    padding-left: 0;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 410px) {
+  .hobby:nth-child(even) {
+    padding-right: 60px;
+    padding-left: 0;
+  }
 }
 
 .hobby .hexagon {
@@ -505,6 +699,20 @@ html {
   background-size: cover;
 }
 
+@media (orientation: portrait) and (min-width: 359px) {
+  .hobby .hexagon {
+    width: 150px;
+    height: 170px;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 410px) {
+  .hobby .hexagon {
+    width: 190px;
+    height: 210px;
+  }
+}
+
 .hobby .darkHover {
   position: absolute;
   top: auto;
@@ -516,17 +724,45 @@ html {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
+@media (orientation: portrait) and (min-width: 359px) {
+  .hobby .darkHover {
+    width: 150px;
+    height: 170px;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 410px) {
+  .hobby .darkHover {
+    width: 190px;
+    height: 210px;
+  }
+}
+
 .hobbyText {
   width: 47%;
+  height: auto;
+  margin: auto;
+  padding: 0 10px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  padding: 0 10px;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
   z-index: -1;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+@media (orientation: portrait) and (min-width: 359px) {
+  .hobbyText {
+    padding: 0 15px;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 410px) {
+  .hobbyText {
+    width: 40%;
+  }
 }
 
 .hobbyText:nth-last-child(even) {
@@ -538,8 +774,20 @@ html {
   font-size: 1.3rem;
 }
 
+@media (orientation: portrait) and (min-width: 410px) {
+  .hobbyText h4 {
+    font-size: 1.5rem;
+  }
+}
+
 .hobbyText p {
   font-size: 1.2rem;
+}
+
+@media (orientation: portrait) and (min-width: 410px) {
+  .hobbyText p {
+    font-size: 1.3rem;
+  }
 }
 
 .hobby .showTxt {
@@ -575,6 +823,12 @@ html {
       flex-basis: 8%;
 }
 
+@media (orientation: portrait) and (min-width: 359px) {
+  .contactTitle {
+    font-size: 2.2rem;
+  }
+}
+
 .contactTile {
   -ms-flex-preferred-size: 22%;
       flex-basis: 22%;
@@ -605,12 +859,24 @@ html {
   font-size: 1.5rem;
 }
 
+@media (orientation: portrait) and (min-width: 359px) {
+  .contactTile h4 {
+    font-size: 1.7rem;
+  }
+}
+
 .contactTile .icon {
   font-size: 3rem;
 }
 
 .contactTile p {
   font-size: 1.4rem;
+}
+
+@media (orientation: portrait) and (min-width: 359px) {
+  .contactTile p {
+    font-size: 1.6rem;
+  }
 }
 
 .email {
@@ -679,9 +945,29 @@ html {
   font-size: 1.2rem;
 }
 
+@media (orientation: portrait) and (min-width: 359px) {
+  .creditsTitle {
+    font-size: 1.4rem;
+  }
+}
+
 .credits p,
 .credits a {
   font-size: 1.2rem;
+}
+
+@media (orientation: portrait) and (min-width: 359px) {
+  .credits p,
+  .credits a {
+    font-size: 1.3rem;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 410px) {
+  .credits p,
+  .credits a {
+    font-size: 1.4rem;
+  }
 }
 
 .credits p {

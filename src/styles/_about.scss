@@ -11,6 +11,9 @@
       rgba(7, 24, 67, 1) 100%
     );
     border-radius: 15px 80px;
+    @include mq(xsmall, $portrait) {
+      height: 80%;
+    }
   }
   &Txt {
     margin: 10px;
@@ -19,13 +22,25 @@
     background-color: white;
     border-radius: 11px 72px;
     text-align: center;
+    @include mq(xsmall, $portrait) {
+      padding: 50px 10px;
+    }
   }
   &Header {
     font-size: $page-title-size;
     padding: 30px;
+    @include mq(xxsmall, $portrait) {
+      font-size: $title-size-xxsmall;
+    }
   }
   &Desc {
     @include size(85%, auto, 0 auto, 0 0 20px 0);
     font-size: 1.5rem;
+    @include mq(xxsmall, $portrait) {
+      font-size: 1.8rem;
+    }
+    @include mq(xsmall, $portrait) {
+      width: 75%;
+    }
   }
 }

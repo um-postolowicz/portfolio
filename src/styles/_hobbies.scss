@@ -6,11 +6,17 @@
   &Title {
     font-size: $page-title-size;
     text-align: center;
+    @include mq(xxsmall, $portrait) {
+      font-size: $title-size-xxsmall;
+    }
   }
   &Tiles {
     padding-top: 12px;
     @include flex(column, flex-start, stretch);
     height: 90vh;
+    @include mq(xsmall, $portrait) {
+      padding-top: 30px;
+    }
   }
 }
 
@@ -19,37 +25,78 @@
   @include flex(row);
   padding-left: 54px;
   filter: drop-shadow(0 0 6px rgb(255, 255, 255));
+  @include mq(xxsmall, $portrait) {
+    padding-left: 65px;
+  }
+  @include mq(xsmall, $portrait) {
+    padding-left: 60px;
+  }
   &:nth-child(even) {
     flex-direction: row-reverse;
     text-align: right;
     padding-right: 54px;
     padding-left: 0;
+    @include mq(xxsmall, $portrait) {
+      padding-right: 65px;
+      padding-left: 0;
+    }
+    @include mq(xsmall, $portrait) {
+      padding-right: 60px;
+      padding-left: 0;
+    }
   }
   .hexagon {
     @include position(relative, auto, auto, 140px, 150px);
     clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     background-size: cover;
+    @include mq(xxsmall, $portrait) {
+      width: 150px;
+      height: 170px;
+    }
+    @include mq(xsmall, $portrait) {
+      width: 190px;
+      height: 210px;
+    }
   }
   .darkHover {
     @include position(absolute, auto, auto, 140px, 150px);
     clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     background-color: rgba(0, 0, 0, 0.7);
+    @include mq(xxsmall, $portrait) {
+      width: 150px;
+      height: 170px;
+    }
+    @include mq(xsmall, $portrait) {
+      width: 190px;
+      height: 210px;
+    }
   }
   &Text {
-    width: 47%;
+    @include size($width: 47%, $padding: 0 10px);
     align-self: center;
-    padding: 0 10px;
     transform: translateX(-100%);
     z-index: -1;
     transition: 0.3s;
+    @include mq(xxsmall, $portrait) {
+      padding: 0 15px;
+    }
+    @include mq(xsmall, $portrait) {
+      width: 40%;
+    }
     &:nth-last-child(even) {
       transform: translateX(100%);
     }
     h4 {
       font-size: 1.3rem;
+      @include mq(xsmall, $portrait) {
+        font-size: 1.5rem;
+      }
     }
     p {
       font-size: 1.2rem;
+      @include mq(xsmall, $portrait) {
+        font-size: 1.3rem;
+      }
     }
   }
   .showTxt {

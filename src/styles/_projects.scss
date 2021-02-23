@@ -5,10 +5,25 @@
     font-size: $page-title-size;
     text-align: center;
     margin-bottom: 5px;
+    @include mq(xxsmall, $portrait) {
+      font-size: $title-size-xxsmall;
+      margin-bottom: 8px;
+    }
+    @include mq(xsmall, $portrait) {
+      margin-bottom: 15px;
+    }
   }
   &Comment {
     @include size($width: 90%, $margin: 0 auto 15px);
     font-style: italic;
+    text-align: center;
+    @include mq(xxsmall, $portrait) {
+      font-size: 1.2rem;
+      width: 80%;
+    }
+    @include mq(xsmall, $portrait) {
+      font-size: 1.3rem;
+    }
   }
   &Container {
     @include flex(column, center, center);
@@ -28,12 +43,21 @@
     text-align: center;
     font-size: 1.3rem;
     color: $dark-blue;
+    @include mq(xsmall, $portrait) {
+      font-size: 1.5rem;
+    }
   }
   p {
     font-size: 1.3rem;
+    @include mq(xsmall, $portrait) {
+      font-size: 1.4rem;
+    }
   }
   img {
     width: 65%;
+    @include mq(xsmall, $portrait) {
+      width: 70%;
+    }
   }
 }
 

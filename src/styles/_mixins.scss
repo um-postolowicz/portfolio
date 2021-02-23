@@ -22,6 +22,17 @@
   justify-items: $justify-items;
 }
 
+@mixin mq($breakpoint, $orientation) {
+  $size: map-get($breakpoints, $breakpoint);
+  @if ($size) {
+    @media ($orientation) and ($size) {
+      @content;
+    }
+  } @else {
+    @error "Nie rozpoznaję tej wielkości";
+  }
+}
+
 @mixin position(
   $position: fixed,
   $top: 0,

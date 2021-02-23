@@ -1,4 +1,4 @@
-//colors
+//page colors
 $dark-blue: #071843;
 $menu-dark-blue: #051335;
 $light-blue: #e5eafa;
@@ -23,6 +23,7 @@ $npm-color: rgb(204, 0, 0);
 
 //font sizes
 $page-title-size: 2rem;
+$title-size-xxsmall: 2.2rem;
 
 //page paddings
 $page-padding-top: 20px;
@@ -43,3 +44,7 @@ $breakpoints: (
   xlarge: "min-width: 1199px",
   xxlarge: "min-width: 1365px",
 );
+
+//orientations
+$landscape: "orientation:landscape";
+$portrait: "orientation:portrait";

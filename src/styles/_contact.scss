@@ -6,6 +6,9 @@
     text-align: center;
     font-size: $page-title-size;
     flex-basis: 8%;
+    @include mq(xxsmall, $portrait) {
+      font-size: $title-size-xxsmall;
+    }
   }
   &Tile {
     flex-basis: 22%;
@@ -17,12 +20,18 @@
     transition: $transition;
     h4 {
       font-size: 1.5rem;
+      @include mq(xxsmall, $portrait) {
+        font-size: 1.7rem;
+      }
     }
     .icon {
       font-size: 3rem;
     }
     p {
       font-size: 1.4rem;
+      @include mq(xxsmall, $portrait) {
+        font-size: 1.6rem;
+      }
     }
   }
 }

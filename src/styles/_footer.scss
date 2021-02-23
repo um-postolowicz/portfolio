@@ -10,10 +10,19 @@
   &Title {
     padding-top: 10px;
     font-size: 1.2rem;
+    @include mq(xxsmall, $portrait) {
+      font-size: 1.4rem;
+    }
   }
   p,
   a {
     font-size: 1.2rem;
+    @include mq(xxsmall, $portrait) {
+      font-size: 1.3rem;
+    }
+    @include mq(xsmall, $portrait) {
+      font-size: 1.4rem;
+    }
   }
   p {
     display: inline;
