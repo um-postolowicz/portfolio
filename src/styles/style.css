@@ -262,7 +262,7 @@ html {
   .mainPage .introduction {
     width: 80%;
     height: auto;
-    margin: 50px 0 0;
+    margin: 50px auto 0;
     padding: 0;
     font-size: 2.4rem;
   }
@@ -303,7 +303,7 @@ html {
   .mainPage .avatar {
     width: 95%;
     height: auto;
-    margin: 37px 0 0;
+    margin: 37px auto 0;
     padding: 0;
   }
 }
@@ -746,7 +746,9 @@ html {
 }
 
 .hobbies {
+  width: auto;
   height: 100vh;
+  margin: auto;
   padding: 20px 0;
   background-color: #071843;
   color: white;
@@ -764,23 +766,23 @@ html {
 }
 
 .hobbiesTiles {
-  padding-top: 12px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  display: -ms-grid;
+  display: grid;
+  grid: repeat(4, 1fr)/repeat(2, 1fr);
   -webkit-box-align: start;
       -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: stretch;
-      -ms-flex-pack: stretch;
-          justify-content: stretch;
-  height: 90vh;
+          align-items: start;
+  justify-items: center;
+  width: 90vw;
+  height: auto;
+  margin: -35px auto;
+  padding: 0;
+}
+
+@media (orientation: portrait) and (min-width: 359px) {
+  .hobbiesTiles {
+    margin-top: -40px;
+  }
 }
 
 @media (orientation: portrait) and (min-width: 410px) {
@@ -824,21 +826,8 @@ html {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  padding-left: 54px;
   -webkit-filter: drop-shadow(0 0 6px white);
           filter: drop-shadow(0 0 6px white);
-}
-
-@media (orientation: portrait) and (min-width: 359px) {
-  .hobby {
-    padding-left: 65px;
-  }
-}
-
-@media (orientation: portrait) and (min-width: 410px) {
-  .hobby {
-    padding-left: 60px;
-  }
 }
 
 @media (orientation: landscape) and (min-width: 410px) {
@@ -853,22 +842,13 @@ html {
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
   text-align: right;
-  padding-right: 54px;
-  padding-left: 0;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
 }
 
-@media (orientation: portrait) and (min-width: 359px) {
-  .hobby:nth-child(even) {
-    padding-right: 65px;
-    padding-left: 0;
-  }
-}
-
-@media (orientation: portrait) and (min-width: 410px) {
-  .hobby:nth-child(even) {
-    padding-right: 60px;
-    padding-left: 0;
-  }
+.hobby:nth-child(even) .showTxt {
+  right: 100%;
 }
 
 @media (orientation: landscape) and (min-width: 410px) {
@@ -896,19 +876,24 @@ html {
   -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
           clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   background-size: cover;
+  z-index: 1;
 }
 
 @media (orientation: portrait) and (min-width: 359px) {
   .hobby .hexagon {
     width: 150px;
     height: 170px;
+    margin: auto;
+    padding: 0;
   }
 }
 
 @media (orientation: portrait) and (min-width: 410px) {
   .hobby .hexagon {
-    width: 190px;
-    height: 210px;
+    width: 170px;
+    height: 190px;
+    margin: auto;
+    padding: 0;
   }
 }
 
@@ -918,6 +903,8 @@ html {
             clip-path: polygon(0 50%, 25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
     width: 130px;
     height: 110px;
+    margin: auto;
+    padding: 0;
   }
 }
 
@@ -929,6 +916,7 @@ html {
   height: 150px;
   -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
           clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  z-index: 2;
   background-color: rgba(0, 0, 0, 0.7);
 }
 
@@ -936,13 +924,19 @@ html {
   .hobby .darkHover {
     width: 150px;
     height: 170px;
+    margin: auto;
+    padding: 0;
+    left: 6px;
   }
 }
 
 @media (orientation: portrait) and (min-width: 410px) {
   .hobby .darkHover {
-    width: 190px;
-    height: 210px;
+    width: 170px;
+    height: 190px;
+    margin: auto;
+    padding: 0;
+    right: 6px;
   }
 }
 
@@ -952,21 +946,21 @@ html {
             clip-path: polygon(0 50%, 25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
     width: 130px;
     height: 110px;
+    margin: auto;
+    padding: 0;
   }
 }
 
 .hobbyText {
-  width: 47%;
+  position: absolute;
+  top: 120%;
+  right: 0;
+  width: auto;
   height: auto;
+  width: 80%;
+  height: 100%;
   margin: auto;
   padding: 0 10px;
-  position: absolute;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
-  z-index: -1;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -977,25 +971,15 @@ html {
   }
 }
 
-@media (orientation: portrait) and (min-width: 410px) {
-  .hobbyText {
-    width: 40%;
-  }
-}
-
 @media (orientation: landscape) and (min-width: 410px) {
   .hobbyText {
+    position: absolute;
     top: 100%;
-    left: 90%;
+    right: 10%;
     width: 80%;
     height: 100%;
     text-align: center;
   }
-}
-
-.hobbyText:nth-last-child(even) {
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
 }
 
 .hobbyText h4 {
@@ -1018,16 +1002,26 @@ html {
   }
 }
 
-.hobby .showTxt {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-  z-index: 1;
+.hobbyText.showTxt {
+  right: -80%;
 }
 
 @media (orientation: landscape) and (min-width: 410px) {
-  .hobby .showTxt {
+  .hobbyText.showTxt {
     -webkit-transform: translate(-100%, 400%);
             transform: translate(-100%, 400%);
+  }
+}
+
+.aviation {
+  left: 37px;
+  top: 50px;
+}
+
+@media (orientation: portrait) and (min-width: 359px) {
+  .aviation {
+    left: 42px;
+    top: 51px;
   }
 }
 
@@ -1041,6 +1035,20 @@ html {
   }
 }
 
+.crossStitch {
+  right: 37px;
+  top: 17px;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+@media (orientation: portrait) and (min-width: 359px) {
+  .crossStitch {
+    right: 42px;
+  }
+}
+
 @media (orientation: landscape) and (min-width: 410px) {
   .crossStitch {
     -ms-grid-column: 2;
@@ -1051,6 +1059,20 @@ html {
   }
 }
 
+.fantasyBooks {
+  left: 37px;
+  bottom: 17px;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+}
+
+@media (orientation: portrait) and (min-width: 359px) {
+  .fantasyBooks {
+    left: 42px;
+  }
+}
+
 @media (orientation: landscape) and (min-width: 410px) {
   .fantasyBooks {
     -ms-grid-column: 3;
@@ -1058,6 +1080,21 @@ html {
     grid-column: 3/4;
     top: 24px;
     right: 15px;
+  }
+}
+
+.jigsaw {
+  right: 37px;
+  bottom: 50px;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+}
+
+@media (orientation: portrait) and (min-width: 359px) {
+  .jigsaw {
+    right: 42px;
+    bottom: 51px;
   }
 }
 
