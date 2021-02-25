@@ -795,12 +795,12 @@ html {
   .hobbiesTiles {
     display: -ms-grid;
     display: grid;
-    grid: repeat(2, 1fr)/repeat(4, 24vw);
+    grid: repeat(2, 1fr)/repeat(4, 23vw);
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
     justify-items: start;
-    margin: 20px 10px;
+    margin: 20px;
     height: 70vh;
   }
 }
@@ -830,21 +830,12 @@ html {
           filter: drop-shadow(0 0 6px white);
 }
 
-@media (orientation: landscape) and (min-width: 410px) {
-  .hobby {
-    padding: 0;
-  }
-}
-
 .hobby:nth-child(even) {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
   text-align: right;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
 }
 
 .hobby:nth-child(even) .showTxt {
@@ -852,18 +843,9 @@ html {
 }
 
 @media (orientation: landscape) and (min-width: 410px) {
-  .hobby:nth-child(even) {
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
-    grid-row: 2/3;
-    padding: 0;
-  }
-}
-
-@media (orientation: landscape) and (min-width: 410px) {
   .hobby:nth-child(even) .showTxt {
-    -webkit-transform: translate(-100%, -400%);
-            transform: translate(-100%, -400%);
+    right: 5px;
+    top: -85px;
   }
 }
 
@@ -973,12 +955,10 @@ html {
 
 @media (orientation: landscape) and (min-width: 410px) {
   .hobbyText {
-    position: absolute;
-    top: 100%;
-    right: 10%;
-    width: 80%;
-    height: 100%;
     text-align: center;
+    width: 85%;
+    top: 24px;
+    right: 5px;
   }
 }
 
@@ -1008,8 +988,8 @@ html {
 
 @media (orientation: landscape) and (min-width: 410px) {
   .hobbyText.showTxt {
-    -webkit-transform: translate(-100%, 400%);
-            transform: translate(-100%, 400%);
+    right: 5px;
+    top: 130px;
   }
 }
 
@@ -1027,17 +1007,23 @@ html {
 
 @media (orientation: landscape) and (min-width: 410px) {
   .aviation {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
-    top: 24px;
-    left: 51px;
+    left: 42px;
+    top: 28px;
   }
 }
 
 .crossStitch {
   right: 37px;
   top: 17px;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
@@ -1051,11 +1037,14 @@ html {
 
 @media (orientation: landscape) and (min-width: 410px) {
   .crossStitch {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
-    bottom: 24px;
-    left: 15px;
+    right: -14px;
+    top: -28px;
   }
 }
 
@@ -1075,11 +1064,14 @@ html {
 
 @media (orientation: landscape) and (min-width: 410px) {
   .fantasyBooks {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
     -ms-grid-column: 3;
     -ms-grid-column-span: 1;
     grid-column: 3/4;
-    top: 24px;
-    right: 15px;
+    left: -14px;
+    bottom: -28px;
   }
 }
 
@@ -1089,6 +1081,9 @@ html {
   -ms-grid-row: 4;
   -ms-grid-row-span: 1;
   grid-row: 4/5;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
 }
 
 @media (orientation: portrait) and (min-width: 359px) {
@@ -1100,11 +1095,14 @@ html {
 
 @media (orientation: landscape) and (min-width: 410px) {
   .jigsaw {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
     -ms-grid-column: 4;
     -ms-grid-column-span: 1;
     grid-column: 4/5;
-    bottom: 24px;
-    right: 51px;
+    bottom: 28px;
+    right: 42px;
   }
 }
 
