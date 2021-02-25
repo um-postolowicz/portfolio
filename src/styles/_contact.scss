@@ -18,6 +18,7 @@
     flex-basis: 24%;
     text-align: center;
     color: $white;
+    text-decoration: none;
     @include flex(column, stretch, space-evenly);
     letter-spacing: 1px;
     text-shadow: -2px 2px #000;

@@ -1130,6 +1130,7 @@ html {
       flex-basis: 24%;
   text-align: center;
   color: #fff;
+  text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -52,7 +52,7 @@ export const dictionary = {
     contactTitle: "Jak się ze mną skontaktować?",
     creditsTitle: "Informacje o stronie",
     avatarText: "Awatar stworzony za pomocą: ",
-    borderText: "Flagi oraz ramka pochodzą ze strony: ",
+    borderText: "Flagi pochodzą ze strony: ",
     hobbiesText: "Zdjęcia z sekcji hobby pochodzą ze strony: ",
   },
   english: {
@@ -108,7 +108,7 @@ export const dictionary = {
     contactTitle: "How to contact me?",
     creditsTitle: "Page Info",
     avatarText: "Avatar created via: ",
-    borderText: "Flags and border come from: ",
+    borderText: "Flags come from: ",
     hobbiesText: "Hobbies' pictures come from: ",
   },
 };

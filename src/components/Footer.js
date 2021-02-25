@@ -1,5 +1,6 @@
 import React from "react";
 import { Consumer } from "../data/LanguageContext";
+import FooterLink from "./FooterLink";
 
 const Footer = () => {
   return (
@@ -10,39 +11,30 @@ const Footer = () => {
           <footer className="footer">
             <div className="credits">
               <h5 className="creditsTitle">{creditsTitle}</h5>
-              <div className="avatarInfo">
-                <p className="avatarText">{avatarText}</p>
-                <a
-                  className="avatarLink"
-                  href="https://avatarmaker.com"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Avatar Maker
-                </a>
-              </div>
-              <div className="borderInfo">
-                <p className="borderText">{borderText}</p>
-                <a
-                  href="https://freesvg.org"
-                  className="borderLink"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Free SVG
-                </a>
-              </div>
-              <div className="hobbiesInfo">
-                <p className="hobbiesText">{hobbiesText}</p>
-                <a
-                  href="https://www.pexels.com"
-                  className="hobbiesLink"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Pexels
-                </a>
-              </div>
+              <FooterLink
+                mainTitle="avatarInfo"
+                linkTextClass="avatarText"
+                linkText={avatarText}
+                linkClass="avatarLink"
+                link="https://avatarmaker.com"
+                linkName="Avatar Maker"
+              />
+              <FooterLink
+                mainTitle="borderInfo"
+                linkTextClass="borderText"
+                linkText={borderText}
+                linkClass="borderLink"
+                link="https://freesvg.org"
+                linkName="Free SVG"
+              />
+              <FooterLink
+                mainTitle="hobbiesInfo"
+                linkTextClass="hobbiesText"
+                linkText={hobbiesText}
+                linkClass="hobbiesLink"
+                link="https://www.pexels.com"
+                linkName="Pexels"
+              />
             </div>
           </footer>
         );
