@@ -1,7 +1,6 @@
 .technologies {
-  height: 100vh;
+  @include size($height: 100vh, $padding: $page-padding-top 0 0);
   background-color: $dark-blue;
-  padding-top: $page-padding-top;
   &Title {
     text-align: center;
     color: white;
@@ -21,6 +20,9 @@
     @include mq(xsmall, $portrait) {
       margin-top: 50px;
     }
+    @include mq(xsmall, $landscape) {
+      @include size(90%, 82%, 15px auto 0);
+    }
     p {
       font-size: 2rem;
     }
@@ -32,6 +34,11 @@
       background-color: white;
       @include mq(xsmall, $portrait) {
         height: 70%;
+      }
+      @include mq(xsmall, $landscape) {
+        height: 90%;
+        flex-direction: row;
+        border-radius: 26px;
       }
     }
     .html {

@@ -16,8 +16,7 @@
     }
   }
   &Txt {
-    margin: 10px;
-    height: calc(100% - 20px);
+    @include size($height: calc(100% - 20px), $margin: 10px);
     background-image: none;
     background-color: white;
     border-radius: 11px 72px;
@@ -31,6 +30,9 @@
     padding: 30px;
     @include mq(xxsmall, $portrait) {
       font-size: $title-size-xxsmall;
+    }
+    @include mq(xsmall, $landscape) {
+      padding: 20px;
     }
   }
   &Desc {

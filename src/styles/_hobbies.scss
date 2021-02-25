@@ -17,6 +17,11 @@
     @include mq(xsmall, $portrait) {
       padding-top: 30px;
     }
+    @include mq(xsmall, $landscape) {
+      @include grid(repeat(2, 1fr), repeat(4, 24vw), start, start);
+      margin: 20px 10px;
+      height: 70vh;
+    }
   }
 }
 
@@ -31,6 +36,9 @@
   @include mq(xsmall, $portrait) {
     padding-left: 60px;
   }
+  @include mq(xsmall, $landscape) {
+    padding: 0;
+  }
   &:nth-child(even) {
     flex-direction: row-reverse;
     text-align: right;
@@ -43,6 +51,15 @@
     @include mq(xsmall, $portrait) {
       padding-right: 60px;
       padding-left: 0;
+    }
+    @include mq(xsmall, $landscape) {
+      grid-row: 2/3;
+      padding: 0;
+    }
+    .showTxt {
+      @include mq(xsmall, $landscape) {
+        transform: translate(-100%, -400%);
+      }
     }
   }
   .hexagon {
@@ -57,6 +74,19 @@
       width: 190px;
       height: 210px;
     }
+    @include mq(xsmall, $landscape) {
+      clip-path: polygon(
+        0 50%,
+        25% 0,
+        75% 0,
+        100% 50%,
+        75% 100%,
+        25% 100%,
+        0 50%
+      );
+      width: 130px;
+      height: 110px;
+    }
   }
   .darkHover {
     @include position(absolute, auto, auto, 140px, 150px);
@@ -70,9 +100,23 @@
       width: 190px;
       height: 210px;
     }
+    @include mq(xsmall, $landscape) {
+      clip-path: polygon(
+        0 50%,
+        25% 0,
+        75% 0,
+        100% 50%,
+        75% 100%,
+        25% 100%,
+        0 50%
+      );
+      width: 130px;
+      height: 110px;
+    }
   }
   &Text {
     @include size($width: 47%, $padding: 0 10px);
+    position: absolute;
     align-self: center;
     transform: translateX(-100%);
     z-index: -1;
@@ -82,6 +126,13 @@
     }
     @include mq(xsmall, $portrait) {
       width: 40%;
+    }
+    @include mq(xsmall, $landscape) {
+      top: 100%;
+      left: 90%;
+      width: 80%;
+      height: 100%;
+      text-align: center;
     }
     &:nth-last-child(even) {
       transform: translateX(100%);
@@ -102,5 +153,36 @@
   .showTxt {
     transform: translateX(0);
     z-index: 1;
+    @include mq(xsmall, $landscape) {
+      transform: translate(-100%, 400%);
+    }
+  }
+}
+.aviation {
+  @include mq(xsmall, $landscape) {
+    grid-column: 1/2;
+    top: 24px;
+    left: 51px;
+  }
+}
+.crossStitch {
+  @include mq(xsmall, $landscape) {
+    grid-column: 2/3;
+    bottom: 24px;
+    left: 15px;
+  }
+}
+.fantasyBooks {
+  @include mq(xsmall, $landscape) {
+    grid-column: 3/4;
+    top: 24px;
+    right: 15px;
+  }
+}
+.jigsaw {
+  @include mq(xsmall, $landscape) {
+    grid-column: 4/5;
+    bottom: 24px;
+    right: 51px;
   }
 }

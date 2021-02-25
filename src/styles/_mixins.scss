@@ -47,7 +47,7 @@
   height: $height;
 }
 
-@mixin size($width: auto, $height: auto, $margin: auto, $padding: auto) {
+@mixin size($width: auto, $height: auto, $margin: auto, $padding: 0) {
   width: $width;
   height: $height;
   margin: $margin;

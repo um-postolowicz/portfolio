@@ -53,7 +53,7 @@ export const dictionary = {
     creditsTitle: "Informacje o stronie",
     avatarText: "Awatar stworzony za pomocą: ",
     borderText: "Flagi oraz ramka pochodzą ze strony: ",
-    hobbiesText: "Zdjęcia związane z zainteresowaniami pochodzą ze strony: ",
+    hobbiesText: "Zdjęcia z sekcji hobby pochodzą ze strony: ",
   },
   english: {
     listWelcome: "Welcome Page",

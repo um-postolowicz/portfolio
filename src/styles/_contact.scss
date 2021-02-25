@@ -10,14 +10,21 @@
       font-size: $title-size-xxsmall;
     }
   }
+  &Tiles {
+    flex-grow: 1;
+    @include flex($flex-direction: column);
+  }
   &Tile {
-    flex-basis: 22%;
+    flex-basis: 24%;
     text-align: center;
     color: $white;
     @include flex(column, stretch, space-evenly);
     letter-spacing: 1px;
     text-shadow: -2px 2px #000;
     transition: $transition;
+    @include mq(xsmall, $landscape) {
+      flex-basis: 48%;
+    }
     h4 {
       font-size: 1.5rem;
       @include mq(xxsmall, $portrait) {

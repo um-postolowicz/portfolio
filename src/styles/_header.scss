@@ -1,3 +1,6 @@
 .header {
-  position: relative;
+  @include position($position: relative, $width: 100vw);
+  @include mq(xsmall, $landscape) {
+    grid-column: 1/3;
+  }
 }
