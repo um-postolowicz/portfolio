@@ -33,18 +33,10 @@
   }
 }
 
-@mixin position(
-  $position: fixed,
-  $top: 0,
-  $right: 0,
-  $width: auto,
-  $height: auto
-) {
+@mixin position($position: fixed, $top: 0, $right: 0) {
   position: $position;
   top: $top;
   right: $right;
-  width: $width;
-  height: $height;
 }
 
 @mixin size($width: auto, $height: auto, $margin: auto, $padding: 0) {

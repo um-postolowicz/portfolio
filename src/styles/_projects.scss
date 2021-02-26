@@ -37,7 +37,8 @@
 }
 
 .project {
-  @include position(relative, auto, auto, 90vw, 20vh);
+  @include position(relative, auto, auto);
+  @include size($width: 90vw, $height: 20vh);
   @include grid(20px 1fr, 40% 60%);
   border-bottom: 1px solid #ddd;
   padding: 10px 0;
@@ -88,7 +89,8 @@
 }
 
 .link {
-  @include position(absolute, 30px, 0, 60%, calc(100% - 31px));
+  @include position(absolute, 30px);
+  @include size($width: 60%, $height: calc(100% - 31px));
   @include flex(row, center, center);
   padding: 10px;
   border-radius: 10px;
