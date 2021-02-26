@@ -34,7 +34,7 @@ const Contact = () => {
               />
               <ContactPiece
                 mainClassName="linkedin contactTile"
-                contactLink="https://www.facebook.com/profile.php?id=100004203695582"
+                contactLink="https://www.linkedin.com/in/urszula-maria-postołowicz-311866207/"
                 contactClassTitle="linkedinTitle"
                 contactTitle="LinkedIn"
                 contactIcon={<FaLinkedin />}
