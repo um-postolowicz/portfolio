@@ -82,7 +82,13 @@ const Menu = () => {
                     : "listElement listAbout"
                 }
               >
-                <Link to="about" spy={true} smooth={true} onClick={closeMenu}>
+                <Link
+                  activeClass="active"
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  onClick={closeMenu}
+                >
                   {listAbout}
                 </Link>
               </li>
@@ -92,6 +98,7 @@ const Menu = () => {
                 }
               >
                 <Link
+                  activeClass="active"
                   to="technologies"
                   spy={true}
                   smooth={true}
@@ -108,6 +115,7 @@ const Menu = () => {
                 }
               >
                 <Link
+                  activeClass="active"
                   to="projects"
                   spy={true}
                   smooth={true}
@@ -124,7 +132,13 @@ const Menu = () => {
                 }
               >
                 {" "}
-                <Link to="hobbies" spy={true} smooth={true} onClick={closeMenu}>
+                <Link
+                  activeClass="active"
+                  to="hobbies"
+                  spy={true}
+                  smooth={true}
+                  onClick={closeMenu}
+                >
                   {listHobbies}
                 </Link>
               </li>
