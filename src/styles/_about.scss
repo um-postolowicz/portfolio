@@ -14,6 +14,21 @@
     @include mq(xsmall, $portrait) {
       height: 80%;
     }
+    @include mq(medium, $portrait) {
+      height: 75%;
+      width: 75%;
+    }
+    @include mq(large, $landscape) {
+      margin-top: 16vh;
+      width: 70%;
+      height: 75%;
+    }
+    @include mq(xlarge, $landscape) {
+      height: 70%;
+    }
+    @include mq(xxlarge, $landscape) {
+      height: 60%;
+    }
   }
   &Txt {
     @include size($height: calc(100% - 20px), $margin: 10px);
@@ -34,6 +49,14 @@
     @include mq(xsmall, $landscape) {
       padding: 20px;
     }
+    @include mq(medium, $portrait) {
+      font-size: $title-size-medium;
+      padding-top: 10px;
+    }
+    @include mq(large, $landscape) {
+      font-size: $title-size-large;
+      padding-top: 40px;
+    }
   }
   &Desc {
     @include size(85%, auto, 0 auto, 0 0 20px 0);
@@ -47,8 +70,17 @@
     @include mq(medium, $landscape) {
       font-size: 1.7rem;
     }
+    @include mq(medium, $portrait) {
+      font-size: 2.4rem;
+      padding-top: 40px;
+    }
     @include mq(xmedium, $landscape) {
       padding-top: 10px;
+    }
+    @include mq(large, $landscape) {
+      font-size: 2rem;
+      width: 70%;
+      padding-top: 20px;
     }
   }
 }

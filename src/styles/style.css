@@ -37,6 +37,12 @@ html {
   z-index: 101;
 }
 
+@media (orientation: portrait) and (min-width: 719px) {
+  .menu {
+    font-size: 4rem;
+  }
+}
+
 .menuWhite {
   color: white;
   z-index: 101;
@@ -76,6 +82,12 @@ html {
   z-index: 100;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+@media (orientation: portrait) and (min-width: 719px) {
+  .menuList {
+    font-size: 3rem;
+  }
 }
 
 @media (orientation: landscape) and (min-width: 845px) {
@@ -160,6 +172,63 @@ html {
     height: auto;
     margin: 0 0 0 2.5vw;
     padding: 0;
+  }
+}
+
+.menuWide {
+  position: fixed;
+  background-color: #051335;
+  height: 12vh;
+  top: 0;
+  width: 100%;
+  font-family: "Josefin Sans", sans-serif;
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-shadow: 0 0 6px 4px #000;
+          box-shadow: 0 0 6px 4px #000;
+}
+
+.menuWide .languages {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  margin: 0;
+  padding: 0;
+}
+
+.menuWide .listElement {
+  text-align: center;
+  margin: 0;
+  display: block;
+  border: none;
+  -ms-flex-preferred-size: 15%;
+      flex-basis: 15%;
+}
+
+.menuWide .listBig:active,
+.menuWide .listBig:focus,
+.menuWide .listBig:hover {
+  font-weight: bold;
+}
+
+@media (orientation: landscape) and (min-width: 1279px) {
+  .menuWide {
+    font-size: 2rem;
   }
 }
 
@@ -273,6 +342,18 @@ html {
   }
 }
 
+@media (orientation: landscape) and (min-width: 1023px) {
+  .mainPage {
+    display: -ms-grid;
+    display: grid;
+    grid: 1fr/45% 55%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+  }
+}
+
 .mainPage .introduction {
   width: 95%;
   height: 40vh;
@@ -317,6 +398,33 @@ html {
   }
 }
 
+@media (orientation: portrait) and (min-width: 719px) {
+  .mainPage .introduction {
+    font-size: 3.3rem;
+    width: 70%;
+    margin-top: 7px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1023px) {
+  .mainPage .introduction {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    margin-top: 20vh;
+    text-align: right;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1279px) {
+  .mainPage .introduction {
+    text-align: right;
+  }
+}
+
 .mainPage .introduction h1 {
   margin-top: 10px;
 }
@@ -324,6 +432,31 @@ html {
 @media (orientation: portrait) and (min-width: 410px) {
   .mainPage .introduction h1 {
     margin-bottom: 15px;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 719px) {
+  .mainPage .introduction h1 {
+    padding-bottom: 15px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1023px) {
+  .mainPage .introduction h1 {
+    font-size: 5rem;
+    padding-bottom: 30px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1279px) {
+  .mainPage .introduction h1 {
+    font-size: 5rem;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1279px) {
+  .mainPage .introduction h2 {
+    font-size: 5rem;
   }
 }
 
@@ -368,9 +501,32 @@ html {
   }
 }
 
+@media (orientation: portrait) and (min-width: 719px) {
+  .mainPage .avatar {
+    width: 75%;
+    margin-top: 35px;
+  }
+}
+
 @media (orientation: landscape) and (min-width: 845px) {
   .mainPage .avatar {
     margin-top: 25px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1023px) {
+  .mainPage .avatar {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+    -ms-grid-column-align: end;
+        justify-self: end;
   }
 }
 
@@ -379,6 +535,18 @@ html {
   height: auto;
   margin: 0 auto;
   padding: 0;
+}
+
+@media (orientation: landscape) and (min-width: 1023px) {
+  .mainPage .avatarImg {
+    width: 100%;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1279px) {
+  .mainPage .avatarImg {
+    width: 92%;
+  }
 }
 
 .about {
@@ -416,6 +584,33 @@ html {
   }
 }
 
+@media (orientation: portrait) and (min-width: 719px) {
+  .aboutBorder {
+    height: 75%;
+    width: 75%;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1023px) {
+  .aboutBorder {
+    margin-top: 16vh;
+    width: 70%;
+    height: 75%;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1279px) {
+  .aboutBorder {
+    height: 70%;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1359px) {
+  .aboutBorder {
+    height: 60%;
+  }
+}
+
 .aboutTxt {
   width: auto;
   height: calc(100% - 20px);
@@ -450,6 +645,20 @@ html {
   }
 }
 
+@media (orientation: portrait) and (min-width: 719px) {
+  .aboutHeader {
+    font-size: 3rem;
+    padding-top: 10px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1023px) {
+  .aboutHeader {
+    font-size: 3.4rem;
+    padding-top: 40px;
+  }
+}
+
 .aboutDesc {
   width: 85%;
   height: auto;
@@ -476,9 +685,24 @@ html {
   }
 }
 
+@media (orientation: portrait) and (min-width: 719px) {
+  .aboutDesc {
+    font-size: 2.4rem;
+    padding-top: 40px;
+  }
+}
+
 @media (orientation: landscape) and (min-width: 845px) {
   .aboutDesc {
     padding-top: 10px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1023px) {
+  .aboutDesc {
+    font-size: 2rem;
+    width: 70%;
+    padding-top: 20px;
   }
 }
 
@@ -499,6 +723,20 @@ html {
 @media (orientation: portrait) and (min-width: 359px) {
   .technologiesTitle {
     font-size: 2.2rem;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 719px) {
+  .technologiesTitle {
+    font-size: 3rem;
+    padding-top: 20px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1023px) {
+  .technologiesTitle {
+    padding-top: 15vh;
+    font-size: 3.4rem;
   }
 }
 
@@ -539,6 +777,22 @@ html {
   }
 }
 
+@media (orientation: portrait) and (min-width: 719px) {
+  .technologiesContainer {
+    width: 88%;
+    font-size: 8rem;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1023px) {
+  .technologiesContainer {
+    width: 80%;
+    padding-top: 10px;
+    height: 73%;
+    font-size: 7rem;
+  }
+}
+
 .technologiesContainer p {
   font-size: 2rem;
 }
@@ -546,6 +800,18 @@ html {
 @media (orientation: landscape) and (min-width: 639px) {
   .technologiesContainer p {
     font-size: 2.2rem;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 719px) {
+  .technologiesContainer p {
+    font-size: 3rem;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1023px) {
+  .technologiesContainer p {
+    font-size: 3.2rem;
   }
 }
 
@@ -589,6 +855,19 @@ html {
         -ms-flex-direction: row;
             flex-direction: row;
     border-radius: 26px;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 719px) {
+  .technologiesContainer .tech {
+    width: 65%;
+    height: 80%;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1023px) {
+  .technologiesContainer .tech {
+    border-radius: 50px;
   }
 }
 
@@ -642,6 +921,20 @@ html {
   }
 }
 
+@media (orientation: portrait) and (min-width: 719px) {
+  .projectsTitle {
+    font-size: 3rem;
+    padding-top: 20px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1023px) {
+  .projectsTitle {
+    padding-top: 15vh;
+    font-size: 3.4rem;
+  }
+}
+
 .projectsComment {
   width: 90%;
   height: auto;
@@ -667,6 +960,18 @@ html {
 @media (orientation: landscape) and (min-width: 639px) {
   .projectsComment {
     font-size: 1.4rem;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 719px) {
+  .projectsComment {
+    font-size: 1.7rem;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1023px) {
+  .projectsComment {
+    font-size: 1.9rem;
   }
 }
 
@@ -718,9 +1023,23 @@ html {
   }
 }
 
+@media (orientation: portrait) and (min-width: 719px) {
+  .projectsContainer {
+    margin-top: 30px;
+  }
+}
+
 @media (orientation: landscape) and (min-width: 845px) {
   .projectsContainer {
     margin-top: 0px;
+    width: 95%;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1023px) {
+  .projectsContainer {
+    margin-top: 50px;
+    height: 60%;
   }
 }
 
@@ -748,6 +1067,20 @@ html {
     width: 100%;
     height: auto;
     border: none;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 719px) {
+  .project {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1023px) {
+  .project {
+    height: 100%;
+    margin: 0;
   }
 }
 
@@ -808,6 +1141,18 @@ html {
   }
 }
 
+@media (orientation: portrait) and (min-width: 719px) {
+  .project a {
+    font-size: 2rem;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1023px) {
+  .project a {
+    font-size: 2rem;
+  }
+}
+
 .project p {
   font-size: 1.2rem;
 }
@@ -824,9 +1169,21 @@ html {
   }
 }
 
+@media (orientation: portrait) and (min-width: 719px) {
+  .project p {
+    font-size: 1.9rem;
+  }
+}
+
 @media (orientation: landscape) and (min-width: 845px) {
   .project p {
     font-size: 1.5rem;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1023px) {
+  .project p {
+    font-size: 1.9rem;
   }
 }
 
@@ -843,6 +1200,12 @@ html {
 @media (orientation: landscape) and (min-width: 639px) {
   .project img {
     width: 75%;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 719px) {
+  .project img {
+    width: 60%;
   }
 }
 
@@ -884,6 +1247,18 @@ html {
   }
 }
 
+@media (orientation: portrait) and (min-width: 719px) {
+  .link a {
+    font-size: 2rem;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1023px) {
+  .link a {
+    font-size: 2.5rem;
+  }
+}
+
 .hobbies {
   width: auto;
   height: 100vh;
@@ -901,6 +1276,20 @@ html {
 @media (orientation: portrait) and (min-width: 359px) {
   .hobbiesTitle {
     font-size: 2.2rem;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 719px) {
+  .hobbiesTitle {
+    font-size: 3rem;
+    padding-top: 20px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1023px) {
+  .hobbiesTitle {
+    font-size: 3.4rem;
+    padding-top: 15vh;
   }
 }
 
@@ -947,6 +1336,12 @@ html {
 @media (orientation: landscape) and (min-width: 639px) {
   .hobbiesTiles {
     margin: 20px auto 0;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 719px) {
+  .hobbiesTiles {
+    margin-top: -50px;
   }
 }
 
@@ -1001,6 +1396,12 @@ html {
   }
 }
 
+@media (orientation: portrait) and (min-width: 719px) {
+  .hobby:nth-child(even) .hobbyText {
+    right: -15vw;
+  }
+}
+
 .hobby:nth-child(even) .showTxt {
   right: 100%;
 }
@@ -1012,9 +1413,27 @@ html {
   }
 }
 
+@media (orientation: portrait) and (min-width: 719px) {
+  .hobby:nth-child(even) .showTxt {
+    left: -11.5vw;
+  }
+}
+
 @media (orientation: landscape) and (min-width: 845px) {
   .hobby:nth-child(even) .showTxt {
     right: 40px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1023px) {
+  .hobby:nth-child(even) .showTxt {
+    top: -130px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1023px) {
+  .hobby:nth-child(even) .showTxt {
+    right: 80px;
   }
 }
 
@@ -1025,6 +1444,12 @@ html {
         -ms-flex-direction: column;
             flex-direction: column;
     height: 100%;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 719px) {
+  .hobby {
+    margin: 0;
   }
 }
 
@@ -1080,10 +1505,37 @@ html {
   }
 }
 
+@media (orientation: portrait) and (min-width: 719px) {
+  .hobby .hexagon {
+    width: 220px;
+    height: 240px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
 @media (orientation: landscape) and (min-width: 845px) {
   .hobby .hexagon {
     width: 180px;
     height: 155px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1023px) {
+  .hobby .hexagon {
+    width: 235px;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1359px) {
+  .hobby .hexagon {
+    width: 280px;
+    height: 240px;
     margin: 0;
     padding: 0;
   }
@@ -1141,10 +1593,37 @@ html {
   }
 }
 
+@media (orientation: portrait) and (min-width: 719px) {
+  .hobby .darkHover {
+    width: 220px;
+    height: 240px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
 @media (orientation: landscape) and (min-width: 845px) {
   .hobby .darkHover {
     width: 180px;
     height: 155px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1023px) {
+  .hobby .darkHover {
+    width: 235px;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1359px) {
+  .hobby .darkHover {
+    width: 280px;
+    height: 240px;
     margin: 0;
     padding: 0;
   }
@@ -1183,10 +1662,23 @@ html {
   }
 }
 
+@media (orientation: portrait) and (min-width: 719px) {
+  .hobbyText {
+    width: 60%;
+    left: -4vw;
+  }
+}
+
 @media (orientation: landscape) and (min-width: 845px) {
   .hobbyText {
     width: 65%;
     right: 40px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1023px) {
+  .hobbyText {
+    right: 80px;
   }
 }
 
@@ -1200,9 +1692,22 @@ html {
   }
 }
 
+@media (orientation: portrait) and (min-width: 719px) {
+  .hobbyText h4 {
+    font-size: 2rem;
+  }
+}
+
 @media (orientation: landscape) and (min-width: 845px) {
   .hobbyText h4 {
     font-size: 1.4rem;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1023px) {
+  .hobbyText h4 {
+    font-size: 1.8rem;
+    padding-bottom: 10px;
   }
 }
 
@@ -1216,9 +1721,21 @@ html {
   }
 }
 
+@media (orientation: portrait) and (min-width: 719px) {
+  .hobbyText p {
+    font-size: 1.8rem;
+  }
+}
+
 @media (orientation: landscape) and (min-width: 845px) {
   .hobbyText p {
     font-size: 1.3rem;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1023px) {
+  .hobbyText p {
+    font-size: 1.8rem;
   }
 }
 
@@ -1245,10 +1762,34 @@ html {
   }
 }
 
+@media (orientation: portrait) and (min-width: 719px) {
+  .hobbyText.showTxt {
+    right: -100%;
+  }
+}
+
 @media (orientation: landscape) and (min-width: 845px) {
   .hobbyText.showTxt {
     right: 40px;
     top: 180px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1023px) {
+  .hobbyText.showTxt {
+    top: 230px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1279px) {
+  .hobbyText.showTxt {
+    right: 80px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1359px) {
+  .hobbyText.showTxt {
+    top: 270px;
   }
 }
 
@@ -1284,10 +1825,37 @@ html {
   }
 }
 
+@media (orientation: portrait) and (min-width: 719px) {
+  .aviation {
+    left: 178px;
+    top: 77px;
+  }
+}
+
 @media (orientation: landscape) and (min-width: 845px) {
   .aviation {
     left: 80px;
     top: 35px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1023px) {
+  .aviation {
+    left: 73px;
+    top: 80px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1279px) {
+  .aviation {
+    left: 192px;
+    top: 73px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1279px) {
+  .aviation {
+    left: 162px;
   }
 }
 
@@ -1328,10 +1896,37 @@ html {
   }
 }
 
+@media (orientation: portrait) and (min-width: 719px) {
+  .crossStitch {
+    right: 178px;
+    top: 25px;
+  }
+}
+
 @media (orientation: landscape) and (min-width: 845px) {
   .crossStitch {
     right: -27px;
     top: -35px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1023px) {
+  .crossStitch {
+    right: -25px;
+    top: -80px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1279px) {
+  .crossStitch {
+    right: -85px;
+    top: -73px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1359px) {
+  .crossStitch {
+    right: -75px;
   }
 }
 
@@ -1369,10 +1964,37 @@ html {
   }
 }
 
+@media (orientation: portrait) and (min-width: 719px) {
+  .fantasyBooks {
+    left: 178px;
+    bottom: 25px;
+  }
+}
+
 @media (orientation: landscape) and (min-width: 845px) {
   .fantasyBooks {
     left: -27px;
     bottom: -35px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1023px) {
+  .fantasyBooks {
+    left: -25px;
+    bottom: -80px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1279px) {
+  .fantasyBooks {
+    left: -25px;
+    bottom: -73px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1279px) {
+  .fantasyBooks {
+    left: -15px;
   }
 }
 
@@ -1414,10 +2036,37 @@ html {
   }
 }
 
+@media (orientation: portrait) and (min-width: 719px) {
+  .jigsaw {
+    right: 178px;
+    bottom: 77px;
+  }
+}
+
 @media (orientation: landscape) and (min-width: 845px) {
   .jigsaw {
     right: 80px;
     bottom: 35px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1023px) {
+  .jigsaw {
+    right: 73px;
+    bottom: 80px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1279px) {
+  .jigsaw {
+    right: 132px;
+    bottom: 73px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1279px) {
+  .jigsaw {
+    right: 102px;
   }
 }
 
@@ -1454,6 +2103,21 @@ html {
   }
 }
 
+@media (orientation: portrait) and (min-width: 719px) {
+  .contactTitle {
+    font-size: 3rem;
+    padding-top: 20px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1023px) {
+  .contactTitle {
+    padding-top: 15vh;
+    font-size: 3.4rem;
+    padding-bottom: 50px;
+  }
+}
+
 .contactTiles {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -1473,6 +2137,18 @@ html {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+@media (orientation: landscape) and (min-width: 1023px) {
+  .contactTiles {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    -ms-flex-preferred-size: 65%;
+        flex-basis: 65%;
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 .contactTile {
@@ -1525,13 +2201,37 @@ html {
   }
 }
 
+@media (orientation: portrait) and (min-width: 719px) {
+  .contactTile h4 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1023px) {
+  .contactTile h4 {
+    font-size: 2.6rem;
+  }
+}
+
 .contactTile .icon {
   font-size: 3rem;
+}
+
+@media (orientation: portrait) and (min-width: 719px) {
+  .contactTile .icon {
+    font-size: 4rem;
+  }
 }
 
 @media (orientation: landscape) and (min-width: 845px) {
   .contactTile .icon {
     font-size: 3.5rem;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1023px) {
+  .contactTile .icon {
+    font-size: 5rem;
   }
 }
 
@@ -1545,9 +2245,21 @@ html {
   }
 }
 
+@media (orientation: portrait) and (min-width: 719px) {
+  .contactTile p {
+    font-size: 2rem;
+  }
+}
+
 @media (orientation: landscape) and (min-width: 845px) {
   .contactTile p {
     font-size: 1.8rem;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1023px) {
+  .contactTile p {
+    font-size: 2.2rem;
   }
 }
 
@@ -1629,9 +2341,21 @@ html {
   }
 }
 
+@media (orientation: portrait) and (min-width: 719px) {
+  .creditsTitle {
+    font-size: 1.8rem;
+  }
+}
+
 @media (orientation: landscape) and (min-width: 845px) {
   .creditsTitle {
     font-size: 1.6rem;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1023px) {
+  .creditsTitle {
+    font-size: 2rem;
   }
 }
 
@@ -1654,10 +2378,24 @@ html {
   }
 }
 
+@media (orientation: portrait) and (min-width: 719px) {
+  .credits p,
+  .credits a {
+    font-size: 1.6rem;
+  }
+}
+
 @media (orientation: landscape) and (min-width: 845px) {
   .credits p,
   .credits a {
     font-size: 1.4rem;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1023px) {
+  .credits p,
+  .credits a {
+    font-size: 1.8rem;
   }
 }
 

@@ -8,6 +8,14 @@
     @include mq(xxsmall, $portrait) {
       font-size: $title-size-xxsmall;
     }
+    @include mq(medium, $portrait) {
+      font-size: $title-size-medium;
+      padding-top: $page-padding-top;
+    }
+    @include mq(large, $landscape) {
+      padding-top: 15vh;
+      font-size: $title-size-large;
+    }
   }
   &Container {
     @include size($height: 80%, $margin: 20px auto);
@@ -23,10 +31,26 @@
     @include mq(xsmall, $landscape) {
       @include size(90%, 82%, 15px auto 0);
     }
+    @include mq(medium, $portrait) {
+      width: 88%;
+      font-size: 8rem;
+    }
+    @include mq(large, $landscape) {
+      width: 80%;
+      padding-top: 10px;
+      height: 73%;
+      font-size: 7rem;
+    }
     p {
       font-size: 2rem;
       @include mq(small, $landscape) {
         font-size: 2.2rem;
+      }
+      @include mq(medium, $portrait) {
+        font-size: 3rem;
+      }
+      @include mq(large, $landscape) {
+        font-size: 3.2rem;
       }
     }
     .tech {
@@ -42,6 +66,13 @@
         height: 90%;
         flex-direction: row;
         border-radius: 26px;
+      }
+      @include mq(medium, $portrait) {
+        width: 65%;
+        height: 80%;
+      }
+      @include mq(large, $landscape) {
+        border-radius: 50px;
       }
     }
     .html {

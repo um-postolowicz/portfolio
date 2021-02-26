@@ -11,6 +11,14 @@
     @include mq(xsmall, $portrait) {
       margin-bottom: 15px;
     }
+    @include mq(medium, $portrait) {
+      font-size: $title-size-medium;
+      padding-top: $page-padding-top;
+    }
+    @include mq(large, $landscape) {
+      padding-top: 15vh;
+      font-size: $title-size-large;
+    }
   }
   &Comment {
     @include size($width: 90%, $margin: 0 auto 15px);
@@ -26,6 +34,12 @@
     @include mq(small, $landscape) {
       font-size: 1.4rem;
     }
+    @include mq(medium, $portrait) {
+      font-size: 1.7rem;
+    }
+    @include mq(large, $landscape) {
+      font-size: 1.9rem;
+    }
   }
   &Container {
     @include flex(column, center, center);
@@ -40,8 +54,16 @@
     @include mq(medium, $landscape) {
       margin-top: -15px;
     }
+    @include mq(medium, $portrait) {
+      margin-top: 30px;
+    }
     @include mq(xmedium, $landscape) {
       margin-top: 0px;
+      width: 95%;
+    }
+    @include mq(large, $landscape) {
+      margin-top: 50px;
+      height: 60%;
     }
   }
 }
@@ -56,6 +78,13 @@
     width: 100%;
     height: auto;
     border: none;
+  }
+  @include mq(medium, $portrait) {
+    flex-basis: 25%;
+  }
+  @include mq(large, $landscape) {
+    height: 100%;
+    margin: 0;
   }
   &:nth-last-child(1) {
     border-bottom: none;
@@ -89,6 +118,12 @@
     @include mq(small, $landscape) {
       font-size: 1.5rem;
     }
+    @include mq(medium, $portrait) {
+      font-size: 2rem;
+    }
+    @include mq(large, $landscape) {
+      font-size: 2rem;
+    }
   }
   p {
     font-size: 1.2rem;
@@ -98,8 +133,14 @@
     @include mq(small, $landscape) {
       font-size: 1.4rem;
     }
+    @include mq(medium, $portrait) {
+      font-size: 1.9rem;
+    }
     @include mq(xmedium, $landscape) {
       font-size: 1.5rem;
+    }
+    @include mq(large, $landscape) {
+      font-size: 1.9rem;
     }
   }
   img {
@@ -109,6 +150,9 @@
     }
     @include mq(small, $landscape) {
       width: 75%;
+    }
+    @include mq(medium, $portrait) {
+      width: 60%;
     }
   }
 }
@@ -124,6 +168,12 @@
     font-size: 1.5rem;
     @include mq(small, $landscape) {
       font-size: 1.6rem;
+    }
+    @include mq(medium, $portrait) {
+      font-size: 2rem;
+    }
+    @include mq(large, $landscape) {
+      font-size: 2.5rem;
     }
   }
 }

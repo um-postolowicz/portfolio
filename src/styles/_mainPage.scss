@@ -12,6 +12,9 @@
   @include mq(xsmall, $landscape) {
     @include grid(60px 1fr, 50% 50%);
   }
+  @include mq(large, $landscape) {
+    @include grid(1fr, 45% 55%);
+  }
   .introduction {
     @include size(95%, 40vh, 0 auto);
     text-align: center;
@@ -33,10 +36,40 @@
     @include mq(xmedium, $landscape) {
       font-size: 2.2rem;
     }
+    @include mq(medium, $portrait) {
+      font-size: 3.3rem;
+      width: 70%;
+      margin-top: 7px;
+    }
+    @include mq(large, $landscape) {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      margin-top: 20vh;
+      text-align: right;
+    }
+    @include mq(xlarge, $landscape) {
+      text-align: right;
+    }
+
     h1 {
       margin-top: 10px;
       @include mq(xsmall, $portrait) {
         margin-bottom: 15px;
+      }
+      @include mq(medium, $portrait) {
+        padding-bottom: 15px;
+      }
+      @include mq(large, $landscape) {
+        font-size: 5rem;
+        padding-bottom: 30px;
+      }
+      @include mq(xlarge, $landscape) {
+        font-size: 5rem;
+      }
+    }
+    h2 {
+      @include mq(xlarge, $landscape) {
+        font-size: 5rem;
       }
     }
   }
@@ -55,11 +88,28 @@
     @include mq(small, $landscape) {
       @include size($width: 90%, $margin: 20px 0 0);
     }
+    @include mq(medium, $portrait) {
+      width: 75%;
+      margin-top: 35px;
+    }
     @include mq(xmedium, $landscape) {
       margin-top: 25px;
     }
+    @include mq(large, $landscape) {
+      grid-column: 2/3;
+      grid-row: 1/2;
+      align-self: end;
+      justify-self: end;
+    }
+
     &Img {
       @include size($width: 85%, $margin: 0 auto);
+      @include mq(large, $landscape) {
+        width: 100%;
+      }
+      @include mq(xlarge, $landscape) {
+        width: 92%;
+      }
     }
   }
 }

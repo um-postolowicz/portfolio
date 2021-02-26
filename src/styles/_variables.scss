@@ -24,6 +24,8 @@ $npm-color: rgb(204, 0, 0);
 //font sizes
 $page-title-size: 2rem;
 $title-size-xxsmall: 2.2rem;
+$title-size-medium: 3rem;
+$title-size-large: 3.4rem;
 
 //page paddings
 $page-padding-top: 20px;
@@ -42,8 +44,9 @@ $breakpoints: (
   medium: "min-width: 719px",
   xmedium: "min-width:845px",
   large: "min-width: 1023px",
-  xlarge: "min-width: 1199px",
-  xxlarge: "min-width: 1365px",
+  xlarge: "min-width: 1279px",
+  xxlarge: "min-width: 1359px",
+  xxxlarge: "min-width:1500px",
 );
 
 //orientations

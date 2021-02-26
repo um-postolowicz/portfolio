@@ -8,6 +8,14 @@
     @include mq(xxsmall, $portrait) {
       font-size: $title-size-xxsmall;
     }
+    @include mq(medium, $portrait) {
+      font-size: $title-size-medium;
+      padding-top: $page-padding-top;
+    }
+    @include mq(large, $landscape) {
+      font-size: $title-size-large;
+      padding-top: 15vh;
+    }
   }
   &Tiles {
     @include grid(repeat(4, 1fr), repeat(2, 1fr), start, center);
@@ -25,6 +33,9 @@
     }
     @include mq(small, $landscape) {
       margin: 20px auto 0;
+    }
+    @include mq(medium, $portrait) {
+      margin-top: -50px;
     }
     @include mq(xmedium, $landscape) {
       margin: 25px 35px;
@@ -44,20 +55,37 @@
       flex-direction: column;
       height: 100%;
     }
+    .hobbyText {
+      @include mq(medium, $portrait) {
+        right: -15vw;
+      }
+    }
     .showTxt {
       right: 100%;
       @include mq(xsmall, $landscape) {
         right: 20px;
         top: -85px;
       }
+      @include mq(medium, $portrait) {
+        left: -11.5vw;
+      }
       @include mq(xmedium, $landscape) {
         right: 40px;
+      }
+      @include mq(large, $landscape) {
+        top: -130px;
+      }
+      @include mq(large, $landscape) {
+        right: 80px;
       }
     }
   }
   @include mq(xsmall, $landscape) {
     flex-direction: column;
     height: 100%;
+  }
+  @include mq(medium, $portrait) {
+    margin: 0;
   }
   .hexagon {
     @include position(relative, auto, auto);
@@ -78,8 +106,17 @@
     @include mq(small, $landscape) {
       @include size($width: 150px, $height: 130px, $margin: 0);
     }
+    @include mq(medium, $portrait) {
+      @include size($width: 220px, $height: 240px, $margin: 0);
+    }
     @include mq(xmedium, $landscape) {
       @include size($width: 180px, $height: 155px, $margin: 0);
+    }
+    @include mq(large, $landscape) {
+      @include size($width: 235px, $height: 200px, $margin: 0);
+    }
+    @include mq(xxlarge, $landscape) {
+      @include size($width: 280px, $height: 240px, $margin: 0);
     }
   }
   .darkHover {
@@ -101,8 +138,17 @@
     @include mq(small, $landscape) {
       @include size($width: 150px, $height: 130px, $margin: 0);
     }
+    @include mq(medium, $portrait) {
+      @include size($width: 220px, $height: 240px, $margin: 0);
+    }
     @include mq(xmedium, $landscape) {
       @include size($width: 180px, $height: 155px, $margin: 0);
+    }
+    @include mq(large, $landscape) {
+      @include size($width: 235px, $height: 200px, $margin: 0);
+    }
+    @include mq(xxlarge, $landscape) {
+      @include size($width: 280px, $height: 240px, $margin: 0);
     }
   }
   &Text {
@@ -121,17 +167,31 @@
     @include mq(medium, $landscape) {
       right: 7vh;
     }
+    @include mq(medium, $portrait) {
+      width: 60%;
+      left: -4vw;
+    }
     @include mq(xmedium, $landscape) {
       width: 65%;
       right: 40px;
+    }
+    @include mq(large, $landscape) {
+      right: 80px;
     }
     h4 {
       font-size: 1.3rem;
       @include mq(xsmall, $portrait) {
         font-size: 1.5rem;
       }
+      @include mq(medium, $portrait) {
+        font-size: 2rem;
+      }
       @include mq(xmedium, $landscape) {
         font-size: 1.4rem;
+      }
+      @include mq(large, $landscape) {
+        font-size: 1.8rem;
+        padding-bottom: 10px;
       }
     }
     p {
@@ -139,8 +199,14 @@
       @include mq(xsmall, $portrait) {
         font-size: 1.3rem;
       }
+      @include mq(medium, $portrait) {
+        font-size: 1.8rem;
+      }
       @include mq(xmedium, $landscape) {
         font-size: 1.3rem;
+      }
+      @include mq(large, $landscape) {
+        font-size: 1.8rem;
       }
     }
     &.showTxt {
@@ -155,9 +221,21 @@
       @include mq(medium, $landscape) {
         right: 18px;
       }
+      @include mq(medium, $portrait) {
+        right: -100%;
+      }
       @include mq(xmedium, $landscape) {
         right: 40px;
         top: 180px;
+      }
+      @include mq(large, $landscape) {
+        top: 230px;
+      }
+      @include mq(xlarge, $landscape) {
+        right: 80px;
+      }
+      @include mq(xxlarge, $landscape) {
+        top: 270px;
       }
     }
   }
@@ -179,9 +257,24 @@
     left: 40px;
     top: 30px;
   }
+  @include mq(medium, $portrait) {
+    left: 178px;
+    top: 77px;
+  }
   @include mq(xmedium, $landscape) {
     left: 80px;
     top: 35px;
+  }
+  @include mq(large, $landscape) {
+    left: 73px;
+    top: 80px;
+  }
+  @include mq(xlarge, $landscape) {
+    left: 192px;
+    top: 73px;
+  }
+  @include mq(xlarge, $landscape) {
+    left: 162px;
   }
 }
 .crossStitch {
@@ -202,9 +295,24 @@
     right: -14px;
     top: -30px;
   }
+  @include mq(medium, $portrait) {
+    right: 178px;
+    top: 25px;
+  }
   @include mq(xmedium, $landscape) {
     right: -27px;
     top: -35px;
+  }
+  @include mq(large, $landscape) {
+    right: -25px;
+    top: -80px;
+  }
+  @include mq(xlarge, $landscape) {
+    right: -85px;
+    top: -73px;
+  }
+  @include mq(xxlarge, $landscape) {
+    right: -75px;
   }
 }
 .fantasyBooks {
@@ -224,9 +332,24 @@
     left: -14px;
     bottom: -30px;
   }
+  @include mq(medium, $portrait) {
+    left: 178px;
+    bottom: 25px;
+  }
   @include mq(xmedium, $landscape) {
     left: -27px;
     bottom: -35px;
+  }
+  @include mq(large, $landscape) {
+    left: -25px;
+    bottom: -80px;
+  }
+  @include mq(xlarge, $landscape) {
+    left: -25px;
+    bottom: -73px;
+  }
+  @include mq(xlarge, $landscape) {
+    left: -15px;
   }
 }
 .jigsaw {
@@ -248,8 +371,23 @@
     right: 40px;
     bottom: 30px;
   }
+  @include mq(medium, $portrait) {
+    right: 178px;
+    bottom: 77px;
+  }
   @include mq(xmedium, $landscape) {
     right: 80px;
     bottom: 35px;
+  }
+  @include mq(large, $landscape) {
+    right: 73px;
+    bottom: 80px;
+  }
+  @include mq(xlarge, $landscape) {
+    right: 132px;
+    bottom: 73px;
+  }
+  @include mq(xlarge, $landscape) {
+    right: 102px;
   }
 }

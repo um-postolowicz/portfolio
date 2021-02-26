@@ -10,7 +10,9 @@ const Menu = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [size, setSize] = useState(false);
   const handleMenu = () => setIsMenuOpen(!isMenuOpen);
-  const closeMenu = () => setIsMenuOpen(false);
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
 
   const showMenu = () => {
     if (window.innerWidth <= 1023) {
@@ -56,7 +58,13 @@ const Menu = () => {
               }
             >
               <LanguageChoice />
-              <li className="listElement listWelcome">
+              <li
+                className={
+                  size
+                    ? "listElement listWelcome listBig"
+                    : "listElement listWelcome"
+                }
+              >
                 <Link
                   activeClass="active"
                   to="welcome"
@@ -67,12 +75,22 @@ const Menu = () => {
                   {listWelcome}
                 </Link>
               </li>
-              <li className="listElement listAbout">
+              <li
+                className={
+                  size
+                    ? "listElement listAbout listBig"
+                    : "listElement listAbout"
+                }
+              >
                 <Link to="about" spy={true} smooth={true} onClick={closeMenu}>
                   {listAbout}
                 </Link>
               </li>
-              <li className="listElement listTech">
+              <li
+                className={
+                  size ? "listElement listTech listBig" : "listElement listTech"
+                }
+              >
                 <Link
                   to="technologies"
                   spy={true}
@@ -82,7 +100,13 @@ const Menu = () => {
                   {listTech}
                 </Link>
               </li>
-              <li className="listElement listProjects">
+              <li
+                className={
+                  size
+                    ? "listElement listProjects listBig"
+                    : "listElement listProjects"
+                }
+              >
                 <Link
                   to="projects"
                   spy={true}
@@ -92,13 +116,25 @@ const Menu = () => {
                   {listProjects}
                 </Link>
               </li>
-              <li className="listElement listHobbies">
+              <li
+                className={
+                  size
+                    ? "listElement listHobbies listBig"
+                    : "listElement listHobbies"
+                }
+              >
                 {" "}
                 <Link to="hobbies" spy={true} smooth={true} onClick={closeMenu}>
                   {listHobbies}
                 </Link>
               </li>
-              <li className="listElement listContact">
+              <li
+                className={
+                  size
+                    ? "listElement listContact listBig"
+                    : "listElement listContact"
+                }
+              >
                 <Link to="contact" spy={true} smooth={true} onClick={closeMenu}>
                   {listContact}
                 </Link>

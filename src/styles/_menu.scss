@@ -3,6 +3,9 @@
   font-size: 2.5rem;
   color: #aaa;
   z-index: 101;
+  @include mq(medium, $portrait) {
+    font-size: 4rem;
+  }
 
   &White {
     color: white;
@@ -22,6 +25,9 @@
     font-size: 2rem;
     z-index: 100;
     transition: $transition;
+    @include mq(medium, $portrait) {
+      font-size: 3rem;
+    }
     @include mq(xmedium, $landscape) {
       font-size: 2.2rem;
     }
@@ -70,5 +76,39 @@
   @include mq(xsmall, $landscape) {
     flex-basis: 25%;
     @include size($width: 45%, $margin: 0 0 0 2.5vw);
+  }
+}
+
+.menuWide {
+  position: fixed;
+  background-color: $menu-dark-blue;
+  height: 12vh;
+  top: 0;
+  width: 100%;
+  font-family: "Josefin Sans", sans-serif;
+
+  z-index: 100;
+  @include flex(row, center);
+  flex-wrap: nowrap;
+  box-shadow: 0 0 6px 4px #000;
+  .languages {
+    flex-basis: 20%;
+    margin: 0;
+    padding: 0;
+  }
+  .listElement {
+    text-align: center;
+    margin: 0;
+    display: block;
+    border: none;
+    flex-basis: 15%;
+  }
+  .listBig:active,
+  .listBig:focus,
+  .listBig:hover {
+    font-weight: bold;
+  }
+  @include mq(xlarge, $landscape) {
+    font-size: 2rem;
   }
 }
