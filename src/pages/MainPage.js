@@ -3,7 +3,7 @@ import { Consumer } from "../data/LanguageContext";
 import Header from "../components/Header";
 import avatar from "../images/avatar.svg";
 
-const MainPage = ({ id }) => {
+const MainPage = () => {
   return (
     <Consumer>
       {({ label }) => {

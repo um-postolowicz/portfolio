@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Consumer } from "../data/LanguageContext";
 import LanguageChoice from "./LanguageChoice";
 
@@ -8,8 +8,21 @@ import { FaBars, FaTimes } from "react-icons/fa";
 
 const Menu = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [size, setSize] = useState(false);
   const handleMenu = () => setIsMenuOpen(!isMenuOpen);
   const closeMenu = () => setIsMenuOpen(false);
+
+  const showMenu = () => {
+    if (window.innerWidth <= 1023) {
+      setSize(false);
+    } else {
+      setSize(true);
+    }
+  };
+
+  useEffect(() => {
+    showMenu();
+  }, []);
 
   return (
     <Consumer>
@@ -24,14 +37,24 @@ const Menu = () => {
         } = label;
         return (
           <>
-            <div
-              className={isMenuOpen ? "menu menuWhite" : "menu"}
-              onClick={handleMenu}
-            >
-              {isMenuOpen ? <FaTimes /> : <FaBars />}
-            </div>
+            {size ? null : (
+              <div
+                className={isMenuOpen ? "menu menuWhite" : "menu"}
+                onClick={handleMenu}
+              >
+                {isMenuOpen ? <FaTimes /> : <FaBars />}
+              </div>
+            )}
 
-            <ul className={isMenuOpen ? "menuList menuOpen" : "menuList"}>
+            <ul
+              className={
+                size
+                  ? "menuWide"
+                  : isMenuOpen
+                  ? "menuList menuOpen"
+                  : "menuList"
+              }
+            >
               <LanguageChoice />
               <li className="listElement listWelcome">
                 <Link
