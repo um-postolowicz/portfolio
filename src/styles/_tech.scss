@@ -25,6 +25,9 @@
     }
     p {
       font-size: 2rem;
+      @include mq(small, $landscape) {
+        font-size: 2.2rem;
+      }
     }
     .tech {
       @include flex(column, center, space-evenly);

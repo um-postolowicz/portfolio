@@ -19,6 +19,9 @@
     @include mq(xsmall, $portrait) {
       height: 40px;
     }
+    @include mq(small, $landscape) {
+      height: 35px;
+    }
   }
   .uk {
     flex-grow: 1;
@@ -26,6 +29,9 @@
     background-color: white;
     @include mq(xsmall, $portrait) {
       height: 40px;
+    }
+    @include mq(small, $landscape) {
+      height: 35px;
     }
   }
 }

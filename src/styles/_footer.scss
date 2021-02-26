@@ -16,6 +16,9 @@
     @include mq(xxsmall, $portrait) {
       font-size: 1.4rem;
     }
+    @include mq(xmedium, $landscape) {
+      font-size: 1.6rem;
+    }
   }
   p,
   a {
@@ -24,6 +27,9 @@
       font-size: 1.3rem;
     }
     @include mq(xsmall, $portrait) {
+      font-size: 1.4rem;
+    }
+    @include mq(xmedium, $landscape) {
       font-size: 1.4rem;
     }
   }

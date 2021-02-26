@@ -44,5 +44,11 @@
     @include mq(xsmall, $portrait) {
       width: 75%;
     }
+    @include mq(medium, $landscape) {
+      font-size: 1.7rem;
+    }
+    @include mq(xmedium, $landscape) {
+      padding-top: 10px;
+    }
   }
 }

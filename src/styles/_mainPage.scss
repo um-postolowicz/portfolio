@@ -23,6 +23,16 @@
       font-size: 1.7rem;
       height: 90%;
     }
+    @include mq(small, $landscape) {
+      font-size: 1.9rem;
+      width: 85%;
+    }
+    @include mq(medium, $landscape) {
+      font-size: 2rem;
+    }
+    @include mq(xmedium, $landscape) {
+      font-size: 2.2rem;
+    }
     h1 {
       margin-top: 10px;
       @include mq(xsmall, $portrait) {
@@ -41,6 +51,12 @@
     }
     @include mq(xsmall, $landscape) {
       @include size($height: 90%, $margin: 10px 0 0);
+    }
+    @include mq(small, $landscape) {
+      @include size($width: 90%, $margin: 20px 0 0);
+    }
+    @include mq(xmedium, $landscape) {
+      margin-top: 25px;
     }
     &Img {
       @include size($width: 85%, $margin: 0 auto);
