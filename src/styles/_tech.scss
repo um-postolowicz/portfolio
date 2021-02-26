@@ -41,6 +41,9 @@
       height: 73%;
       font-size: 7rem;
     }
+    @include mq(xxxlarge, $landscape) {
+      font-weight: bold;
+    }
     p {
       font-size: 2rem;
       @include mq(small, $landscape) {
@@ -73,6 +76,9 @@
       }
       @include mq(large, $landscape) {
         border-radius: 50px;
+      }
+      @include mq(xxxlarge, $landscape) {
+        width: 65%;
       }
     }
     .html {

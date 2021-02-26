@@ -40,6 +40,9 @@
     @include mq(xmedium, $landscape) {
       margin: 25px 35px;
     }
+    @include mq(tremendous, $landscape) {
+      margin: 25px auto;
+    }
   }
 }
 
@@ -59,6 +62,9 @@
       @include mq(medium, $portrait) {
         right: -15vw;
       }
+      @include mq(tremendous, $landscape) {
+        right: 125px;
+      }
     }
     .showTxt {
       right: 100%;
@@ -77,6 +83,12 @@
       }
       @include mq(large, $landscape) {
         right: 80px;
+      }
+      @include mq(xxxlarge, $landscape) {
+        right: 90px;
+      }
+      @include mq(tremendous, $landscape) {
+        right: 125px;
       }
     }
   }
@@ -117,6 +129,14 @@
     }
     @include mq(xxlarge, $landscape) {
       @include size($width: 280px, $height: 240px, $margin: 0);
+      cursor: pointer;
+      transition: $transition;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+    @include mq(tremendous, $landscape) {
+      @include size($width: 350px, $height: 310px, $margin: 0);
     }
   }
   .darkHover {
@@ -150,6 +170,9 @@
     @include mq(xxlarge, $landscape) {
       @include size($width: 280px, $height: 240px, $margin: 0);
     }
+    @include mq(tremendous, $landscape) {
+      @include size($width: 350px, $height: 310px, $margin: 0);
+    }
   }
   &Text {
     @include position(absolute, 120%);
@@ -178,6 +201,13 @@
     @include mq(large, $landscape) {
       right: 80px;
     }
+    @include mq(xxxlarge, $landscape) {
+      right: 100px;
+      top: 100px;
+    }
+    @include mq(tremendous, $landscape) {
+      right: 125px;
+    }
     h4 {
       font-size: 1.3rem;
       @include mq(xsmall, $portrait) {
@@ -193,6 +223,9 @@
         font-size: 1.8rem;
         padding-bottom: 10px;
       }
+      @include mq(tremendous, $landscape) {
+        font-size: 2.2rem;
+      }
     }
     p {
       font-size: 1.2rem;
@@ -207,6 +240,9 @@
       }
       @include mq(large, $landscape) {
         font-size: 1.8rem;
+      }
+      @include mq(tremendous, $landscape) {
+        font-size: 2rem;
       }
     }
     &.showTxt {
@@ -236,6 +272,13 @@
       }
       @include mq(xxlarge, $landscape) {
         top: 270px;
+      }
+      @include mq(xxxlarge, $landscape) {
+        right: 90px;
+      }
+      @include mq(tremendous, $landscape) {
+        right: 125px;
+        top: 350px;
       }
     }
   }
@@ -276,6 +319,14 @@
   @include mq(xlarge, $landscape) {
     left: 162px;
   }
+  @include mq(xxxlarge, $landscape) {
+    left: 230px;
+    top: 70px;
+  }
+  @include mq(tremendous, $landscape) {
+    left: 298px;
+    top: 120px;
+  }
 }
 .crossStitch {
   right: 37px;
@@ -314,6 +365,14 @@
   @include mq(xxlarge, $landscape) {
     right: -75px;
   }
+  @include mq(xxxlarge, $landscape) {
+    right: -110px;
+    top: -70px;
+  }
+  @include mq(tremendous, $landscape) {
+    right: -130px;
+    top: -100px;
+  }
 }
 .fantasyBooks {
   left: 37px;
@@ -350,6 +409,13 @@
   }
   @include mq(xlarge, $landscape) {
     left: -15px;
+  }
+  @include mq(xxxlarge, $landscape) {
+    bottom: -70px;
+  }
+  @include mq(tremendous, $landscape) {
+    left: -40px;
+    bottom: -120px;
   }
 }
 .jigsaw {
@@ -389,5 +455,13 @@
   }
   @include mq(xlarge, $landscape) {
     right: 102px;
+  }
+  @include mq(xxxlarge, $landscape) {
+    right: 135px;
+    bottom: 70px;
+  }
+  @include mq(tremendous, $landscape) {
+    right: 205px;
+    bottom: 100px;
   }
 }

@@ -110,5 +110,13 @@
   }
   @include mq(xlarge, $landscape) {
     font-size: 2rem;
+    cursor: pointer;
+  }
+  @include mq(xxxlarge, $landscape) {
+    font-size: 2.5rem;
+  }
+  .listBig:active {
+    @include mq(xxxlarge, $landscape) {
+    }
   }
 }

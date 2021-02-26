@@ -40,6 +40,9 @@
     @include mq(large, $landscape) {
       font-size: 1.9rem;
     }
+    @include mq(tremendous, $landscape) {
+      padding-top: 20px;
+    }
   }
   &Container {
     @include flex(column, center, center);
@@ -64,6 +67,12 @@
     @include mq(large, $landscape) {
       margin-top: 50px;
       height: 60%;
+    }
+    @include mq(tremendous, $landscape) {
+      height: 65%;
+      width: 80%;
+      column-gap: 50px;
+      row-gap: 30px;
     }
   }
 }
@@ -124,6 +133,9 @@
     @include mq(large, $landscape) {
       font-size: 2rem;
     }
+    @include mq(tremendous, $landscape) {
+      font-size: 3rem;
+    }
   }
   p {
     font-size: 1.2rem;
@@ -142,6 +154,9 @@
     @include mq(large, $landscape) {
       font-size: 1.9rem;
     }
+    @include mq(tremendous, $landscape) {
+      font-size: 2.3rem;
+    }
   }
   img {
     width: 65%;
@@ -153,6 +168,18 @@
     }
     @include mq(medium, $portrait) {
       width: 60%;
+    }
+    @include mq(xxlarge, $landscape) {
+      cursor: pointer;
+      transition: $transition;
+    }
+    &:hover {
+      @include mq(xxlarge, $landscape) {
+        transform: scale(1.1);
+      }
+    }
+    @include mq(tremendous, $landscape) {
+      width: 80%;
     }
   }
 }

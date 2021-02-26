@@ -50,7 +50,9 @@
     @include mq(xlarge, $landscape) {
       text-align: right;
     }
-
+    @include mq(xxxlarge, $landscape) {
+      margin-top: 30vh;
+    }
     h1 {
       margin-top: 10px;
       @include mq(xsmall, $portrait) {
@@ -65,6 +67,13 @@
       }
       @include mq(xlarge, $landscape) {
         font-size: 5rem;
+      }
+      @include mq(xxxlarge, $landscape) {
+        font-size: 5.8rem;
+      }
+      @include mq(tremendous, $landscape) {
+        font-size: 7rem;
+        padding-bottom: 50px;
       }
     }
     h2 {
@@ -109,6 +118,12 @@
       }
       @include mq(xlarge, $landscape) {
         width: 92%;
+      }
+      @include mq(xxxlarge, $landscape) {
+        width: 70%;
+      }
+      @include mq(tremendous, $landscape) {
+        width: 80%;
       }
     }
   }

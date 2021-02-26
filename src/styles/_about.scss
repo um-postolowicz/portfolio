@@ -82,5 +82,8 @@
       width: 70%;
       padding-top: 20px;
     }
+    @include mq(tremendous, $landscape) {
+      font-size: 3rem;
+    }
   }
 }
