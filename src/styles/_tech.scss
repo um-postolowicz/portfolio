@@ -58,7 +58,7 @@
     }
     .tech {
       @include flex(column, center, space-evenly);
-      @include size(80%, 80%);
+      @include size(70%, 80%);
       border-radius: 30%;
       box-shadow: -4px 4px 4px 2px #000;
       background-color: white;

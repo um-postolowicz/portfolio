@@ -347,6 +347,7 @@ html {
   font-size: 2rem;
   font-family: "Amatic SC", cursive;
   height: 100vh;
+  max-height: 100vh;
   background-color: #071843;
   color: #e5eafa;
   letter-spacing: 2px;
@@ -355,7 +356,7 @@ html {
 
 @media (orientation: portrait) and (min-width: 359px) {
   .mainPage {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 }
 
@@ -519,6 +520,7 @@ html {
 @media (orientation: portrait) and (min-width: 359px) {
   .mainPage .avatar {
     margin-top: 32px;
+    height: 50%;
   }
 }
 
@@ -583,6 +585,13 @@ html {
   height: auto;
   margin: 0 auto;
   padding: 0;
+}
+
+@media (orientation: portrait) and (min-width: 359px) {
+  .mainPage .avatarImg {
+    height: 80%;
+    width: auto;
+  }
 }
 
 @media (orientation: landscape) and (min-width: 1023px) {
@@ -729,7 +738,7 @@ html {
 
 @media (orientation: portrait) and (min-width: 359px) {
   .aboutDesc {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -903,7 +912,7 @@ html {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  width: 80%;
+  width: 70%;
   height: 80%;
   margin: auto;
   padding: 0;
@@ -989,7 +998,7 @@ html {
 @media (orientation: portrait) and (min-width: 359px) {
   .projectsTitle {
     font-size: 2.2rem;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
   }
 }
 
@@ -1075,6 +1084,7 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: -20px;
 }
 
 @media (orientation: landscape) and (min-width: 410px) {
@@ -1436,7 +1446,7 @@ html {
 
 @media (orientation: portrait) and (min-width: 359px) {
   .hobbiesTiles {
-    margin-top: -105px;
+    margin-top: -98px;
   }
 }
 
@@ -1545,6 +1555,12 @@ html {
   right: 100%;
 }
 
+@media (orientation: portrait) and (min-width: 359px) {
+  .hobby:nth-child(even) .showTxt {
+    right: 85%;
+  }
+}
+
 @media (orientation: landscape) and (min-width: 410px) {
   .hobby:nth-child(even) .showTxt {
     right: 20px;
@@ -1620,8 +1636,8 @@ html {
 
 @media (orientation: portrait) and (min-width: 359px) {
   .hobby .hexagon {
-    width: 150px;
-    height: 170px;
+    width: 130px;
+    height: 145px;
     margin: 0;
     padding: 0;
   }
@@ -1724,8 +1740,8 @@ html {
 
 @media (orientation: portrait) and (min-width: 359px) {
   .hobby .darkHover {
-    width: 150px;
-    height: 170px;
+    width: 130px;
+    height: 145px;
     margin: 0;
     padding: 0;
   }
@@ -1820,6 +1836,7 @@ html {
 @media (orientation: portrait) and (min-width: 359px) {
   .hobbyText {
     padding: 0 15px;
+    right: 10%;
   }
 }
 
@@ -1944,6 +1961,12 @@ html {
   right: -80%;
 }
 
+@media (orientation: portrait) and (min-width: 359px) {
+  .hobbyText.showTxt {
+    right: -65%;
+  }
+}
+
 @media (orientation: landscape) and (min-width: 410px) {
   .hobbyText.showTxt {
     right: 5px;
@@ -2014,8 +2037,8 @@ html {
 
 @media (orientation: portrait) and (min-width: 359px) {
   .aviation {
-    left: 42px;
-    top: 51px;
+    left: 62px;
+    top: 46px;
   }
 }
 
@@ -2100,7 +2123,8 @@ html {
 
 @media (orientation: portrait) and (min-width: 359px) {
   .crossStitch {
-    right: 42px;
+    right: 62px;
+    top: 15px;
   }
 }
 
@@ -2182,7 +2206,8 @@ html {
 
 @media (orientation: portrait) and (min-width: 359px) {
   .fantasyBooks {
-    left: 42px;
+    left: 62px;
+    bottom: 15px;
   }
 }
 
@@ -2266,8 +2291,8 @@ html {
 
 @media (orientation: portrait) and (min-width: 359px) {
   .jigsaw {
-    right: 42px;
-    bottom: 51px;
+    right: 62px;
+    bottom: 46px;
   }
 }
 

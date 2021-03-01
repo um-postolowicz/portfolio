@@ -21,7 +21,7 @@
     @include grid(repeat(4, 1fr), repeat(2, 1fr), start, center);
     @include size($width: 90vw, $margin: -95px auto);
     @include mq(xxsmall, $portrait) {
-      margin-top: -105px;
+      margin-top: -98px;
     }
     @include mq(xsmall, $portrait) {
       padding-top: 30px;
@@ -68,6 +68,9 @@
     }
     .showTxt {
       right: 100%;
+      @include mq(xxsmall, $portrait) {
+        right: 85%;
+      }
       @include mq(xsmall, $landscape) {
         right: 20px;
         top: -85px;
@@ -106,7 +109,7 @@
     background-size: cover;
     z-index: 1;
     @include mq(xxsmall, $portrait) {
-      @include size($width: 150px, $height: 170px, $margin: 0);
+      @include size($width: 130px, $height: 145px, $margin: 0);
     }
     @include mq(xsmall, $portrait) {
       @include size($width: 170px, $height: 190px, $margin: 0);
@@ -146,7 +149,7 @@
     z-index: 2;
     background-color: rgba(0, 0, 0, 0.7);
     @include mq(xxsmall, $portrait) {
-      @include size($width: 150px, $height: 170px, $margin: 0);
+      @include size($width: 130px, $height: 145px, $margin: 0);
     }
     @include mq(xsmall, $portrait) {
       @include size($width: 170px, $height: 190px, $margin: 0);
@@ -180,6 +183,7 @@
     transition: 0.3s;
     @include mq(xxsmall, $portrait) {
       padding: 0 15px;
+      right: 10%;
     }
     @include mq(xsmall, $landscape) {
       text-align: center;
@@ -247,6 +251,9 @@
     }
     &.showTxt {
       right: -80%;
+      @include mq(xxsmall, $portrait) {
+        right: -65%;
+      }
       @include mq(xsmall, $landscape) {
         right: 5px;
         top: 130px;
@@ -287,8 +294,8 @@
   left: 37px;
   top: 50px;
   @include mq(xxsmall, $portrait) {
-    left: 42px;
-    top: 51px;
+    left: 62px;
+    top: 46px;
   }
   @include mq(xsmall, $landscape) {
     grid-row: 1/2;
@@ -334,7 +341,8 @@
   grid-column: 2/3;
   grid-row: 2/3;
   @include mq(xxsmall, $portrait) {
-    right: 42px;
+    right: 62px;
+    top: 15px;
   }
   @include mq(xsmall, $landscape) {
     grid-row: 2/3;
@@ -379,7 +387,8 @@
   bottom: 17px;
   grid-row: 3/4;
   @include mq(xxsmall, $portrait) {
-    left: 42px;
+    left: 62px;
+    bottom: 15px;
   }
   @include mq(xsmall, $landscape) {
     grid-row: 1/2;
@@ -424,8 +433,8 @@
   grid-row: 4/5;
   grid-column: 2/3;
   @include mq(xxsmall, $portrait) {
-    right: 42px;
-    bottom: 51px;
+    right: 62px;
+    bottom: 46px;
   }
   @include mq(xsmall, $landscape) {
     grid-row: 2/3;

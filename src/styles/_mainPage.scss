@@ -2,12 +2,13 @@
   font-size: 2rem;
   font-family: "Amatic SC", cursive;
   height: 100vh;
+  max-height: 100vh;
   background-color: $dark-blue;
   color: $light-blue;
   letter-spacing: 2px;
   text-shadow: 3px 3px black;
   @include mq(xxsmall, $portrait) {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
   @include mq(xsmall, $landscape) {
     @include grid(60px 1fr, 50% 50%);
@@ -87,6 +88,7 @@
     text-align: center;
     @include mq(xxsmall, $portrait) {
       margin-top: 32px;
+      height: 50%;
     }
     @include mq(xsmall, $portrait) {
       @include size($width: 95%, $margin: 37px auto 0);
@@ -113,6 +115,10 @@
 
     &Img {
       @include size($width: 85%, $margin: 0 auto);
+      @include mq(xxsmall, $portrait) {
+        height: 80%;
+        width: auto;
+      }
       @include mq(large, $landscape) {
         width: 100%;
       }

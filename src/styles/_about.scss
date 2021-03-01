@@ -62,7 +62,7 @@
     @include size(85%, auto, 0 auto, 0 0 20px 0);
     font-size: 1.5rem;
     @include mq(xxsmall, $portrait) {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
     }
     @include mq(xsmall, $portrait) {
       width: 75%;

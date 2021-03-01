@@ -6,7 +6,7 @@
     margin-bottom: 5px;
     @include mq(xxsmall, $portrait) {
       font-size: $title-size-xxsmall;
-      margin-bottom: 8px;
+      margin-bottom: 5px;
     }
     @include mq(xsmall, $portrait) {
       margin-bottom: 15px;
@@ -46,6 +46,7 @@
   }
   &Container {
     @include flex(column, center, center);
+    margin-top: -20px;
     @include mq(xsmall, $landscape) {
       @include grid(repeat(2, 1fr), repeat(2, 1fr));
       @include size($width: 90%, $margin: -12px auto 0);
