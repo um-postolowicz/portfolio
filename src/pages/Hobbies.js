@@ -24,39 +24,39 @@ const Hobbies = () => {
         } = label;
         return (
           <section className="hobbies">
-            <h3 className="hobbiesTitle">{hobbiesTitle}</h3>
-            <div className="hobbiesTiles">
+            <h3 className="hobbies__title">{hobbiesTitle}</h3>
+            <div className="hobbies__container">
               <Hobby
-                descClassName="aviationTxt"
+                descClassName="hobbies__hobby-text-desc"
                 hobbyDesc={aviationTxt}
                 hobbyName={aviationTitle}
                 imgSrc={plane}
-                mainClassName="aviation hobby"
-                titleClassName="aviationTitle"
+                mainClassName="hobbies__hobby hobbies__hobby-aviation"
+                titleClassName="hobbies__hobby-text-title"
               />
               <Hobby
-                descClassName="crossStitchTxt"
+                descClassName="hobbies__hobby-text-desc"
                 hobbyDesc={crossStitchTxt}
                 hobbyName={crossStitchTitle}
                 imgSrc={stitch}
-                mainClassName="crossStitch hobby"
-                titleClassName="crossStitchTitle"
+                mainClassName="hobbies__hobby hobbies__hobby-crossStitch"
+                titleClassName="hobbies__hobby-text-title"
               />
               <Hobby
-                descClassName="fantasyBooksTxt"
+                descClassName="hobbies__hobby-text-desc"
                 hobbyDesc={fantasyBooksTxt}
                 hobbyName={fantasyBooksTitle}
                 imgSrc={fantasy}
-                mainClassName="fantasyBooks hobby"
-                titleClassName="fantasyBooksTitle"
+                mainClassName="hobbies__hobby hobbies__hobby-fantasyBooks"
+                titleClassName="hobbies__hobby-text-title"
               />
               <Hobby
-                descClassName="jigsawTxt"
+                descClassName="hobbies__hobby-text-desc"
                 hobbyDesc={jigsawTxt}
                 hobbyName={jigsawTitle}
                 imgSrc={jigsaw}
-                mainClassName="jigsaw hobby"
-                titleClassName="jigsawTitle"
+                mainClassName="hobbies__hobby hobbies__hobby-jigsaw"
+                titleClassName="hobbies__hobby-text-title"
               />
             </div>
           </section>

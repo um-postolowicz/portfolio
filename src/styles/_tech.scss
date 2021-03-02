@@ -3,7 +3,7 @@
   max-height: 100vh;
   padding-top: $page-padding-top;
   background-color: $dark-blue;
-  &Title {
+  &__title {
     text-align: center;
     color: white;
     font-size: $page-title-size;
@@ -19,7 +19,7 @@
       font-size: $title-size-large;
     }
   }
-  &Container {
+  &__container {
     height: 80%;
     width: 90%;
     margin: 30px auto;
@@ -48,7 +48,34 @@
     @include mq(xxxlarge, $landscape) {
       font-weight: bold;
     }
-    p {
+  }
+  &__piece {
+    aspect-ratio: 1/1;
+    @include flex(column, center, space-evenly);
+    width: 85%;
+    height: 85%;
+    border-radius: 30%;
+    box-shadow: -4px 4px 4px 2px #000;
+    background-color: white;
+    @include mq(xsmall, $portrait) {
+      height: 70%;
+    }
+    @include mq(xsmall, $landscape) {
+      height: 90%;
+      flex-direction: row;
+      border-radius: 26px;
+    }
+    @include mq(medium, $portrait) {
+      width: 65%;
+      height: 80%;
+    }
+    @include mq(large, $landscape) {
+      border-radius: 50px;
+    }
+    @include mq(xxxlarge, $landscape) {
+      width: 65%;
+    }
+    &-title {
       font-size: 2rem;
       @include mq(small, $landscape) {
         font-size: 2.2rem;
@@ -60,49 +87,22 @@
         font-size: 3.2rem;
       }
     }
-    .tech {
-      aspect-ratio: 1/1;
-      @include flex(column, center, space-evenly);
-      width: 85%;
-      height: 85%;
-      border-radius: 30%;
-      box-shadow: -4px 4px 4px 2px #000;
-      background-color: white;
-      @include mq(xsmall, $portrait) {
-        height: 70%;
-      }
-      @include mq(xsmall, $landscape) {
-        height: 90%;
-        flex-direction: row;
-        border-radius: 26px;
-      }
-      @include mq(medium, $portrait) {
-        width: 65%;
-        height: 80%;
-      }
-      @include mq(large, $landscape) {
-        border-radius: 50px;
-      }
-      @include mq(xxxlarge, $landscape) {
-        width: 65%;
-      }
-    }
-    .html {
+    &-html {
       color: $html-color;
     }
-    .css {
+    &-css {
       color: $css-color;
     }
-    .sass {
+    &-sass {
       color: $sass-color;
     }
-    .javascript {
+    &-javascript {
       color: $js-color;
     }
-    .react {
+    &-react {
       color: $react-color;
     }
-    .npm {
+    &-npm {
       color: $npm-color;
     }
   }

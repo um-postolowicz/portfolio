@@ -9,15 +9,19 @@ const LanguageChoice = () => {
     <Consumer>
       {({ setLanguage }) => {
         return (
-          <div className="languages">
-            <div className="polish flag" onClick={() => setLanguage("polish")}>
-              <img src={polishFlag} alt="Polish flag" className="poland" />
+          <div className="header__languages">
+            <div className="header__flag" onClick={() => setLanguage("polish")}>
+              <img
+                src={polishFlag}
+                alt="Polish flag"
+                className="header__flag--poland"
+              />
             </div>
             <div
-              className="english flag"
+              className="header__flag"
               onClick={() => setLanguage("english")}
             >
-              <img src={ukFlag} alt="UK flag" className="uk" />
+              <img src={ukFlag} alt="UK flag" className="header__flag--uk" />
             </div>
           </div>
         );

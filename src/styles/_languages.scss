@@ -1,37 +1,42 @@
-.languages {
-  @include size($width: 100%, $padding: 15px 0 0);
-  @include flex($justify-content: space-around);
-  @include mq(xxsmall, $portrait) {
-    padding-top: 30px;
-  }
-  @include mq(xsmall, $portrait) {
-    padding-top: 40px;
-  }
-  @include mq(xsmall, $landscape) {
-    padding-top: 25px;
-  }
-  .flag img {
-    box-shadow: 0 0 4px 2px #ddd;
-  }
-  .poland {
-    flex-basis: 50%;
-    height: 30px;
+.header {
+  &__languages {
+    @include size($width: 100%, $padding: 15px 0 0);
+    @include flex($justify-content: space-around);
+    @include mq(xxsmall, $portrait) {
+      padding-top: 30px;
+    }
     @include mq(xsmall, $portrait) {
-      height: 40px;
+      padding-top: 40px;
     }
-    @include mq(small, $landscape) {
-      height: 35px;
+    @include mq(xsmall, $landscape) {
+      padding-top: 25px;
     }
   }
-  .uk {
-    flex-grow: 1;
-    height: 30px;
-    background-color: white;
-    @include mq(xsmall, $portrait) {
-      height: 40px;
+
+  &__flag {
+    img {
+      box-shadow: 0 0 4px 2px #ddd;
     }
-    @include mq(small, $landscape) {
-      height: 35px;
+    &--poland {
+      flex-basis: 50%;
+      height: 30px;
+      @include mq(xsmall, $portrait) {
+        height: 40px;
+      }
+      @include mq(small, $landscape) {
+        height: 35px;
+      }
+    }
+    &--uk {
+      flex-grow: 1;
+      height: 30px;
+      background-color: white;
+      @include mq(xsmall, $portrait) {
+        height: 40px;
+      }
+      @include mq(small, $landscape) {
+        height: 35px;
+      }
     }
   }
 }

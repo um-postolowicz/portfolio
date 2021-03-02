@@ -18,8 +18,13 @@ const Project = ({
 
   return (
     <div className={mainClassName}>
-      <a href={projectLink} target="_blank" rel="noreferrer">
-        <h4 className={titleClassName}>{projectName}</h4>
+      <a
+        className={titleClassName}
+        href={projectLink}
+        target="_blank"
+        rel="noreferrer"
+      >
+        <h4>{projectName}</h4>
       </a>
       <img
         src={imgSrc}
@@ -29,7 +34,7 @@ const Project = ({
       />
       <p className={descClassName}>{descTxt}</p>
       {showLink ? (
-        <div className="link">
+        <div className="projects__project-gitlink">
           <a href={githubLink} target="_blank" rel="noreferrer">
             {githubLink}
           </a>

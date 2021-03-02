@@ -12,42 +12,42 @@ const Contact = () => {
         const { contactTitle } = label;
         return (
           <section className="contact">
-            <h3 className="contactTitle">{contactTitle}</h3>
-            <div className="contactTiles">
+            <h3 className="contact__title">{contactTitle}</h3>
+            <div className="contact__container">
               <ContactPiece
-                mainClassName="email contactTile"
+                mainClassName="contact__piece contact__piece-email"
                 contactLink="https://www.gmail.com"
-                contactClassTitle="emailTitle"
+                contactClassTitle="contact__piece-title"
                 contactTitle="Email"
                 contactIcon={<HiOutlineMailOpen />}
-                dataClassTitle="emailTxt"
+                dataClassTitle="contact__piece-data"
                 contactData="u.postolowicz@gmail.com"
               />
               <ContactPiece
-                mainClassName="facebook contactTile"
+                mainClassName="contact__piece contact__piece-facebook"
                 contactLink="https://www.facebook.com/profile.php?id=100004203695582"
-                contactClassTitle="facebookTitle"
+                contactClassTitle="contact__piece-title"
                 contactTitle="Facebook"
                 contactIcon={<FaFacebookSquare />}
-                dataClassTitle="facebookTxt"
+                dataClassTitle="contact__piece-data"
                 contactData="Ula Postołowicz"
               />
               <ContactPiece
-                mainClassName="linkedin contactTile"
+                mainClassName="contact__piece contact__piece-linkedin"
                 contactLink="https://www.linkedin.com/in/urszula-maria-postołowicz-311866207/"
-                contactClassTitle="linkedinTitle"
+                contactClassTitle="contact__piece-title"
                 contactTitle="LinkedIn"
                 contactIcon={<FaLinkedin />}
-                dataClassTitle="linkedinTxt"
+                dataClassTitle="contact__piece-data"
                 contactData="Urszula Maria Postołowicz"
               />
               <ContactPiece
-                mainClassName="github contactTile"
+                mainClassName="contact__piece contact__piece-github"
                 contactLink="https://github.com/um-postolowicz"
-                contactClassTitle="githubTitle"
+                contactClassTitle="contact__piece-title"
                 contactTitle="GitHub"
                 contactIcon={<FaGithubSquare />}
-                dataClassTitle="githubTxt"
+                dataClassTitle="contact__piece-data"
                 contactData="um-postolowicz"
               />
             </div>

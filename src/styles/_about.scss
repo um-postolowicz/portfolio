@@ -2,7 +2,7 @@
   height: 100vh;
   max-height: 100vh;
   @include flex(column, center, center);
-  &Border {
+  &__border {
     @include size(85%, 90%, 30px auto, 0);
     background: rgb(248, 248, 255);
     background: linear-gradient(
@@ -31,7 +31,7 @@
       height: 60%;
     }
   }
-  &Txt {
+  &__txt {
     height: calc(100% - 20px);
     margin: 10px;
     background-image: none;
@@ -42,7 +42,7 @@
       padding: 50px 10px;
     }
   }
-  &Header {
+  &__header {
     font-size: $page-title-size;
     padding: 30px;
     @include mq(xxsmall, $portrait) {
@@ -60,7 +60,7 @@
       padding-top: 40px;
     }
   }
-  &Desc {
+  &__desc {
     width: 85%;
     margin: 0 auto;
     padding: 0 0 20px 0;

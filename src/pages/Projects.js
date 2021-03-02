@@ -29,56 +29,56 @@ const Projects = () => {
         } = label;
         return (
           <section className="projects">
-            <h3 className="projectsTitle">{projectsTitle}</h3>
-            <p className="projectsComment">{projectsComment}</p>
-            <div className="projectsContainer">
+            <h3 className="projects__title">{projectsTitle}</h3>
+            <p className="projects__comment">{projectsComment}</p>
+            <div className="projects__container">
               <Project
                 alt={portfolioAlt}
-                descClassName="portfolioDesc"
+                descClassName="projects__project-desc"
                 descTxt={portfolioTxt}
                 githubLink="https://github.com/um-postolowicz/portfolio"
-                imgClassName="portfolioImg"
+                imgClassName="projects__project-img"
                 imgSrc={portfolioImg}
-                mainClassName="portfolio project"
+                mainClassName="projects__project projects__project-portfolio "
                 projectLink="https://github.com/um-postolowicz/portfolio"
                 projectName={portfolioTitle}
-                titleClassName="portfolioTitle"
+                titleClassName="projects__project-title"
               />
               <Project
                 alt={rateMovieAlt}
-                descClassName="rateMovieDesc"
+                descClassName="projects__project-desc"
                 descTxt={rateMovieTxt}
                 githubLink="https://github.com/um-postolowicz/rate-a-movie"
-                imgClassName="rateMovieImg"
+                imgClassName="projects__project-img"
                 imgSrc={rateMovieImg}
-                mainClassName="rateMovie project"
+                mainClassName="projects__project projects__project-rateMovie"
                 projectLink="https://rateamovie-ump.herokuapp.com"
                 projectName={rateMovieTitle}
-                titleClassName="rateMovieTitle"
+                titleClassName="projects__project-title"
               />
               <Project
                 alt={todoAlt}
-                descClassName="toDoDesc"
+                descClassName="projects__project-desc"
                 descTxt={toDoTxt}
                 githubLink="https://github.com/um-postolowicz/todo"
-                imgClassName="toDoImg"
+                imgClassName="projects__project-img"
                 imgSrc={toDoImg}
-                mainClassName="toDo project"
+                mainClassName="projects__project projects__project-toDo"
                 projectLink="https://todo-ump.herokuapp.com"
                 projectName={toDoTitle}
-                titleClassName="toDoTitle"
+                titleClassName="projects__project-title"
               />
               <Project
                 alt={calculatorAlt}
-                descClassName="calculatorDesc"
+                descClassName="projects__project-desc"
                 descTxt={calculatorTxt}
                 githubLink="https://github.com/um-postolowicz/calculator"
-                imgClassName="calculatorImg"
+                imgClassName="projects__project-img"
                 imgSrc={calculatorImg}
-                mainClassName="calculator project"
+                mainClassName="projects__project projects__project-calculator"
                 projectLink="https://calculator-ump.herokuapp.com"
                 projectName={calculatorTitle}
-                titleClassName="calculatorTitle"
+                titleClassName="projects__project-title"
               />
             </div>
           </section>

@@ -8,12 +8,12 @@ const About = () => {
         const { aboutProf, aboutDev, aboutFree, aboutTitle } = label;
         return (
           <section className="about">
-            <div className="aboutBorder">
-              <div className="aboutTxt">
-                <h3 className="aboutHeader">{aboutTitle}</h3>
-                <p className="aboutDesc">{aboutProf}</p>
-                <p className="aboutDesc">{aboutDev}</p>
-                <p className="aboutDesc">{aboutFree}</p>
+            <div className="about__border">
+              <div className="about__txt">
+                <h3 className="about__header">{aboutTitle}</h3>
+                <p className="about__desc">{aboutProf}</p>
+                <p className="about__desc">{aboutDev}</p>
+                <p className="about__desc">{aboutFree}</p>
               </div>
             </div>
           </section>

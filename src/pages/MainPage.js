@@ -10,16 +10,20 @@ const MainPage = () => {
         const { welcome, name, profession, invitation, avatarAlt } = label;
         return (
           <>
-            <section className="mainPage">
+            <section className="main-page">
               <Header />
-              <div className="introduction">
-                <h1 className="welcome">{welcome}</h1>
-                <h1 className="name">{name}</h1>
-                <h1 className="profession">{profession}</h1>
-                <h2 className="invitation">{invitation}</h2>
+              <div className="main-page__introduction">
+                <h1 className="main-page__welcome">{welcome}</h1>
+                <h1 className="main-page__name">{name}</h1>
+                <h1 className="main-page__profession">{profession}</h1>
+                <h2 className="main-page__invitation">{invitation}</h2>
               </div>
-              <div className="avatar">
-                <img src={avatar} alt={avatarAlt} className="avatarImg" />
+              <div className="main-page__avatar">
+                <img
+                  src={avatar}
+                  alt={avatarAlt}
+                  className="main-page__avatar-img"
+                />
               </div>
             </section>
           </>

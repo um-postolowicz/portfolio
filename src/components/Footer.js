@@ -9,29 +9,29 @@ const Footer = () => {
         const { creditsTitle, avatarText, borderText, hobbiesText } = label;
         return (
           <footer className="footer">
-            <div className="credits">
-              <h5 className="creditsTitle">{creditsTitle}</h5>
+            <div className="footer__credits">
+              <h5 className="footer__credits-title">{creditsTitle}</h5>
               <FooterLink
                 mainTitle="avatarInfo"
-                linkTextClass="avatarText"
+                linkTextClass="footer__credits-desc"
                 linkText={avatarText}
-                linkClass="avatarLink"
+                linkClass="footer__credits-link"
                 link="https://avatarmaker.com"
                 linkName="Avatar Maker"
               />
               <FooterLink
                 mainTitle="borderInfo"
-                linkTextClass="borderText"
+                linkTextClass="footer__credits-desc"
                 linkText={borderText}
-                linkClass="borderLink"
+                linkClass="footer__credits-link"
                 link="https://freesvg.org"
                 linkName="Free SVG"
               />
               <FooterLink
                 mainTitle="hobbiesInfo"
-                linkTextClass="hobbiesText"
+                linkTextClass="footer__credits-desc"
                 linkText={hobbiesText}
-                linkClass="hobbiesLink"
+                linkClass="footer__credits-link"
                 link="https://www.pexels.com"
                 linkName="Pexels"
               />

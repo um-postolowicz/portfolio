@@ -18,7 +18,7 @@ const ContactPiece = ({
         rel="noreferrer"
       >
         <h4 className={contactClassTitle}>{contactTitle}</h4>
-        <div className="icon">{contactIcon}</div>
+        <div className="contact__piece-icon">{contactIcon}</div>
         <p className={dataClassTitle}>{contactData}</p>
       </a>
     </>

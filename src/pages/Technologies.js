@@ -12,42 +12,42 @@ const Technologies = () => {
       {({ label }) => {
         return (
           <section className="technologies">
-            <h3 className="technologiesTitle">{label.technologies}</h3>
-            <div className="technologiesContainer">
+            <h3 className="technologies__title">{label.technologies}</h3>
+            <div className="technologies__container">
               <TechPiece
-                techClassName="htmlTitle"
+                techClassName="technologies__piece-title"
                 techIcon={<AiFillHtml5 />}
-                techMain="html tech"
+                techMain="technologies__piece technologies__piece-html"
                 techName="HTML5"
               />
               <TechPiece
-                techClassName="cssTitle"
+                techClassName="technologies__piece-title"
                 techIcon={<DiCss3Full />}
-                techMain="css tech"
+                techMain="technologies__piece technologies__piece-css"
                 techName="CSS3"
               />
               <TechPiece
-                techClassName="sassTitle"
+                techClassName="technologies__piece-title"
                 techIcon={<DiSass />}
-                techMain="sass tech"
+                techMain="technologies__piece technologies__piece-sass"
                 techName="Sass/Scss"
               />
               <TechPiece
-                techClassName="jsTitle"
+                techClassName="technologies__piece-title"
                 techIcon={<SiJavascript />}
-                techMain="javascript tech"
+                techMain="technologies__piece technologies__piece-javascript"
                 techName="JavaScript"
               />
               <TechPiece
-                techClassName="reactTitle"
+                techClassName="technologies__piece-title"
                 techIcon={<FaReact />}
-                techMain="react tech"
+                techMain="technologies__piece technologies__piece-react"
                 techName="ReactJS"
               />
               <TechPiece
-                techClassName="npmTitle"
+                techClassName="technologies__piece-title"
                 techIcon={<DiNpm />}
-                techMain="npm tech"
+                techMain="technologies__piece technologies__piece-npm"
                 techName="NPM"
               />
             </div>

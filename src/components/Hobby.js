@@ -15,15 +15,21 @@ const Hobby = ({
   return (
     <div className={mainClassName}>
       <div
-        className="hexagon"
+        className="hobbies__hobby-hexagon"
         onClick={handleClick}
         style={{ backgroundImage: `url(${imgSrc})` }}
       ></div>
       <div
-        className={isClicked ? "darkHover" : null}
+        className={isClicked ? "hobbies__hobby-darkHover" : null}
         onClick={handleClick}
       ></div>
-      <div className={isClicked ? "hobbyText showTxt" : "hobbyText"}>
+      <div
+        className={
+          isClicked
+            ? "hobbies__hobby-text hobbies__hobby-text--showTxt"
+            : "hobbies__hobby-text"
+        }
+      >
         <h4 className={titleClassName}>{hobbyName}</h4>
         <p className={descClassName}>{hobbyDesc}</p>
       </div>

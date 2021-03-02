@@ -41,7 +41,11 @@ const Menu = () => {
           <>
             {size ? null : (
               <div
-                className={isMenuOpen ? "menu menuWhite" : "menu"}
+                className={
+                  isMenuOpen
+                    ? "header__menu-bars header__menu-bars--white"
+                    : "header__menu-bars"
+                }
                 onClick={handleMenu}
               >
                 {isMenuOpen ? <FaTimes /> : <FaBars />}
@@ -51,18 +55,18 @@ const Menu = () => {
             <ul
               className={
                 size
-                  ? "menuWide"
+                  ? "header__menu-wide"
                   : isMenuOpen
-                  ? "menuList menuOpen"
-                  : "menuList"
+                  ? "header__menu-list header__menu-list--open"
+                  : "header__menu-list"
               }
             >
               <LanguageChoice />
               <li
                 className={
                   size
-                    ? "listElement listWelcome listBig"
-                    : "listElement listWelcome"
+                    ? "header__menu-list-element header__menu-list-element--big"
+                    : "header__menu-list-element"
                 }
               >
                 <Link
@@ -78,8 +82,8 @@ const Menu = () => {
               <li
                 className={
                   size
-                    ? "listElement listAbout listBig"
-                    : "listElement listAbout"
+                    ? "header__menu-list-element header__menu-list-element--big"
+                    : "header__menu-list-element"
                 }
               >
                 <Link
@@ -94,7 +98,9 @@ const Menu = () => {
               </li>
               <li
                 className={
-                  size ? "listElement listTech listBig" : "listElement listTech"
+                  size
+                    ? "header__menu-list-element header__menu-list-element--big"
+                    : "header__menu-list-element"
                 }
               >
                 <Link
@@ -110,8 +116,8 @@ const Menu = () => {
               <li
                 className={
                   size
-                    ? "listElement listProjects listBig"
-                    : "listElement listProjects"
+                    ? "header__menu-list-element header__menu-list-element--big"
+                    : "header__menu-list-element"
                 }
               >
                 <Link
@@ -127,8 +133,8 @@ const Menu = () => {
               <li
                 className={
                   size
-                    ? "listElement listHobbies listBig"
-                    : "listElement listHobbies"
+                    ? "header__menu-list-element header__menu-list-element--big"
+                    : "header__menu-list-element"
                 }
               >
                 {" "}
@@ -145,8 +151,8 @@ const Menu = () => {
               <li
                 className={
                   size
-                    ? "listElement listContact listBig"
-                    : "listElement listContact"
+                    ? "header__menu-list-element header__menu-list-element--big"
+                    : "header__menu-list-element"
                 }
               >
                 <Link to="contact" spy={true} smooth={true} onClick={closeMenu}>

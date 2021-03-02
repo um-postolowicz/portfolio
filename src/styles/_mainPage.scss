@@ -1,4 +1,4 @@
-.mainPage {
+.main-page {
   font-size: 2rem;
   font-family: "Amatic SC", cursive;
   height: 100vh;
@@ -18,7 +18,7 @@
   @include mq(large, $landscape) {
     @include grid(1fr, 45% 55%);
   }
-  .introduction {
+  &__introduction {
     width: 95%;
     flex-basis: 50%;
     margin: 0 auto;
@@ -88,7 +88,7 @@
       }
     }
   }
-  .avatar {
+  &__avatar {
     width: 100%;
     height: 40%;
     text-align: center;
@@ -123,7 +123,7 @@
       justify-self: end;
     }
 
-    &Img {
+    &-img {
       height: 100%;
       margin-bottom: 0;
       @include mq(xxsmall, $portrait) {

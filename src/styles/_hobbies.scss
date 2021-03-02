@@ -2,7 +2,7 @@
   @include size($height: 100vh, $padding: $page-padding-top 0);
   background-color: $dark-blue;
   color: white;
-  &Title {
+  &__title {
     font-size: $page-title-size;
     text-align: center;
     @include mq(xxsmall, $portrait) {
@@ -17,7 +17,7 @@
       padding-top: 15vh;
     }
   }
-  &Tiles {
+  &__container {
     @include grid(repeat(4, 1fr), repeat(2, 1fr), start, center);
     @include size($width: 90vw, $margin: -95px auto);
     @include mq(xxsmall, $portrait) {
@@ -44,433 +44,433 @@
       margin: 25px auto;
     }
   }
-}
-
-.hobby {
-  @include position(relative, auto, auto);
-  @include size($width: 100%, $height: 23.5%);
-  @include flex(row);
-  filter: drop-shadow(0 0 6px rgb(255, 255, 255));
-  &:nth-child(even) {
-    flex-direction: row-reverse;
-    text-align: right;
+  &__hobby {
+    @include position(relative, auto, auto);
+    @include size($width: 100%, $height: 23.5%);
+    @include flex(row);
+    filter: drop-shadow(0 0 6px rgb(255, 255, 255));
+    &-hexagon {
+      @include position(relative, auto, auto);
+      @include size($width: 140px, $height: 150px, $margin: 0);
+      clip-path: $polygon;
+      background-size: cover;
+      z-index: 1;
+      @include mq(xxsmall, $portrait) {
+        @include size($width: 130px, $height: 145px, $margin: 0);
+      }
+      @include mq(xsmall, $portrait) {
+        @include size($width: 170px, $height: 190px, $margin: 0);
+      }
+      @include mq(xsmall, $landscape) {
+        clip-path: $polygon-rotate;
+        @include size($width: 130px, $height: 110px, $margin: 0);
+      }
+      @include mq(small, $landscape) {
+        @include size($width: 150px, $height: 130px, $margin: 0);
+      }
+      @include mq(medium, $portrait) {
+        @include size($width: 220px, $height: 240px, $margin: 0);
+      }
+      @include mq(xmedium, $landscape) {
+        @include size($width: 180px, $height: 155px, $margin: 0);
+      }
+      @include mq(large, $landscape) {
+        @include size($width: 235px, $height: 200px, $margin: 0);
+      }
+      @include mq(xxlarge, $landscape) {
+        @include size($width: 280px, $height: 240px, $margin: 0);
+        cursor: pointer;
+        transition: $transition;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+      @include mq(tremendous, $landscape) {
+        @include size($width: 350px, $height: 310px, $margin: 0);
+      }
+    }
     @include mq(xsmall, $landscape) {
       flex-direction: column;
       height: 100%;
     }
-    .hobbyText {
-      @include mq(medium, $portrait) {
-        right: -15vw;
-      }
-      @include mq(tremendous, $landscape) {
-        right: 125px;
-      }
+    @include mq(medium, $portrait) {
+      margin: 0;
     }
-    .showTxt {
-      right: 100%;
+
+    &-darkHover {
+      @include position(absolute, auto, auto);
+      @include size($width: 140px, $height: 150px, $margin: 0);
+      clip-path: $polygon;
+      z-index: 2;
+      background-color: rgba(0, 0, 0, 0.7);
       @include mq(xxsmall, $portrait) {
-        right: 85%;
+        @include size($width: 130px, $height: 145px, $margin: 0);
+      }
+      @include mq(xsmall, $portrait) {
+        @include size($width: 170px, $height: 190px, $margin: 0);
       }
       @include mq(xsmall, $landscape) {
-        right: 20px;
-        top: -85px;
-      }
-      @include mq(medium, $portrait) {
-        left: -11.5vw;
-      }
-      @include mq(xmedium, $landscape) {
-        right: 40px;
-      }
-      @include mq(large, $landscape) {
-        top: -130px;
-      }
-      @include mq(large, $landscape) {
-        right: 80px;
-      }
-      @include mq(xxxlarge, $landscape) {
-        right: 90px;
-      }
-      @include mq(tremendous, $landscape) {
-        right: 125px;
-      }
-    }
-  }
-  @include mq(xsmall, $landscape) {
-    flex-direction: column;
-    height: 100%;
-  }
-  @include mq(medium, $portrait) {
-    margin: 0;
-  }
-  .hexagon {
-    @include position(relative, auto, auto);
-    @include size($width: 140px, $height: 150px, $margin: 0);
-    clip-path: $polygon;
-    background-size: cover;
-    z-index: 1;
-    @include mq(xxsmall, $portrait) {
-      @include size($width: 130px, $height: 145px, $margin: 0);
-    }
-    @include mq(xsmall, $portrait) {
-      @include size($width: 170px, $height: 190px, $margin: 0);
-    }
-    @include mq(xsmall, $landscape) {
-      clip-path: $polygon-rotate;
-      @include size($width: 130px, $height: 110px, $margin: 0);
-    }
-    @include mq(small, $landscape) {
-      @include size($width: 150px, $height: 130px, $margin: 0);
-    }
-    @include mq(medium, $portrait) {
-      @include size($width: 220px, $height: 240px, $margin: 0);
-    }
-    @include mq(xmedium, $landscape) {
-      @include size($width: 180px, $height: 155px, $margin: 0);
-    }
-    @include mq(large, $landscape) {
-      @include size($width: 235px, $height: 200px, $margin: 0);
-    }
-    @include mq(xxlarge, $landscape) {
-      @include size($width: 280px, $height: 240px, $margin: 0);
-      cursor: pointer;
-      transition: $transition;
-      &:hover {
-        transform: scale(1.1);
-      }
-    }
-    @include mq(tremendous, $landscape) {
-      @include size($width: 350px, $height: 310px, $margin: 0);
-    }
-  }
-  .darkHover {
-    @include position(absolute, auto, auto);
-    @include size($width: 140px, $height: 150px, $margin: 0);
-    clip-path: $polygon;
-    z-index: 2;
-    background-color: rgba(0, 0, 0, 0.7);
-    @include mq(xxsmall, $portrait) {
-      @include size($width: 130px, $height: 145px, $margin: 0);
-    }
-    @include mq(xsmall, $portrait) {
-      @include size($width: 170px, $height: 190px, $margin: 0);
-    }
-    @include mq(xsmall, $landscape) {
-      clip-path: $polygon-rotate;
-      @include size($width: 130px, $height: 110px, $margin: 0);
-    }
-    @include mq(small, $landscape) {
-      @include size($width: 150px, $height: 130px, $margin: 0);
-    }
-    @include mq(medium, $portrait) {
-      @include size($width: 220px, $height: 240px, $margin: 0);
-    }
-    @include mq(xmedium, $landscape) {
-      @include size($width: 180px, $height: 155px, $margin: 0);
-    }
-    @include mq(large, $landscape) {
-      @include size($width: 235px, $height: 200px, $margin: 0);
-    }
-    @include mq(xxlarge, $landscape) {
-      @include size($width: 280px, $height: 240px, $margin: 0);
-    }
-    @include mq(tremendous, $landscape) {
-      @include size($width: 350px, $height: 310px, $margin: 0);
-    }
-  }
-  &Text {
-    @include position(absolute, 120%);
-    @include size($width: 80%, $height: 100%, $padding: 0 10px);
-    transition: 0.3s;
-    @include mq(xxsmall, $portrait) {
-      padding: 0 15px;
-      right: 10%;
-    }
-    @include mq(xsmall, $landscape) {
-      text-align: center;
-      width: 85%;
-      top: 24px;
-      right: 11px;
-    }
-    @include mq(medium, $landscape) {
-      right: 7vh;
-    }
-    @include mq(medium, $portrait) {
-      width: 60%;
-      left: -4vw;
-    }
-    @include mq(xmedium, $landscape) {
-      width: 65%;
-      right: 40px;
-    }
-    @include mq(large, $landscape) {
-      right: 80px;
-    }
-    @include mq(xxxlarge, $landscape) {
-      right: 100px;
-      top: 100px;
-    }
-    @include mq(tremendous, $landscape) {
-      right: 125px;
-    }
-    h4 {
-      font-size: 1.3rem;
-      @include mq(xsmall, $portrait) {
-        font-size: 1.5rem;
-      }
-      @include mq(medium, $portrait) {
-        font-size: 2rem;
-      }
-      @include mq(xmedium, $landscape) {
-        font-size: 1.4rem;
-      }
-      @include mq(large, $landscape) {
-        font-size: 1.8rem;
-        padding-bottom: 10px;
-      }
-      @include mq(tremendous, $landscape) {
-        font-size: 2.2rem;
-      }
-    }
-    p {
-      font-size: 1.2rem;
-      @include mq(xsmall, $portrait) {
-        font-size: 1.3rem;
-      }
-      @include mq(medium, $portrait) {
-        font-size: 1.8rem;
-      }
-      @include mq(xmedium, $landscape) {
-        font-size: 1.3rem;
-      }
-      @include mq(large, $landscape) {
-        font-size: 1.8rem;
-      }
-      @include mq(tremendous, $landscape) {
-        font-size: 2rem;
-      }
-    }
-    &.showTxt {
-      right: -80%;
-      @include mq(xxsmall, $portrait) {
-        right: -65%;
-      }
-      @include mq(xsmall, $landscape) {
-        right: 5px;
-        top: 130px;
+        clip-path: $polygon-rotate;
+        @include size($width: 130px, $height: 110px, $margin: 0);
       }
       @include mq(small, $landscape) {
-        top: 150px;
-      }
-      @include mq(medium, $landscape) {
-        right: 18px;
+        @include size($width: 150px, $height: 130px, $margin: 0);
       }
       @include mq(medium, $portrait) {
-        right: -100%;
+        @include size($width: 220px, $height: 240px, $margin: 0);
       }
       @include mq(xmedium, $landscape) {
-        right: 40px;
-        top: 180px;
+        @include size($width: 180px, $height: 155px, $margin: 0);
       }
       @include mq(large, $landscape) {
-        top: 230px;
-      }
-      @include mq(xlarge, $landscape) {
-        right: 80px;
+        @include size($width: 235px, $height: 200px, $margin: 0);
       }
       @include mq(xxlarge, $landscape) {
-        top: 270px;
+        @include size($width: 280px, $height: 240px, $margin: 0);
+      }
+      @include mq(tremendous, $landscape) {
+        @include size($width: 350px, $height: 310px, $margin: 0);
+      }
+    }
+    &-aviation {
+      left: 37px;
+      top: 50px;
+      @include mq(xxsmall, $portrait) {
+        left: 62px;
+        top: 46px;
+      }
+      @include mq(xsmall, $landscape) {
+        grid-row: 1/2;
+        grid-column: 1/2;
+        left: 42px;
+        top: 28px;
+      }
+      @include mq(small, $landscape) {
+        left: 40px;
+        top: 30px;
+      }
+      @include mq(medium, $portrait) {
+        left: 178px;
+        top: 77px;
+      }
+      @include mq(xmedium, $landscape) {
+        left: 80px;
+        top: 35px;
+      }
+      @include mq(large, $landscape) {
+        left: 73px;
+        top: 80px;
+      }
+      @include mq(xlarge, $landscape) {
+        left: 192px;
+        top: 73px;
+      }
+      @include mq(xlarge, $landscape) {
+        left: 162px;
       }
       @include mq(xxxlarge, $landscape) {
-        right: 90px;
+        left: 230px;
+        top: 70px;
+      }
+      @include mq(tremendous, $landscape) {
+        left: 298px;
+        top: 120px;
+      }
+    }
+    &-crossStitch {
+      right: 37px;
+      top: 17px;
+      grid-column: 2/3;
+      grid-row: 2/3;
+      @include mq(xxsmall, $portrait) {
+        right: 62px;
+        top: 15px;
+      }
+      @include mq(xsmall, $landscape) {
+        grid-row: 2/3;
+        grid-column: 2/3;
+        right: -14px;
+        top: -28px;
+      }
+      @include mq(small, $landscape) {
+        right: -14px;
+        top: -30px;
+      }
+      @include mq(medium, $portrait) {
+        right: 178px;
+        top: 25px;
+      }
+      @include mq(xmedium, $landscape) {
+        right: -27px;
+        top: -35px;
+      }
+      @include mq(large, $landscape) {
+        right: -25px;
+        top: -80px;
+      }
+      @include mq(xlarge, $landscape) {
+        right: -85px;
+        top: -73px;
+      }
+      @include mq(xxlarge, $landscape) {
+        right: -75px;
+      }
+      @include mq(xxxlarge, $landscape) {
+        right: -110px;
+        top: -70px;
+      }
+      @include mq(tremendous, $landscape) {
+        right: -130px;
+        top: -100px;
+      }
+    }
+    &-fantasyBooks {
+      left: 37px;
+      bottom: 17px;
+      grid-row: 3/4;
+      @include mq(xxsmall, $portrait) {
+        left: 62px;
+        bottom: 15px;
+      }
+      @include mq(xsmall, $landscape) {
+        grid-row: 1/2;
+        grid-column: 3/4;
+        left: -14px;
+        bottom: -28px;
+      }
+      @include mq(small, $landscape) {
+        left: -14px;
+        bottom: -30px;
+      }
+      @include mq(medium, $portrait) {
+        left: 178px;
+        bottom: 25px;
+      }
+      @include mq(xmedium, $landscape) {
+        left: -27px;
+        bottom: -35px;
+      }
+      @include mq(large, $landscape) {
+        left: -25px;
+        bottom: -80px;
+      }
+      @include mq(xlarge, $landscape) {
+        left: -25px;
+        bottom: -73px;
+      }
+      @include mq(xlarge, $landscape) {
+        left: -15px;
+      }
+      @include mq(xxxlarge, $landscape) {
+        bottom: -70px;
+      }
+      @include mq(tremendous, $landscape) {
+        left: -40px;
+        bottom: -120px;
+      }
+    }
+    &-jigsaw {
+      right: 37px;
+      bottom: 50px;
+      grid-row: 4/5;
+      grid-column: 2/3;
+      @include mq(xxsmall, $portrait) {
+        right: 62px;
+        bottom: 46px;
+      }
+      @include mq(xsmall, $landscape) {
+        grid-row: 2/3;
+        grid-column: 4/5;
+        bottom: 28px;
+        right: 42px;
+      }
+      @include mq(small, $landscape) {
+        right: 40px;
+        bottom: 30px;
+      }
+      @include mq(medium, $portrait) {
+        right: 178px;
+        bottom: 77px;
+      }
+      @include mq(xmedium, $landscape) {
+        right: 80px;
+        bottom: 35px;
+      }
+      @include mq(large, $landscape) {
+        right: 73px;
+        bottom: 80px;
+      }
+      @include mq(xlarge, $landscape) {
+        right: 132px;
+        bottom: 73px;
+      }
+      @include mq(xlarge, $landscape) {
+        right: 102px;
+      }
+      @include mq(xxxlarge, $landscape) {
+        right: 135px;
+        bottom: 70px;
+      }
+      @include mq(tremendous, $landscape) {
+        right: 205px;
+        bottom: 100px;
+      }
+    }
+    &-text {
+      @include position(absolute, 120%);
+      @include size($width: 80%, $height: 100%, $padding: 0 10px);
+      transition: 0.3s;
+      @include mq(xxsmall, $portrait) {
+        padding: 0 15px;
+        right: 10%;
+      }
+      @include mq(xsmall, $landscape) {
+        text-align: center;
+        width: 85%;
+        top: 24px;
+        right: 11px;
+      }
+      @include mq(medium, $landscape) {
+        right: 7vh;
+      }
+      @include mq(medium, $portrait) {
+        width: 60%;
+        left: -4vw;
+      }
+      @include mq(xmedium, $landscape) {
+        width: 65%;
+        right: 40px;
+      }
+      @include mq(large, $landscape) {
+        right: 80px;
+      }
+      @include mq(xxxlarge, $landscape) {
+        right: 100px;
+        top: 100px;
       }
       @include mq(tremendous, $landscape) {
         right: 125px;
-        top: 350px;
+      }
+      &-title {
+        font-size: 1.3rem;
+        @include mq(xsmall, $portrait) {
+          font-size: 1.5rem;
+        }
+        @include mq(medium, $portrait) {
+          font-size: 2rem;
+        }
+        @include mq(xmedium, $landscape) {
+          font-size: 1.4rem;
+        }
+        @include mq(large, $landscape) {
+          font-size: 1.8rem;
+          padding-bottom: 10px;
+        }
+        @include mq(tremendous, $landscape) {
+          font-size: 2.2rem;
+        }
+      }
+      &-desc {
+        font-size: 1.2rem;
+        @include mq(xsmall, $portrait) {
+          font-size: 1.3rem;
+        }
+        @include mq(medium, $portrait) {
+          font-size: 1.8rem;
+        }
+        @include mq(xmedium, $landscape) {
+          font-size: 1.3rem;
+        }
+        @include mq(large, $landscape) {
+          font-size: 1.8rem;
+        }
+        @include mq(tremendous, $landscape) {
+          font-size: 2rem;
+        }
+      }
+      &--showTxt {
+        right: -80%;
+        @include mq(xxsmall, $portrait) {
+          right: -65%;
+        }
+        @include mq(xsmall, $landscape) {
+          right: 5px;
+          top: 130px;
+        }
+        @include mq(small, $landscape) {
+          top: 150px;
+        }
+        @include mq(medium, $landscape) {
+          right: 18px;
+        }
+        @include mq(medium, $portrait) {
+          right: -100%;
+        }
+        @include mq(xmedium, $landscape) {
+          right: 40px;
+          top: 180px;
+        }
+        @include mq(large, $landscape) {
+          top: 230px;
+        }
+        @include mq(xlarge, $landscape) {
+          right: 80px;
+        }
+        @include mq(xxlarge, $landscape) {
+          top: 270px;
+        }
+        @include mq(xxxlarge, $landscape) {
+          right: 90px;
+        }
+        @include mq(tremendous, $landscape) {
+          right: 125px;
+          top: 350px;
+        }
       }
     }
-  }
-}
-.aviation {
-  left: 37px;
-  top: 50px;
-  @include mq(xxsmall, $portrait) {
-    left: 62px;
-    top: 46px;
-  }
-  @include mq(xsmall, $landscape) {
-    grid-row: 1/2;
-    grid-column: 1/2;
-    left: 42px;
-    top: 28px;
-  }
-  @include mq(small, $landscape) {
-    left: 40px;
-    top: 30px;
-  }
-  @include mq(medium, $portrait) {
-    left: 178px;
-    top: 77px;
-  }
-  @include mq(xmedium, $landscape) {
-    left: 80px;
-    top: 35px;
-  }
-  @include mq(large, $landscape) {
-    left: 73px;
-    top: 80px;
-  }
-  @include mq(xlarge, $landscape) {
-    left: 192px;
-    top: 73px;
-  }
-  @include mq(xlarge, $landscape) {
-    left: 162px;
-  }
-  @include mq(xxxlarge, $landscape) {
-    left: 230px;
-    top: 70px;
-  }
-  @include mq(tremendous, $landscape) {
-    left: 298px;
-    top: 120px;
-  }
-}
-.crossStitch {
-  right: 37px;
-  top: 17px;
-  grid-column: 2/3;
-  grid-row: 2/3;
-  @include mq(xxsmall, $portrait) {
-    right: 62px;
-    top: 15px;
-  }
-  @include mq(xsmall, $landscape) {
-    grid-row: 2/3;
-    grid-column: 2/3;
-    right: -14px;
-    top: -28px;
-  }
-  @include mq(small, $landscape) {
-    right: -14px;
-    top: -30px;
-  }
-  @include mq(medium, $portrait) {
-    right: 178px;
-    top: 25px;
-  }
-  @include mq(xmedium, $landscape) {
-    right: -27px;
-    top: -35px;
-  }
-  @include mq(large, $landscape) {
-    right: -25px;
-    top: -80px;
-  }
-  @include mq(xlarge, $landscape) {
-    right: -85px;
-    top: -73px;
-  }
-  @include mq(xxlarge, $landscape) {
-    right: -75px;
-  }
-  @include mq(xxxlarge, $landscape) {
-    right: -110px;
-    top: -70px;
-  }
-  @include mq(tremendous, $landscape) {
-    right: -130px;
-    top: -100px;
-  }
-}
-.fantasyBooks {
-  left: 37px;
-  bottom: 17px;
-  grid-row: 3/4;
-  @include mq(xxsmall, $portrait) {
-    left: 62px;
-    bottom: 15px;
-  }
-  @include mq(xsmall, $landscape) {
-    grid-row: 1/2;
-    grid-column: 3/4;
-    left: -14px;
-    bottom: -28px;
-  }
-  @include mq(small, $landscape) {
-    left: -14px;
-    bottom: -30px;
-  }
-  @include mq(medium, $portrait) {
-    left: 178px;
-    bottom: 25px;
-  }
-  @include mq(xmedium, $landscape) {
-    left: -27px;
-    bottom: -35px;
-  }
-  @include mq(large, $landscape) {
-    left: -25px;
-    bottom: -80px;
-  }
-  @include mq(xlarge, $landscape) {
-    left: -25px;
-    bottom: -73px;
-  }
-  @include mq(xlarge, $landscape) {
-    left: -15px;
-  }
-  @include mq(xxxlarge, $landscape) {
-    bottom: -70px;
-  }
-  @include mq(tremendous, $landscape) {
-    left: -40px;
-    bottom: -120px;
-  }
-}
-.jigsaw {
-  right: 37px;
-  bottom: 50px;
-  grid-row: 4/5;
-  grid-column: 2/3;
-  @include mq(xxsmall, $portrait) {
-    right: 62px;
-    bottom: 46px;
-  }
-  @include mq(xsmall, $landscape) {
-    grid-row: 2/3;
-    grid-column: 4/5;
-    bottom: 28px;
-    right: 42px;
-  }
-  @include mq(small, $landscape) {
-    right: 40px;
-    bottom: 30px;
-  }
-  @include mq(medium, $portrait) {
-    right: 178px;
-    bottom: 77px;
-  }
-  @include mq(xmedium, $landscape) {
-    right: 80px;
-    bottom: 35px;
-  }
-  @include mq(large, $landscape) {
-    right: 73px;
-    bottom: 80px;
-  }
-  @include mq(xlarge, $landscape) {
-    right: 132px;
-    bottom: 73px;
-  }
-  @include mq(xlarge, $landscape) {
-    right: 102px;
-  }
-  @include mq(xxxlarge, $landscape) {
-    right: 135px;
-    bottom: 70px;
-  }
-  @include mq(tremendous, $landscape) {
-    right: 205px;
-    bottom: 100px;
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+      text-align: right;
+      @include mq(xsmall, $landscape) {
+        flex-direction: column;
+        height: 100%;
+      }
+      .hobbies__hobby-text {
+        @include mq(medium, $portrait) {
+          right: -15vw;
+        }
+        @include mq(tremendous, $landscape) {
+          right: 125px;
+        }
+        &--showTxt {
+          right: 100%;
+          @include mq(xxsmall, $portrait) {
+            right: 85%;
+          }
+          @include mq(xsmall, $landscape) {
+            right: 20px;
+            top: -85px;
+          }
+          @include mq(medium, $portrait) {
+            left: -11.5vw;
+          }
+          @include mq(xmedium, $landscape) {
+            right: 40px;
+          }
+          @include mq(large, $landscape) {
+            top: -130px;
+          }
+          @include mq(large, $landscape) {
+            right: 80px;
+          }
+          @include mq(xxxlarge, $landscape) {
+            right: 90px;
+          }
+          @include mq(tremendous, $landscape) {
+            right: 125px;
+          }
+        }
+      }
+    }
   }
 }
