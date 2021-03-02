@@ -1382,10 +1382,9 @@ html {
 }
 
 .hobbies {
-  width: auto;
   height: 100vh;
-  margin: auto;
-  padding: 20px 0;
+  max-height: 100vh;
+  padding-top: 20px;
   background-color: #071843;
   color: white;
 }
@@ -1418,15 +1417,12 @@ html {
 .hobbies__container {
   display: -ms-grid;
   display: grid;
-  grid: repeat(4, 1fr)/repeat(2, 1fr);
+  grid: repeat(4, calc(150px * 0.577))/repeat(2, calc(140px * 0.75));
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
   justify-items: center;
-  width: 90vw;
-  height: auto;
-  margin: -95px auto;
-  padding: 0;
+  margin: 40px calc((100vw - 2 * (140px * 0.75)) / 2);
 }
 
 @media (orientation: portrait) and (min-width: 359px) {
@@ -1484,9 +1480,8 @@ html {
   top: auto;
   right: auto;
   width: 100%;
-  height: 23.5%;
-  margin: auto;
-  padding: 0;
+  height: 25%;
+  top: -40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1506,110 +1501,6 @@ html {
           filter: drop-shadow(0 0 6px white);
 }
 
-.hobbies__hobby-hexagon {
-  position: relative;
-  top: auto;
-  right: auto;
-  width: 140px;
-  height: 150px;
-  margin: 0;
-  padding: 0;
-  -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-          clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  background-size: cover;
-  z-index: 1;
-}
-
-@media (orientation: portrait) and (min-width: 359px) {
-  .hobbies__hobby-hexagon {
-    width: 130px;
-    height: 145px;
-    margin: 0;
-    padding: 0;
-  }
-}
-
-@media (orientation: portrait) and (min-width: 410px) {
-  .hobbies__hobby-hexagon {
-    width: 170px;
-    height: 190px;
-    margin: 0;
-    padding: 0;
-  }
-}
-
-@media (orientation: landscape) and (min-width: 410px) {
-  .hobbies__hobby-hexagon {
-    -webkit-clip-path: polygon(0 50%, 25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
-            clip-path: polygon(0 50%, 25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
-    width: 130px;
-    height: 110px;
-    margin: 0;
-    padding: 0;
-  }
-}
-
-@media (orientation: landscape) and (min-width: 639px) {
-  .hobbies__hobby-hexagon {
-    width: 150px;
-    height: 130px;
-    margin: 0;
-    padding: 0;
-  }
-}
-
-@media (orientation: portrait) and (min-width: 719px) {
-  .hobbies__hobby-hexagon {
-    width: 220px;
-    height: 240px;
-    margin: 0;
-    padding: 0;
-  }
-}
-
-@media (orientation: landscape) and (min-width: 845px) {
-  .hobbies__hobby-hexagon {
-    width: 180px;
-    height: 155px;
-    margin: 0;
-    padding: 0;
-  }
-}
-
-@media (orientation: landscape) and (min-width: 1023px) {
-  .hobbies__hobby-hexagon {
-    width: 235px;
-    height: 200px;
-    margin: 0;
-    padding: 0;
-  }
-}
-
-@media (orientation: landscape) and (min-width: 1359px) {
-  .hobbies__hobby-hexagon {
-    width: 280px;
-    height: 240px;
-    margin: 0;
-    padding: 0;
-    cursor: pointer;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-  }
-  .hobbies__hobby-hexagon:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-}
-
-@media (orientation: landscape) and (min-width: 1919px) {
-  .hobbies__hobby-hexagon {
-    width: 350px;
-    height: 310px;
-    margin: 0;
-    padding: 0;
-  }
-}
-
 @media (orientation: landscape) and (min-width: 410px) {
   .hobbies__hobby {
     -webkit-box-orient: vertical;
@@ -1626,14 +1517,97 @@ html {
   }
 }
 
+.hobbies__hobby-hexagon {
+  position: absolute;
+  top: auto;
+  right: auto;
+  width: 140px;
+  min-width: 140px;
+  height: 150px;
+  -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+          clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  background-size: cover;
+  z-index: 1;
+}
+
+@media (orientation: portrait) and (min-width: 359px) {
+  .hobbies__hobby-hexagon {
+    width: 130px;
+    height: 145px;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 410px) {
+  .hobbies__hobby-hexagon {
+    width: 170px;
+    height: 190px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 410px) {
+  .hobbies__hobby-hexagon {
+    -webkit-clip-path: polygon(0 50%, 25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+            clip-path: polygon(0 50%, 25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+    width: 130px;
+    height: 110px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 639px) {
+  .hobbies__hobby-hexagon {
+    width: 150px;
+    height: 130px;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 719px) {
+  .hobbies__hobby-hexagon {
+    width: 220px;
+    height: 240px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 845px) {
+  .hobbies__hobby-hexagon {
+    width: 180px;
+    height: 155px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1023px) {
+  .hobbies__hobby-hexagon {
+    width: 235px;
+    height: 200px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1359px) {
+  .hobbies__hobby-hexagon {
+    width: 280px;
+    height: 240px;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .hobbies__hobby-hexagon:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1919px) {
+  .hobbies__hobby-hexagon {
+    width: 350px;
+    height: 310px;
+  }
+}
+
 .hobbies__hobby-darkHover {
   position: absolute;
   top: auto;
   right: auto;
   width: 140px;
   height: 150px;
-  margin: 0;
-  padding: 0;
   -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
           clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   z-index: 2;
@@ -1724,88 +1698,15 @@ html {
 }
 
 .hobbies__hobby-aviation {
-  left: 37px;
-  top: 50px;
-}
-
-@media (orientation: portrait) and (min-width: 359px) {
-  .hobbies__hobby-aviation {
-    left: 62px;
-    top: 46px;
-  }
-}
-
-@media (orientation: landscape) and (min-width: 410px) {
-  .hobbies__hobby-aviation {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1/2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
-    left: 42px;
-    top: 28px;
-  }
-}
-
-@media (orientation: landscape) and (min-width: 639px) {
-  .hobbies__hobby-aviation {
-    left: 40px;
-    top: 30px;
-  }
-}
-
-@media (orientation: portrait) and (min-width: 719px) {
-  .hobbies__hobby-aviation {
-    left: 178px;
-    top: 77px;
-  }
-}
-
-@media (orientation: landscape) and (min-width: 845px) {
-  .hobbies__hobby-aviation {
-    left: 80px;
-    top: 35px;
-  }
-}
-
-@media (orientation: landscape) and (min-width: 1023px) {
-  .hobbies__hobby-aviation {
-    left: 73px;
-    top: 80px;
-  }
-}
-
-@media (orientation: landscape) and (min-width: 1279px) {
-  .hobbies__hobby-aviation {
-    left: 192px;
-    top: 73px;
-  }
-}
-
-@media (orientation: landscape) and (min-width: 1279px) {
-  .hobbies__hobby-aviation {
-    left: 162px;
-  }
-}
-
-@media (orientation: landscape) and (min-width: 1440px) {
-  .hobbies__hobby-aviation {
-    left: 230px;
-    top: 70px;
-  }
-}
-
-@media (orientation: landscape) and (min-width: 1919px) {
-  .hobbies__hobby-aviation {
-    left: 298px;
-    top: 120px;
-  }
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
 }
 
 .hobbies__hobby-crossStitch {
-  right: 37px;
-  top: 17px;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -1814,257 +1715,32 @@ html {
   grid-row: 2/3;
 }
 
-@media (orientation: portrait) and (min-width: 359px) {
-  .hobbies__hobby-crossStitch {
-    right: 62px;
-    top: 15px;
-  }
-}
-
-@media (orientation: landscape) and (min-width: 410px) {
-  .hobbies__hobby-crossStitch {
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
-    grid-row: 2/3;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2/3;
-    right: -14px;
-    top: -28px;
-  }
-}
-
-@media (orientation: landscape) and (min-width: 639px) {
-  .hobbies__hobby-crossStitch {
-    right: -14px;
-    top: -30px;
-  }
-}
-
-@media (orientation: portrait) and (min-width: 719px) {
-  .hobbies__hobby-crossStitch {
-    right: 178px;
-    top: 25px;
-  }
-}
-
-@media (orientation: landscape) and (min-width: 845px) {
-  .hobbies__hobby-crossStitch {
-    right: -27px;
-    top: -35px;
-  }
-}
-
-@media (orientation: landscape) and (min-width: 1023px) {
-  .hobbies__hobby-crossStitch {
-    right: -25px;
-    top: -80px;
-  }
-}
-
-@media (orientation: landscape) and (min-width: 1279px) {
-  .hobbies__hobby-crossStitch {
-    right: -85px;
-    top: -73px;
-  }
-}
-
-@media (orientation: landscape) and (min-width: 1359px) {
-  .hobbies__hobby-crossStitch {
-    right: -75px;
-  }
-}
-
-@media (orientation: landscape) and (min-width: 1440px) {
-  .hobbies__hobby-crossStitch {
-    right: -110px;
-    top: -70px;
-  }
-}
-
-@media (orientation: landscape) and (min-width: 1919px) {
-  .hobbies__hobby-crossStitch {
-    right: -130px;
-    top: -100px;
-  }
-}
-
 .hobbies__hobby-fantasyBooks {
-  left: 37px;
-  bottom: 17px;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
 }
 
-@media (orientation: portrait) and (min-width: 359px) {
-  .hobbies__hobby-fantasyBooks {
-    left: 62px;
-    bottom: 15px;
-  }
-}
-
-@media (orientation: landscape) and (min-width: 410px) {
-  .hobbies__hobby-fantasyBooks {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1/2;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 1;
-    grid-column: 3/4;
-    left: -14px;
-    bottom: -28px;
-  }
-}
-
-@media (orientation: landscape) and (min-width: 639px) {
-  .hobbies__hobby-fantasyBooks {
-    left: -14px;
-    bottom: -30px;
-  }
-}
-
-@media (orientation: portrait) and (min-width: 719px) {
-  .hobbies__hobby-fantasyBooks {
-    left: 178px;
-    bottom: 25px;
-  }
-}
-
-@media (orientation: landscape) and (min-width: 845px) {
-  .hobbies__hobby-fantasyBooks {
-    left: -27px;
-    bottom: -35px;
-  }
-}
-
-@media (orientation: landscape) and (min-width: 1023px) {
-  .hobbies__hobby-fantasyBooks {
-    left: -25px;
-    bottom: -80px;
-  }
-}
-
-@media (orientation: landscape) and (min-width: 1279px) {
-  .hobbies__hobby-fantasyBooks {
-    left: -25px;
-    bottom: -73px;
-  }
-}
-
-@media (orientation: landscape) and (min-width: 1279px) {
-  .hobbies__hobby-fantasyBooks {
-    left: -15px;
-  }
-}
-
-@media (orientation: landscape) and (min-width: 1440px) {
-  .hobbies__hobby-fantasyBooks {
-    bottom: -70px;
-  }
-}
-
-@media (orientation: landscape) and (min-width: 1919px) {
-  .hobbies__hobby-fantasyBooks {
-    left: -40px;
-    bottom: -120px;
-  }
-}
-
 .hobbies__hobby-jigsaw {
-  right: 37px;
-  bottom: 50px;
-  -ms-grid-row: 4;
-  -ms-grid-row-span: 1;
-  grid-row: 4/5;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
-}
-
-@media (orientation: portrait) and (min-width: 359px) {
-  .hobbies__hobby-jigsaw {
-    right: 62px;
-    bottom: 46px;
-  }
-}
-
-@media (orientation: landscape) and (min-width: 410px) {
-  .hobbies__hobby-jigsaw {
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
-    grid-row: 2/3;
-    -ms-grid-column: 4;
-    -ms-grid-column-span: 1;
-    grid-column: 4/5;
-    bottom: 28px;
-    right: 42px;
-  }
-}
-
-@media (orientation: landscape) and (min-width: 639px) {
-  .hobbies__hobby-jigsaw {
-    right: 40px;
-    bottom: 30px;
-  }
-}
-
-@media (orientation: portrait) and (min-width: 719px) {
-  .hobbies__hobby-jigsaw {
-    right: 178px;
-    bottom: 77px;
-  }
-}
-
-@media (orientation: landscape) and (min-width: 845px) {
-  .hobbies__hobby-jigsaw {
-    right: 80px;
-    bottom: 35px;
-  }
-}
-
-@media (orientation: landscape) and (min-width: 1023px) {
-  .hobbies__hobby-jigsaw {
-    right: 73px;
-    bottom: 80px;
-  }
-}
-
-@media (orientation: landscape) and (min-width: 1279px) {
-  .hobbies__hobby-jigsaw {
-    right: 132px;
-    bottom: 73px;
-  }
-}
-
-@media (orientation: landscape) and (min-width: 1279px) {
-  .hobbies__hobby-jigsaw {
-    right: 102px;
-  }
-}
-
-@media (orientation: landscape) and (min-width: 1440px) {
-  .hobbies__hobby-jigsaw {
-    right: 135px;
-    bottom: 70px;
-  }
-}
-
-@media (orientation: landscape) and (min-width: 1919px) {
-  .hobbies__hobby-jigsaw {
-    right: 205px;
-    bottom: 100px;
-  }
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
 }
 
 .hobbies__hobby-text {
   position: absolute;
-  top: 120%;
-  right: 0;
-  width: 80%;
-  height: 100%;
-  margin: auto;
-  padding: 0 10px;
+  top: 50%;
+  right: 50%;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+  width: 100%;
+  padding-left: 5%;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -2194,7 +1870,7 @@ html {
 }
 
 .hobbies__hobby-text--showTxt {
-  right: -80%;
+  right: -90%;
 }
 
 @media (orientation: portrait) and (min-width: 359px) {
@@ -2272,6 +1948,7 @@ html {
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
   text-align: right;
+  top: 0;
 }
 
 @media (orientation: landscape) and (min-width: 410px) {
@@ -2282,6 +1959,11 @@ html {
             flex-direction: column;
     height: 100%;
   }
+}
+
+.hobbies__hobby:nth-child(even) .hobbies__hobby-text {
+  padding-right: 5%;
+  padding-left: 0;
 }
 
 @media (orientation: portrait) and (min-width: 719px) {
@@ -2297,7 +1979,7 @@ html {
 }
 
 .hobbies__hobby:nth-child(even) .hobbies__hobby-text--showTxt {
-  right: 100%;
+  right: 190%;
 }
 
 @media (orientation: portrait) and (min-width: 359px) {
@@ -2347,6 +2029,14 @@ html {
   .hobbies__hobby:nth-child(even) .hobbies__hobby-text--showTxt {
     right: 125px;
   }
+}
+
+.hobbies__hobby:nth-child(3) {
+  top: 40%;
+}
+
+.hobbies__hobby:nth-child(4) {
+  top: 80%;
 }
 
 .contact {
