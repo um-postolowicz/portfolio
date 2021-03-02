@@ -61,6 +61,7 @@
       height: 70%;
     }
     @include mq(xsmall, $landscape) {
+      aspect-ratio: 0/0;
       height: 90%;
       flex-direction: row;
       border-radius: 26px;

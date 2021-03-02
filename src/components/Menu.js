@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Consumer } from "../data/LanguageContext";
+import LanguageContext, { Consumer } from "../data/LanguageContext";
 import LanguageChoice from "./LanguageChoice";
 
 import { Link } from "react-scroll";
@@ -51,115 +51,130 @@ const Menu = () => {
                 {isMenuOpen ? <FaTimes /> : <FaBars />}
               </div>
             )}
-
-            <ul
+            <div
               className={
                 size
                   ? "header__menu-wide"
                   : isMenuOpen
-                  ? "header__menu-list header__menu-list--open"
-                  : "header__menu-list"
+                  ? "header__menu header__menu--open"
+                  : "header__menu"
               }
             >
               <LanguageChoice />
-              <li
-                className={
-                  size
-                    ? "header__menu-list-element header__menu-list-element--big"
-                    : "header__menu-list-element"
-                }
+              <ul
+                className="header__menu-list"
+                // className={
+                //   size
+                //     ? "header__menu-wide"
+                //     : isMenuOpen
+                //     ? "header__menu-list header__menu-list--open"
+                //     : "header__menu-list"
+                // }
               >
-                <Link
-                  activeClass="active"
-                  to="welcome"
-                  spy={true}
-                  smooth={true}
-                  onClick={closeMenu}
+                <li
+                  className={
+                    size
+                      ? "header__menu-list-element header__menu-list-element--big"
+                      : "header__menu-list-element"
+                  }
                 >
-                  {listWelcome}
-                </Link>
-              </li>
-              <li
-                className={
-                  size
-                    ? "header__menu-list-element header__menu-list-element--big"
-                    : "header__menu-list-element"
-                }
-              >
-                <Link
-                  activeClass="active"
-                  to="about"
-                  spy={true}
-                  smooth={true}
-                  onClick={closeMenu}
+                  <Link
+                    activeClass="active"
+                    to="welcome"
+                    spy={true}
+                    smooth={true}
+                    onClick={closeMenu}
+                  >
+                    {listWelcome}
+                  </Link>
+                </li>
+                <li
+                  className={
+                    size
+                      ? "header__menu-list-element header__menu-list-element--big"
+                      : "header__menu-list-element"
+                  }
                 >
-                  {listAbout}
-                </Link>
-              </li>
-              <li
-                className={
-                  size
-                    ? "header__menu-list-element header__menu-list-element--big"
-                    : "header__menu-list-element"
-                }
-              >
-                <Link
-                  activeClass="active"
-                  to="technologies"
-                  spy={true}
-                  smooth={true}
-                  onClick={closeMenu}
+                  <Link
+                    activeClass="active"
+                    to="about"
+                    spy={true}
+                    smooth={true}
+                    onClick={closeMenu}
+                  >
+                    {listAbout}
+                  </Link>
+                </li>
+                <li
+                  className={
+                    size
+                      ? "header__menu-list-element header__menu-list-element--big"
+                      : "header__menu-list-element"
+                  }
                 >
-                  {listTech}
-                </Link>
-              </li>
-              <li
-                className={
-                  size
-                    ? "header__menu-list-element header__menu-list-element--big"
-                    : "header__menu-list-element"
-                }
-              >
-                <Link
-                  activeClass="active"
-                  to="projects"
-                  spy={true}
-                  smooth={true}
-                  onClick={closeMenu}
+                  <Link
+                    activeClass="active"
+                    to="technologies"
+                    spy={true}
+                    smooth={true}
+                    onClick={closeMenu}
+                  >
+                    {listTech}
+                  </Link>
+                </li>
+                <li
+                  className={
+                    size
+                      ? "header__menu-list-element header__menu-list-element--big"
+                      : "header__menu-list-element"
+                  }
                 >
-                  {listProjects}
-                </Link>
-              </li>
-              <li
-                className={
-                  size
-                    ? "header__menu-list-element header__menu-list-element--big"
-                    : "header__menu-list-element"
-                }
-              >
-                {" "}
-                <Link
-                  activeClass="active"
-                  to="hobbies"
-                  spy={true}
-                  smooth={true}
-                  onClick={closeMenu}
+                  <Link
+                    activeClass="active"
+                    to="projects"
+                    spy={true}
+                    smooth={true}
+                    onClick={closeMenu}
+                  >
+                    {listProjects}
+                  </Link>
+                </li>
+                <li
+                  className={
+                    size
+                      ? "header__menu-list-element header__menu-list-element--big"
+                      : "header__menu-list-element"
+                  }
                 >
-                  {listHobbies}
-                </Link>
-              </li>
-              <li
-                className={
-                  size
-                    ? "header__menu-list-element header__menu-list-element--big"
-                    : "header__menu-list-element"
-                }
-              >
-                <Link to="contact" spy={true} smooth={true} onClick={closeMenu}>
-                  {listContact}
-                </Link>
-              </li>
-            </ul>
+                  {" "}
+                  <Link
+                    activeClass="active"
+                    to="hobbies"
+                    spy={true}
+                    smooth={true}
+                    onClick={closeMenu}
+                  >
+                    {listHobbies}
+                  </Link>
+                </li>
+                <li
+                  className={
+                    size
+                      ? "header__menu-list-element header__menu-list-element--big"
+                      : "header__menu-list-element"
+                  }
+                >
+                  <Link
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    onClick={closeMenu}
+                  >
+                    {listContact}
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </>
         );
       }}

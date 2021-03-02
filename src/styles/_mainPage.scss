@@ -13,7 +13,8 @@
     font-size: 2rem;
   }
   @include mq(xsmall, $landscape) {
-    @include grid(60px 1fr, 50% 50%);
+    @include grid(20vh 80vh, 50% 50%);
+    width: 100vw;
   }
   @include mq(large, $landscape) {
     @include grid(1fr, 45% 55%);
@@ -103,7 +104,6 @@
     }
     @include mq(xsmall, $landscape) {
       height: 90%;
-      margin: 10px 0 0;
     }
     @include mq(small, $landscape) {
       width: 90%;
