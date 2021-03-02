@@ -1,10 +1,10 @@
 import React from "react";
 
-const TechPiece = ({ techClassName, techIcon, techMain, techName }) => {
+const TechPiece = ({ techIcon, techMain, techName }) => {
   return (
     <div className={techMain}>
       {techIcon}
-      <p className={techClassName}>{techName}</p>
+      <p className="technologies__piece-title">{techName}</p>
     </div>
   );
 };

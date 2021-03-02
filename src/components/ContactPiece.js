@@ -3,10 +3,8 @@ import React from "react";
 const ContactPiece = ({
   mainClassName,
   contactLink,
-  contactClassTitle,
   contactTitle,
   contactIcon,
-  dataClassTitle,
   contactData,
 }) => {
   return (
@@ -17,9 +15,9 @@ const ContactPiece = ({
         target="_blank"
         rel="noreferrer"
       >
-        <h4 className={contactClassTitle}>{contactTitle}</h4>
+        <h4 className="contact__piece-title">{contactTitle}</h4>
         <div className="contact__piece-icon">{contactIcon}</div>
-        <p className={dataClassTitle}>{contactData}</p>
+        <p className="contact__piece-data">{contactData}</p>
       </a>
     </>
   );

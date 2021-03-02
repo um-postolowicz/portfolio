@@ -15,37 +15,31 @@ const Technologies = () => {
             <h3 className="technologies__title">{label.technologies}</h3>
             <div className="technologies__container">
               <TechPiece
-                techClassName="technologies__piece-title"
                 techIcon={<AiFillHtml5 />}
                 techMain="technologies__piece technologies__piece-html"
                 techName="HTML5"
               />
               <TechPiece
-                techClassName="technologies__piece-title"
                 techIcon={<DiCss3Full />}
                 techMain="technologies__piece technologies__piece-css"
                 techName="CSS3"
               />
               <TechPiece
-                techClassName="technologies__piece-title"
                 techIcon={<DiSass />}
                 techMain="technologies__piece technologies__piece-sass"
                 techName="Sass/Scss"
               />
               <TechPiece
-                techClassName="technologies__piece-title"
                 techIcon={<SiJavascript />}
                 techMain="technologies__piece technologies__piece-javascript"
                 techName="JavaScript"
               />
               <TechPiece
-                techClassName="technologies__piece-title"
                 techIcon={<FaReact />}
                 techMain="technologies__piece technologies__piece-react"
                 techName="ReactJS"
               />
               <TechPiece
-                techClassName="technologies__piece-title"
                 techIcon={<DiNpm />}
                 techMain="technologies__piece technologies__piece-npm"
                 techName="NPM"

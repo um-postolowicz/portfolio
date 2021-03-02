@@ -34,51 +34,39 @@ const Projects = () => {
             <div className="projects__container">
               <Project
                 alt={portfolioAlt}
-                descClassName="projects__project-desc"
                 descTxt={portfolioTxt}
                 githubLink="https://github.com/um-postolowicz/portfolio"
-                imgClassName="projects__project-img"
                 imgSrc={portfolioImg}
                 mainClassName="projects__project projects__project-portfolio "
                 projectLink="https://github.com/um-postolowicz/portfolio"
                 projectName={portfolioTitle}
-                titleClassName="projects__project-title"
               />
               <Project
                 alt={rateMovieAlt}
-                descClassName="projects__project-desc"
                 descTxt={rateMovieTxt}
                 githubLink="https://github.com/um-postolowicz/rate-a-movie"
-                imgClassName="projects__project-img"
                 imgSrc={rateMovieImg}
                 mainClassName="projects__project projects__project-rateMovie"
                 projectLink="https://rateamovie-ump.herokuapp.com"
                 projectName={rateMovieTitle}
-                titleClassName="projects__project-title"
               />
               <Project
                 alt={todoAlt}
-                descClassName="projects__project-desc"
                 descTxt={toDoTxt}
                 githubLink="https://github.com/um-postolowicz/todo"
-                imgClassName="projects__project-img"
                 imgSrc={toDoImg}
                 mainClassName="projects__project projects__project-toDo"
                 projectLink="https://todo-ump.herokuapp.com"
                 projectName={toDoTitle}
-                titleClassName="projects__project-title"
               />
               <Project
                 alt={calculatorAlt}
-                descClassName="projects__project-desc"
                 descTxt={calculatorTxt}
                 githubLink="https://github.com/um-postolowicz/calculator"
-                imgClassName="projects__project-img"
                 imgSrc={calculatorImg}
                 mainClassName="projects__project projects__project-calculator"
                 projectLink="https://calculator-ump.herokuapp.com"
                 projectName={calculatorTitle}
-                titleClassName="projects__project-title"
               />
             </div>
           </section>

@@ -1,17 +1,15 @@
 import React from "react";
 
-const FooterLink = ({
-  mainTitle,
-  linkTextClass,
-  linkText,
-  linkClass,
-  link,
-  linkName,
-}) => {
+const FooterLink = ({ linkText, link, linkName }) => {
   return (
-    <div className={mainTitle}>
-      <p className={linkTextClass}>{linkText}</p>
-      <a className={linkClass} href={link} target="_blank" rel="noreferrer">
+    <div className="footer-credits-piece">
+      <p className="footer__credits-desc">{linkText}</p>
+      <a
+        className="footer__credits-link"
+        href={link}
+        target="_blank"
+        rel="noreferrer"
+      >
         {linkName}
       </a>
     </div>

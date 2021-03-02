@@ -2,15 +2,12 @@ import React, { useState } from "react";
 
 const Project = ({
   alt,
-  descClassName,
   descTxt,
   githubLink,
-  imgClassName,
   imgSrc,
   mainClassName,
   projectLink,
   projectName,
-  titleClassName,
 }) => {
   const [showLink, setShowLink] = useState(false);
 
@@ -19,7 +16,7 @@ const Project = ({
   return (
     <div className={mainClassName}>
       <a
-        className={titleClassName}
+        className="projects__project-title"
         href={projectLink}
         target="_blank"
         rel="noreferrer"
@@ -29,10 +26,10 @@ const Project = ({
       <img
         src={imgSrc}
         alt={alt}
-        className={imgClassName}
+        className="projects__project-img"
         onClick={handleShowLink}
       />
-      <p className={descClassName}>{descTxt}</p>
+      <p className="projects__project-desc">{descTxt}</p>
       {showLink ? (
         <div className="projects__project-gitlink">
           <a href={githubLink} target="_blank" rel="noreferrer">

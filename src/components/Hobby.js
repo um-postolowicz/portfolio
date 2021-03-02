@@ -1,13 +1,6 @@
 import React, { useState } from "react";
 
-const Hobby = ({
-  descClassName,
-  hobbyDesc,
-  hobbyName,
-  imgSrc,
-  mainClassName,
-  titleClassName,
-}) => {
+const Hobby = ({ hobbyDesc, hobbyName, imgSrc, mainClassName }) => {
   const [isClicked, setIsClicked] = useState(false);
 
   const handleClick = () => setIsClicked(!isClicked);
@@ -30,8 +23,8 @@ const Hobby = ({
             : "hobbies__hobby-text"
         }
       >
-        <h4 className={titleClassName}>{hobbyName}</h4>
-        <p className={descClassName}>{hobbyDesc}</p>
+        <h4 className="hobbies__hobby-text-title">{hobbyName}</h4>
+        <p className="hobbies__hobby-text-desc">{hobbyDesc}</p>
       </div>
     </div>
   );
