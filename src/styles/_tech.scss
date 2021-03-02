@@ -1,5 +1,7 @@
 .technologies {
-  @include size($height: 100vh, $padding: $page-padding-top 0 0);
+  height: 100vh;
+  max-height: 100vh;
+  padding-top: $page-padding-top;
   background-color: $dark-blue;
   &Title {
     text-align: center;
@@ -18,7 +20,9 @@
     }
   }
   &Container {
-    @include size($height: 80%, $margin: 20px auto);
+    height: 80%;
+    width: 90%;
+    margin: 30px auto;
     @include grid(repeat(3, 1fr), repeat(2, 1fr));
     font-size: 6rem;
     text-align: center;
@@ -57,8 +61,10 @@
       }
     }
     .tech {
+      aspect-ratio: 1/1;
       @include flex(column, center, space-evenly);
-      @include size(70%, 80%);
+      width: 85%;
+      height: 85%;
       border-radius: 30%;
       box-shadow: -4px 4px 4px 2px #000;
       background-color: white;

@@ -1,5 +1,6 @@
 .contact {
   height: 100vh;
+  max-height: 100vh;
   @include flex($flex-direction: column);
   padding-top: $page-padding-top;
   &Title {

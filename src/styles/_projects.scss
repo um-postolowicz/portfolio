@@ -1,5 +1,8 @@
 .projects {
-  @include size(100vw, 100vh, auto, $page-padding-top 0 0);
+  width: 100vw;
+  max-height: 100vh;
+  height: 100vh;
+  padding-top: $page-padding-top;
   &Title {
     font-size: $page-title-size;
     text-align: center;
@@ -21,7 +24,8 @@
     }
   }
   &Comment {
-    @include size($width: 90%, $margin: 0 auto 15px);
+    width: 90%;
+    margin: 0 auto;
     font-style: italic;
     text-align: center;
     @include mq(xxsmall, $portrait) {
@@ -46,10 +50,11 @@
   }
   &Container {
     @include flex(column, center, center);
-    margin-top: -20px;
+    height: 90%;
     @include mq(xsmall, $landscape) {
       @include grid(repeat(2, 1fr), repeat(2, 1fr));
-      @include size($width: 90%, $margin: -12px auto 0);
+      width: 90%;
+      margin: -12px auto 0;
       column-gap: 10px;
     }
     @include mq(small, $landscape) {
@@ -79,8 +84,9 @@
 }
 
 .project {
-  @include position(relative, auto, auto);
-  @include size($width: 90vw, $height: 20vh);
+  position: relative;
+  width: 90vw;
+  flex-basis: 25%;
   @include grid(20px 1fr, 40% 60%);
   border-bottom: 1px solid #ddd;
   padding: 10px 0;
@@ -88,9 +94,6 @@
     width: 100%;
     height: auto;
     border: none;
-  }
-  @include mq(medium, $portrait) {
-    flex-basis: 25%;
   }
   @include mq(large, $landscape) {
     height: 100%;
@@ -187,7 +190,9 @@
 
 .link {
   @include position(absolute, 30px);
-  @include size($width: 60%, $height: calc(100% - 31px), $padding: 10px);
+  width: 60%;
+  height: calc(100% - 31px);
+  padding: 10px;
   @include flex(row, center, center);
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.8);

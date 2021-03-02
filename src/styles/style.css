@@ -34,6 +34,8 @@ html {
   top: 0;
   right: 0;
   width: 100vw;
+  -ms-flex-preferred-size: 10%;
+      flex-basis: 10%;
 }
 
 @media (orientation: landscape) and (min-width: 410px) {
@@ -352,6 +354,23 @@ html {
   color: #e5eafa;
   letter-spacing: 2px;
   text-shadow: 3px 3px black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 @media (orientation: portrait) and (min-width: 359px) {
@@ -386,18 +405,16 @@ html {
 
 .mainPage .introduction {
   width: 95%;
-  height: 40vh;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
   margin: 0 auto;
-  padding: 0;
   text-align: center;
 }
 
 @media (orientation: portrait) and (min-width: 410px) {
   .mainPage .introduction {
     width: 80%;
-    height: auto;
-    margin: 50px auto 0;
-    padding: 0;
+    margin: 50px auto;
     font-size: 2.4rem;
   }
 }
@@ -510,11 +527,10 @@ html {
 }
 
 .mainPage .avatar {
-  width: 90%;
-  height: auto;
-  margin: 35px auto 0;
-  padding: 0;
+  width: 100%;
+  height: 40%;
   text-align: center;
+  margin-bottom: 0;
 }
 
 @media (orientation: portrait) and (min-width: 359px) {
@@ -527,27 +543,21 @@ html {
 @media (orientation: portrait) and (min-width: 410px) {
   .mainPage .avatar {
     width: 95%;
-    height: auto;
     margin: 37px auto 0;
-    padding: 0;
   }
 }
 
 @media (orientation: landscape) and (min-width: 410px) {
   .mainPage .avatar {
-    width: auto;
     height: 90%;
     margin: 10px 0 0;
-    padding: 0;
   }
 }
 
 @media (orientation: landscape) and (min-width: 639px) {
   .mainPage .avatar {
     width: 90%;
-    height: auto;
     margin: 20px 0 0;
-    padding: 0;
   }
 }
 
@@ -581,10 +591,8 @@ html {
 }
 
 .mainPage .avatarImg {
-  width: 85%;
-  height: auto;
-  margin: 0 auto;
-  padding: 0;
+  height: 100%;
+  margin-bottom: 0;
 }
 
 @media (orientation: portrait) and (min-width: 359px) {
@@ -620,6 +628,7 @@ html {
 
 .about {
   height: 100vh;
+  max-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -681,10 +690,8 @@ html {
 }
 
 .aboutTxt {
-  width: auto;
   height: calc(100% - 20px);
   margin: 10px;
-  padding: 0;
   background-image: none;
   background-color: white;
   border-radius: 11px 72px;
@@ -730,7 +737,6 @@ html {
 
 .aboutDesc {
   width: 85%;
-  height: auto;
   margin: 0 auto;
   padding: 0 0 20px 0;
   font-size: 1.5rem;
@@ -782,10 +788,9 @@ html {
 }
 
 .technologies {
-  width: auto;
   height: 100vh;
-  margin: auto;
-  padding: 20px 0 0;
+  max-height: 100vh;
+  padding-top: 20px;
   background-color: #071843;
 }
 
@@ -816,10 +821,9 @@ html {
 }
 
 .technologiesContainer {
-  width: auto;
   height: 80%;
-  margin: 20px auto;
-  padding: 0;
+  width: 90%;
+  margin: 30px auto;
   display: -ms-grid;
   display: grid;
   grid: repeat(3, 1fr)/repeat(2, 1fr);
@@ -897,6 +901,7 @@ html {
 }
 
 .technologiesContainer .tech {
+  aspect-ratio: 1/1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -912,10 +917,8 @@ html {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  width: 70%;
-  height: 80%;
-  margin: auto;
-  padding: 0;
+  width: 85%;
+  height: 85%;
   border-radius: 30%;
   -webkit-box-shadow: -4px 4px 4px 2px #000;
           box-shadow: -4px 4px 4px 2px #000;
@@ -984,9 +987,9 @@ html {
 
 .projects {
   width: 100vw;
+  max-height: 100vh;
   height: 100vh;
-  margin: auto;
-  padding: 20px 0 0;
+  padding-top: 20px;
 }
 
 .projectsTitle {
@@ -1024,9 +1027,7 @@ html {
 
 .projectsComment {
   width: 90%;
-  height: auto;
-  margin: 0 auto 15px;
-  padding: 0;
+  margin: 0 auto;
   font-style: italic;
   text-align: center;
 }
@@ -1084,7 +1085,7 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: -20px;
+  height: 90%;
 }
 
 @media (orientation: landscape) and (min-width: 410px) {
@@ -1097,9 +1098,7 @@ html {
             align-items: center;
     justify-items: center;
     width: 90%;
-    height: auto;
     margin: -12px auto 0;
-    padding: 0;
     -webkit-column-gap: 10px;
             column-gap: 10px;
   }
@@ -1149,12 +1148,9 @@ html {
 
 .project {
   position: relative;
-  top: auto;
-  right: auto;
   width: 90vw;
-  height: 20vh;
-  margin: auto;
-  padding: 0;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
   display: -ms-grid;
   display: grid;
   grid: 20px 1fr/40% 60%;
@@ -1171,13 +1167,6 @@ html {
     width: 100%;
     height: auto;
     border: none;
-  }
-}
-
-@media (orientation: portrait) and (min-width: 719px) {
-  .project {
-    -ms-flex-preferred-size: 25%;
-        flex-basis: 25%;
   }
 }
 
@@ -1352,7 +1341,6 @@ html {
   right: 0;
   width: 60%;
   height: calc(100% - 31px);
-  margin: auto;
   padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2366,6 +2354,7 @@ html {
 
 .contact {
   height: 100vh;
+  max-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
