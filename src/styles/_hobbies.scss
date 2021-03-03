@@ -87,7 +87,7 @@
     @include mq(xxlarge, $landscape) {
       --row-size-l: #{$xxxlarge-height-l};
       --column-size-l: #{$xxxlarge-width-l};
-      margin-top: calc((100vw - 4.7 * var(--row-size-l)) / 2);
+      margin-top: calc((100vw - 5 * var(--row-size-l)) / 2);
     }
     @include mq(tremendous, $landscape) {
       --row-size-l: #{$tremendous-height-l};

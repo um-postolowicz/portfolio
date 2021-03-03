@@ -101,15 +101,18 @@
         margin: 0;
         display: block;
         border: none;
+        font-weight: normal;
         flex-basis: 13%;
         &--big:active,
         &--big:focus,
         &--big:hover {
           font-weight: bold;
+          text-shadow: -4px 4px #666;
         }
         & .active {
           @include mq(xxxlarge, $landscape) {
             font-weight: bold;
+            text-shadow: -4px 4px #666;
           }
         }
       }

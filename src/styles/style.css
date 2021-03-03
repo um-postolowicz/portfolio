@@ -356,17 +356,20 @@ html {
   margin: 0;
   display: block;
   border: none;
+  font-weight: normal;
   -ms-flex-preferred-size: 13%;
       flex-basis: 13%;
 }
 
 .header__menu-wide .header__menu-list-element--big:active, .header__menu-wide .header__menu-list-element--big:focus, .header__menu-wide .header__menu-list-element--big:hover {
   font-weight: bold;
+  text-shadow: -4px 4px #666;
 }
 
 @media (orientation: landscape) and (min-width: 1439px) {
   .header__menu-wide .header__menu-list-element .active {
     font-weight: bold;
+    text-shadow: -4px 4px #666;
   }
 }
 
@@ -1678,7 +1681,7 @@ html {
   .hobbies__container {
     --row-size-l: 260px;
     --column-size-l: 300px;
-    margin-top: calc((100vw - 4.7 * var(--row-size-l)) / 2);
+    margin-top: calc((100vw - 5 * var(--row-size-l)) / 2);
   }
 }
 
