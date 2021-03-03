@@ -77,6 +77,12 @@
       margin-top: 50px;
       height: 60%;
     }
+    @include mq(xxlarge, $landscape) {
+      column-gap: 20px;
+    }
+    @include mq(xxxlarge, $landscape) {
+      width: 85%;
+    }
     @include mq(tremendous, $landscape) {
       height: 65%;
       width: 80%;

@@ -63,6 +63,9 @@
     @include mq(xlarge, $landscape) {
       text-align: right;
     }
+    @include mq(xxlarge, $landscape) {
+      padding-top: 40px;
+    }
     @include mq(xxxlarge, $landscape) {
       margin-top: 30vh;
     }
@@ -166,8 +169,11 @@
       @include mq(xlarge, $landscape) {
         width: 92%;
       }
+      @include mq(xxlarge, $landscape) {
+        width: 78%;
+      }
       @include mq(xxxlarge, $landscape) {
-        width: 70%;
+        width: 82%;
       }
       @include mq(tremendous, $landscape) {
         width: 80%;

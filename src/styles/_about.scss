@@ -33,7 +33,7 @@
       height: 70%;
     }
     @include mq(xxlarge, $landscape) {
-      height: 60%;
+      height: 65%;
     }
   }
   &__txt {
@@ -105,6 +105,9 @@
       font-size: 2.3rem;
       width: 70%;
       padding-top: 20px;
+    }
+    @include mq(xxxlarge, $landscape) {
+      font-size: 2.5rem;
     }
     @include mq(tremendous, $landscape) {
       font-size: 3rem;

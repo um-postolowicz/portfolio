@@ -79,8 +79,20 @@
       --column-size-l: #{$xlarge-width-l};
       margin-top: calc((100vw - 4.6 * var(--row-size-l)) / 2);
     }
+    @include mq(xxlarge, $landscape) {
+      --row-size-l: #{$xxlarge-height-l};
+      --column-size-l: #{$xxlarge-width-l};
+      margin-top: calc((100vw - 5 * var(--row-size-l)) / 2);
+    }
+    @include mq(xxlarge, $landscape) {
+      --row-size-l: #{$xxxlarge-height-l};
+      --column-size-l: #{$xxxlarge-width-l};
+      margin-top: calc((100vw - 4.7 * var(--row-size-l)) / 2);
+    }
     @include mq(tremendous, $landscape) {
-      margin: 25px auto;
+      --row-size-l: #{$tremendous-height-l};
+      --column-size-l: #{$tremendous-width-l};
+      margin-top: calc((100vw - 4.7 * var(--row-size-l)) / 2);
     }
   }
   &__hobby {
@@ -124,7 +136,7 @@
           min-width: $xlarge-width-l;
         }
         @include mq(tremendous, $landscape) {
-          right: 125px;
+          min-width: $tremendous-width-l;
         }
         &--showTxt {
           right: 190%;
@@ -137,12 +149,6 @@
           }
           @include mq(large, $landscape) {
             top: -160%;
-          }
-          @include mq(xxxlarge, $landscape) {
-            right: 90px;
-          }
-          @include mq(tremendous, $landscape) {
-            right: 125px;
           }
         }
       }
@@ -219,17 +225,24 @@
         height: $xlarge-height-l;
       }
       @include mq(xxlarge, $landscape) {
-        width: 280px;
-        height: 240px;
+        min-width: $xxlarge-width-l;
+        width: $xxlarge-width-l;
+        height: $xxlarge-height-l;
         cursor: pointer;
         transition: $transition;
         &:hover {
           transform: scale(1.1);
         }
       }
+      @include mq(xxxlarge, $landscape) {
+        min-width: $xxxlarge-width-l;
+        width: $xxxlarge-width-l;
+        height: $xxxlarge-height-l;
+      }
       @include mq(tremendous, $landscape) {
-        width: 350px;
-        height: 310px;
+        min-width: $tremendous-width-l;
+        width: $tremendous-width-l;
+        height: $tremendous-height-l;
       }
     }
     &-darkHover {
@@ -281,10 +294,17 @@
         height: $xlarge-height-l;
       }
       @include mq(xxlarge, $landscape) {
-        @include size($width: 280px, $height: 240px, $margin: 0);
+        width: $xxlarge-width-l;
+        height: $xxlarge-height-l;
+      }
+      @include mq(xxxlarge, $landscape) {
+        width: $xxxlarge-width-l;
+        height: $xxxlarge-height-l;
       }
       @include mq(tremendous, $landscape) {
-        @include size($width: 350px, $height: 310px, $margin: 0);
+        min-width: $tremendous-width-l;
+        width: $tremendous-width-l;
+        height: $tremendous-height-l;
       }
     }
     &-aviation {
@@ -343,11 +363,10 @@
         min-width: $xlarge-width-l;
       }
       @include mq(xxxlarge, $landscape) {
-        right: 100px;
-        top: 100px;
+        min-width: $xxxlarge-width-l;
       }
       @include mq(tremendous, $landscape) {
-        right: 125px;
+        min-width: $tremendous-width-l;
       }
       &-title {
         font-size: 1.3rem;
@@ -421,14 +440,10 @@
           top: 430%;
         }
         @include mq(xxlarge, $landscape) {
-          top: 270px;
-        }
-        @include mq(xxxlarge, $landscape) {
-          right: 90px;
+          top: 500%;
         }
         @include mq(tremendous, $landscape) {
-          right: 125px;
-          top: 350px;
+          top: 620%;
         }
       }
     }

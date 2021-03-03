@@ -46,7 +46,7 @@ $breakpoints: (
   large: "min-width: 1023px",
   xlarge: "min-width: 1279px",
   xxlarge: "min-width: 1359px",
-  xxxlarge: "min-width:1440px",
+  xxxlarge: "min-width:1439px",
   tremendous: "min-width:1919px",
 );
 
@@ -99,3 +99,12 @@ $large-width-l: 235px;
 
 $xlarge-height-l: 230px;
 $xlarge-width-l: 265px;
+
+$xxlarge-height-l: 240px;
+$xxlarge-width-l: 280px;
+
+$xxxlarge-height-l: 260px;
+$xxxlarge-width-l: 300px;
+
+$tremendous-height-l: 365px;
+$tremendous-width-l: 420px;

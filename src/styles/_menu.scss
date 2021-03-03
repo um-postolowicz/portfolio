@@ -50,6 +50,9 @@
       @include mq(large, $landscape) {
         @include flex(row, center, space-around);
       }
+      @include mq(tremendous, $landscape) {
+        font-size: 2.8rem;
+      }
       &-element {
         @include flex(row, center, center);
         @include size($width: 90%, $margin: 0 auto);

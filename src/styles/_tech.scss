@@ -48,6 +48,9 @@
       height: 73%;
       font-size: 7rem;
     }
+    @include mq(xxlarge, $landscape) {
+      font-size: 8rem;
+    }
     @include mq(xxxlarge, $landscape) {
       font-weight: bold;
     }

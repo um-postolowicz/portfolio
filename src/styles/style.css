@@ -252,6 +252,12 @@ html {
   }
 }
 
+@media (orientation: landscape) and (min-width: 1919px) {
+  .header__menu-list {
+    font-size: 2.8rem;
+  }
+}
+
 .header__menu-list-element {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -332,7 +338,7 @@ html {
   }
 }
 
-@media (orientation: landscape) and (min-width: 1440px) {
+@media (orientation: landscape) and (min-width: 1439px) {
   .header__menu-wide {
     font-size: 2.5rem;
   }
@@ -358,7 +364,7 @@ html {
   font-weight: bold;
 }
 
-@media (orientation: landscape) and (min-width: 1440px) {
+@media (orientation: landscape) and (min-width: 1439px) {
   .header__menu-wide .header__menu-list-element .active {
     font-weight: bold;
   }
@@ -499,7 +505,13 @@ html {
   }
 }
 
-@media (orientation: landscape) and (min-width: 1440px) {
+@media (orientation: landscape) and (min-width: 1359px) {
+  .main-page__introduction {
+    padding-top: 40px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1439px) {
   .main-page__introduction {
     margin-top: 30vh;
   }
@@ -544,7 +556,7 @@ html {
   }
 }
 
-@media (orientation: landscape) and (min-width: 1440px) {
+@media (orientation: landscape) and (min-width: 1439px) {
   .main-page__introduction h1 {
     font-size: 5.8rem;
   }
@@ -671,9 +683,15 @@ html {
   }
 }
 
-@media (orientation: landscape) and (min-width: 1440px) {
+@media (orientation: landscape) and (min-width: 1359px) {
   .main-page__avatar-img {
-    width: 70%;
+    width: 78%;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1439px) {
+  .main-page__avatar-img {
+    width: 82%;
   }
 }
 
@@ -748,7 +766,7 @@ html {
 
 @media (orientation: landscape) and (min-width: 1359px) {
   .about__border {
-    height: 60%;
+    height: 65%;
   }
 }
 
@@ -861,6 +879,12 @@ html {
   }
 }
 
+@media (orientation: landscape) and (min-width: 1439px) {
+  .about__desc {
+    font-size: 2.5rem;
+  }
+}
+
 @media (orientation: landscape) and (min-width: 1919px) {
   .about__desc {
     font-size: 3rem;
@@ -953,7 +977,13 @@ html {
   }
 }
 
-@media (orientation: landscape) and (min-width: 1440px) {
+@media (orientation: landscape) and (min-width: 1359px) {
+  .technologies__container {
+    font-size: 8rem;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1439px) {
   .technologies__container {
     font-weight: bold;
   }
@@ -1023,7 +1053,7 @@ html {
   }
 }
 
-@media (orientation: landscape) and (min-width: 1440px) {
+@media (orientation: landscape) and (min-width: 1439px) {
   .technologies__piece {
     width: 65%;
   }
@@ -1224,6 +1254,19 @@ html {
   .projects__container {
     margin-top: 50px;
     height: 60%;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1359px) {
+  .projects__container {
+    -webkit-column-gap: 20px;
+            column-gap: 20px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1439px) {
+  .projects__container {
+    width: 85%;
   }
 }
 
@@ -1623,9 +1666,27 @@ html {
   }
 }
 
+@media (orientation: landscape) and (min-width: 1359px) {
+  .hobbies__container {
+    --row-size-l: 240px;
+    --column-size-l: 280px;
+    margin-top: calc((100vw - 5 * var(--row-size-l)) / 2);
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1359px) {
+  .hobbies__container {
+    --row-size-l: 260px;
+    --column-size-l: 300px;
+    margin-top: calc((100vw - 4.7 * var(--row-size-l)) / 2);
+  }
+}
+
 @media (orientation: landscape) and (min-width: 1919px) {
   .hobbies__container {
-    margin: 25px auto;
+    --row-size-l: 365px;
+    --column-size-l: 420px;
+    margin-top: calc((100vw - 4.7 * var(--row-size-l)) / 2);
   }
 }
 
@@ -1727,7 +1788,7 @@ html {
 
 @media (orientation: landscape) and (min-width: 1919px) {
   .hobbies__hobby:nth-child(even) .hobbies__hobby-text {
-    right: 125px;
+    min-width: 420px;
   }
 }
 
@@ -1752,18 +1813,6 @@ html {
 @media (orientation: landscape) and (min-width: 1023px) {
   .hobbies__hobby:nth-child(even) .hobbies__hobby-text--showTxt {
     top: -160%;
-  }
-}
-
-@media (orientation: landscape) and (min-width: 1440px) {
-  .hobbies__hobby:nth-child(even) .hobbies__hobby-text--showTxt {
-    right: 90px;
-  }
-}
-
-@media (orientation: landscape) and (min-width: 1919px) {
-  .hobbies__hobby:nth-child(even) .hobbies__hobby-text--showTxt {
-    right: 125px;
   }
 }
 
@@ -1874,6 +1923,7 @@ html {
 
 @media (orientation: landscape) and (min-width: 1359px) {
   .hobbies__hobby-hexagon {
+    min-width: 280px;
     width: 280px;
     height: 240px;
     cursor: pointer;
@@ -1886,10 +1936,19 @@ html {
   }
 }
 
+@media (orientation: landscape) and (min-width: 1439px) {
+  .hobbies__hobby-hexagon {
+    min-width: 300px;
+    width: 300px;
+    height: 260px;
+  }
+}
+
 @media (orientation: landscape) and (min-width: 1919px) {
   .hobbies__hobby-hexagon {
-    width: 350px;
-    height: 310px;
+    min-width: 420px;
+    width: 420px;
+    height: 365px;
   }
 }
 
@@ -1971,17 +2030,21 @@ html {
   .hobbies__hobby-darkHover {
     width: 280px;
     height: 240px;
-    margin: 0;
-    padding: 0;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1439px) {
+  .hobbies__hobby-darkHover {
+    width: 300px;
+    height: 260px;
   }
 }
 
 @media (orientation: landscape) and (min-width: 1919px) {
   .hobbies__hobby-darkHover {
-    width: 350px;
-    height: 310px;
-    margin: 0;
-    padding: 0;
+    min-width: 420px;
+    width: 420px;
+    height: 365px;
   }
 }
 
@@ -2099,16 +2162,15 @@ html {
   }
 }
 
-@media (orientation: landscape) and (min-width: 1440px) {
+@media (orientation: landscape) and (min-width: 1439px) {
   .hobbies__hobby-text {
-    right: 100px;
-    top: 100px;
+    min-width: 300px;
   }
 }
 
 @media (orientation: landscape) and (min-width: 1919px) {
   .hobbies__hobby-text {
-    right: 125px;
+    min-width: 420px;
   }
 }
 
@@ -2233,20 +2295,13 @@ html {
 
 @media (orientation: landscape) and (min-width: 1359px) {
   .hobbies__hobby-text--showTxt {
-    top: 270px;
-  }
-}
-
-@media (orientation: landscape) and (min-width: 1440px) {
-  .hobbies__hobby-text--showTxt {
-    right: 90px;
+    top: 500%;
   }
 }
 
 @media (orientation: landscape) and (min-width: 1919px) {
   .hobbies__hobby-text--showTxt {
-    right: 125px;
-    top: 350px;
+    top: 620%;
   }
 }
 
