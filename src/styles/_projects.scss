@@ -1,7 +1,6 @@
 .projects {
-  width: 100vw;
+  @include size(100vw, 100vh);
   max-height: 100vh;
-  height: 100vh;
   padding-top: $page-padding-top;
   &__title {
     font-size: $page-title-size;
@@ -84,8 +83,7 @@
       width: 85%;
     }
     @include mq(tremendous, $landscape) {
-      height: 65%;
-      width: 80%;
+      @include size(80%, 65%);
       column-gap: 50px;
       row-gap: 30px;
     }
@@ -98,8 +96,7 @@
     border-bottom: 1px solid #ddd;
     padding: 10px 0;
     @include mq(xsmall, $landscape) {
-      width: 100%;
-      height: auto;
+      @include size(100%, auto);
       border: none;
     }
     @include mq(large, $landscape) {
@@ -216,8 +213,7 @@
     }
     &-gitlink {
       @include position(absolute, 30px);
-      width: 60%;
-      height: calc(100% - 31px);
+      @include size(60%, calc(100% - 31px));
       padding: 10px;
       @include flex(row, center, center);
       border-radius: 10px;

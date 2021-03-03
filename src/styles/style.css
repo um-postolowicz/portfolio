@@ -300,10 +300,11 @@ html {
 
 .header__menu-wide {
   position: fixed;
-  background-color: #051335;
-  height: 12vh;
   top: 0;
+  right: 0;
   width: 100%;
+  height: 12vh;
+  background-color: #051335;
   font-family: "Josefin Sans", sans-serif;
   z-index: 100;
   display: -webkit-box;
@@ -744,8 +745,8 @@ html {
 
 @media (orientation: portrait) and (min-width: 719px) {
   .about__border {
-    height: 75%;
     width: 75%;
+    height: 75%;
   }
 }
 
@@ -924,8 +925,8 @@ html {
 }
 
 .technologies__container {
-  height: 80%;
   width: 90%;
+  height: 80%;
   margin: 30px auto;
   display: -ms-grid;
   display: grid;
@@ -969,8 +970,8 @@ html {
 @media (orientation: landscape) and (min-width: 1023px) {
   .technologies__container {
     width: 80%;
-    padding-top: 10px;
     height: 73%;
+    padding-top: 10px;
     font-size: 7rem;
   }
 }
@@ -1040,8 +1041,8 @@ html {
   .technologies__piece {
     width: 65%;
     height: 80%;
-    height: 75%;
     width: 75%;
+    height: 75%;
   }
 }
 
@@ -1105,8 +1106,8 @@ html {
 
 .projects {
   width: 100vw;
-  max-height: 100vh;
   height: 100vh;
+  max-height: 100vh;
   padding-top: 20px;
 }
 
@@ -1270,8 +1271,8 @@ html {
 
 @media (orientation: landscape) and (min-width: 1919px) {
   .projects__container {
-    height: 65%;
     width: 80%;
+    height: 65%;
     -webkit-column-gap: 50px;
             column-gap: 50px;
     row-gap: 30px;
@@ -1839,8 +1840,8 @@ html {
   top: auto;
   right: auto;
   width: 130px;
-  min-width: 130px;
   height: 140px;
+  min-width: 130px;
   -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
           clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   background-size: cover;
@@ -1849,19 +1850,19 @@ html {
 
 @media (orientation: portrait) and (min-width: 359px) {
   .hobbies__hobby-hexagon {
-    width: 145px;
     min-width: 145px;
+    width: 145px;
     height: 160px;
-    width: 170px;
     min-width: 170px;
+    width: 170px;
     height: 200px;
   }
 }
 
 @media (orientation: portrait) and (min-width: 410px) {
   .hobbies__hobby-hexagon {
-    width: 170px;
     min-width: 170px;
+    width: 170px;
     height: 190px;
   }
 }
@@ -1870,16 +1871,16 @@ html {
   .hobbies__hobby-hexagon {
     -webkit-clip-path: polygon(0 50%, 25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
             clip-path: polygon(0 50%, 25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
-    width: 140px;
     min-width: 140px;
+    width: 140px;
     height: 120px;
   }
 }
 
 @media (orientation: landscape) and (min-width: 639px) {
   .hobbies__hobby-hexagon {
-    width: 160px;
     min-width: 160px;
+    width: 160px;
     height: 140px;
   }
 }
@@ -1984,6 +1985,8 @@ html {
             clip-path: polygon(0 50%, 25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
     width: 140px;
     height: 120px;
+    width: 140px;
+    height: 120px;
   }
 }
 
@@ -1998,6 +2001,10 @@ html {
   .hobbies__hobby-darkHover {
     width: 220px;
     height: 240px;
+    width: 220px;
+    height: 240px;
+    width: 260px;
+    height: 280px;
     width: 260px;
     height: 280px;
   }
@@ -2040,7 +2047,6 @@ html {
 
 @media (orientation: landscape) and (min-width: 1919px) {
   .hobbies__hobby-darkHover {
-    min-width: 420px;
     width: 420px;
     height: 365px;
   }

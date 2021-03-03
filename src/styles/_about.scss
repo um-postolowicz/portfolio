@@ -3,8 +3,7 @@
   max-height: 100vh;
   @include flex(column, center, center);
   &__border {
-    width: 85%;
-    height: 90%;
+    @include size(85%, 90%);
     margin: 30px auto;
     padding: 0;
     background: rgb(248, 248, 255);
@@ -24,13 +23,11 @@
       height: 75%;
     }
     @include mq(medium, $portrait) {
-      height: 75%;
-      width: 75%;
+      @include size(75%, 75%);
     }
     @include mq(large, $landscape) {
       margin-top: 16vh;
-      width: 70%;
-      height: 75%;
+      @include size(70%, 75%);
     }
     @include mq(xlarge, $landscape) {
       height: 70%;

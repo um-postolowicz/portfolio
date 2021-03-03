@@ -38,3 +38,8 @@
   top: $top;
   right: $right;
 }
+
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}

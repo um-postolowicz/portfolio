@@ -20,8 +20,7 @@
     }
   }
   &__container {
-    height: 80%;
-    width: 90%;
+    @include size(90%, 80%);
     margin: 30px auto;
     @include grid(repeat(3, 1fr), repeat(2, 1fr));
     font-size: 6rem;
@@ -33,8 +32,7 @@
       margin-top: 50px;
     }
     @include mq(xsmall, $landscape) {
-      width: 90%;
-      height: 82%;
+      @include size(90%, 82%);
       margin: 15px auto 0;
     }
     @include mq(medium, $portrait) {
@@ -45,9 +43,8 @@
       }
     }
     @include mq(large, $landscape) {
-      width: 80%;
+      @include size(80%, 73%);
       padding-top: 10px;
-      height: 73%;
       font-size: 7rem;
     }
     @include mq(xxlarge, $landscape) {
@@ -60,8 +57,7 @@
   &__piece {
     aspect-ratio: 1/1;
     @include flex(column, center, space-evenly);
-    width: 85%;
-    height: 85%;
+    @include size(85%, 85%);
     border-radius: 30%;
     box-shadow: -4px 4px 4px 2px #000;
     background-color: white;
@@ -78,11 +74,9 @@
       border-radius: 26px;
     }
     @include mq(medium, $portrait) {
-      width: 65%;
-      height: 80%;
+      @include size(65%, 80%);
       @if (min-height: 1279px) {
-        height: 75%;
-        width: 75%;
+        @include size(75%, 75%);
       }
     }
     @include mq(large, $landscape) {

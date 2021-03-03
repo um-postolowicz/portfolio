@@ -97,8 +97,7 @@
   }
   &__hobby {
     @include position(relative, auto, auto);
-    width: 100%;
-    height: 25%;
+    @include size(100%, 25%);
     top: -40%;
     @include flex(row);
     @include mq(xsmall, $landscape) {
@@ -167,67 +166,55 @@
     }
     &-hexagon {
       @include position(absolute, auto, auto);
-      width: $basic-width;
+      @include size($basic-width, $basic-height);
       min-width: $basic-width;
-      height: $basic-height;
       clip-path: $polygon;
       background-size: cover;
       z-index: 1;
       @include mq(xxsmall, $portrait) {
-        width: $xxsmall-width;
         min-width: $xxsmall-width;
-        height: $xxsmall-height;
+        @include size($xxsmall-width, $xxsmall-height);
         @if (min-height: 850px) {
-          width: $x393-width;
           min-width: $x393-width;
-          height: $x393-height;
+          @include size($x393-width, $x393-height);
         }
       }
       @include mq(xsmall, $portrait) {
-        width: $xsmall-width;
         min-width: $xsmall-width;
-        height: $xsmall-height;
+        @include size($xsmall-width, $xsmall-height);
       }
       @include mq(xsmall, $landscape) {
         clip-path: $polygon-rotate;
-        width: $basic-width-l;
         min-width: $basic-width-l;
-        height: $basic-height-l;
+        @include size($basic-width-l, $basic-height-l);
       }
       @include mq(small, $landscape) {
-        width: $small-width-l;
         min-width: $small-width-l;
-        height: $small-height-l;
+        @include size($small-width-l, $small-height-l);
       }
       @include mq(medium, $portrait) {
         min-width: $medium-width;
-        width: $medium-width;
-        height: $medium-height;
+        @include size($medium-width, $medium-height);
         @if (min-height: 1279px) {
           min-width: $x800-width;
-          width: $x800-width;
-          height: $x800-height;
+          @include size($x800-width, $x800-height);
         }
       }
       @include mq(xmedium, $landscape) {
         min-width: $xmedium-width-l;
-        width: $xmedium-width-l;
-        height: $xmedium-height-l;
+        @include size($xmedium-width-l, $xmedium-height-l);
       }
       @include mq(large, $landscape) {
         min-width: $large-width-l;
-        width: $large-width-l;
-        height: $large-height-l;
+        @include size($large-width-l, $large-height-l);
       }
       @include mq(xlarge, $landscape) {
         min-width: $xlarge-width-l;
-        width: $xlarge-width-l;
-        height: $xlarge-height-l;
+        @include size($xlarge-width-l, $xlarge-height-l);
       }
       @include mq(xxlarge, $landscape) {
         min-width: $xxlarge-width-l;
-        width: $xxlarge-width-l;
-        height: $xxlarge-height-l;
+        @include size($xxlarge-width-l, $xxlarge-height-l);
         cursor: pointer;
         transition: $transition;
         &:hover {
@@ -236,75 +223,64 @@
       }
       @include mq(xxxlarge, $landscape) {
         min-width: $xxxlarge-width-l;
-        width: $xxxlarge-width-l;
-        height: $xxxlarge-height-l;
+        @include size($xxxlarge-width-l, $xxxlarge-height-l);
       }
       @include mq(tremendous, $landscape) {
         min-width: $tremendous-width-l;
-        width: $tremendous-width-l;
-        height: $tremendous-height-l;
+        @include size($tremendous-width-l, $tremendous-height-l);
       }
     }
     &-darkHover {
       @include position(absolute, auto, auto);
-      width: $basic-width;
-      height: $basic-height;
+      @include size($basic-width, $basic-height);
       clip-path: $polygon;
       z-index: 2;
       background-color: rgba(0, 0, 0, 0.7);
       @include mq(xxsmall, $portrait) {
-        width: $xxsmall-width;
-        height: $xxsmall-height;
+        @include size($xxsmall-width, $xxsmall-height);
         @if (min-height: 850px) {
-          width: $x393-width;
-          height: $x393-height;
+          @include size($x393-width, $x393-height);
         }
       }
       @include mq(xsmall, $portrait) {
-        width: $xsmall-width;
-        height: $xsmall-height;
+        @include size($xsmall-width, $xsmall-height);
       }
       @include mq(xsmall, $landscape) {
         clip-path: $polygon-rotate;
+        @include size($basic-width-l, $basic-height-l);
         width: $basic-width-l;
         height: $basic-height-l;
       }
       @include mq(small, $landscape) {
-        width: $small-width-l;
-        height: $small-height-l;
+        @include size($small-width-l, $small-height-l);
       }
       @include mq(medium, $portrait) {
+        @include size($medium-width, $medium-height);
         width: $medium-width;
         height: $medium-height;
         @if (min-height: 1279px) {
+          @include size($x800-width, $x800-height);
           width: $x800-width;
           height: $x800-height;
         }
       }
       @include mq(xmedium, $landscape) {
-        width: $xmedium-width-l;
-        height: $xmedium-height-l;
+        @include size($xmedium-width-l, $xmedium-height-l);
       }
       @include mq(large, $landscape) {
-        width: $large-width-l;
-        height: $large-height-l;
+        @include size($large-width-l, $large-height-l);
       }
       @include mq(xlarge, $landscape) {
-        width: $xlarge-width-l;
-        height: $xlarge-height-l;
+        @include size($xlarge-width-l, $xlarge-height-l);
       }
       @include mq(xxlarge, $landscape) {
-        width: $xxlarge-width-l;
-        height: $xxlarge-height-l;
+        @include size($xxlarge-width-l, $xxlarge-height-l);
       }
       @include mq(xxxlarge, $landscape) {
-        width: $xxxlarge-width-l;
-        height: $xxxlarge-height-l;
+        @include size($xxxlarge-width-l, $xxxlarge-height-l);
       }
       @include mq(tremendous, $landscape) {
-        min-width: $tremendous-width-l;
-        width: $tremendous-width-l;
-        height: $tremendous-height-l;
+        @include size($tremendous-width-l, $tremendous-height-l);
       }
     }
     &-aviation {
@@ -334,8 +310,7 @@
     &-text {
       @include position(absolute, 50%, 50%);
       transform: translate(50%, 20%);
-      width: 100%;
-      height: $basic-height;
+      @include size(100%, $basic-height);
       padding-left: 5%;
       transition: 0.3s;
       @include mq(xxsmall, $portrait) {
