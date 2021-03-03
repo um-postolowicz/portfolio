@@ -52,6 +52,7 @@
   }
   &__container {
     @include flex(column, center, center);
+    flex-wrap: nowrap;
     height: 90%;
     @include mq(xsmall, $landscape) {
       @include grid(repeat(2, 1fr), repeat(2, 1fr));
