@@ -23,6 +23,7 @@
   &__flag {
     &--img {
       box-shadow: 0 0 4px 2px #ddd;
+      height: 30px;
       @include mq(xsmall, $portrait) {
         height: 40px;
       }

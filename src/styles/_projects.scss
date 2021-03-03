@@ -39,9 +39,9 @@
     }
     @include mq(medium, $portrait) {
       font-size: 1.7rem;
-      @if (min-height: 1279px) {
-        font-size: 2rem;
-      }
+    }
+    @include mq(medium, $portrait, "min-height: 1279px") {
+      font-size: 2rem;
     }
     @include mq(large, $landscape) {
       font-size: 1.9rem;
@@ -54,6 +54,7 @@
     @include flex(column, center, center);
     flex-wrap: nowrap;
     height: 90%;
+
     @include mq(xsmall, $landscape) {
       @include grid(repeat(2, 1fr), repeat(2, 1fr));
       width: 90%;
@@ -92,7 +93,7 @@
   &__project {
     position: relative;
     width: 90vw;
-    flex-basis: 25%;
+    flex-basis: 24%;
     @include grid(20px 1fr, 40% 60%);
     border-bottom: 1px solid #ddd;
     padding: 10px 0;
@@ -130,10 +131,8 @@
       text-align: center;
       font-size: 1.3rem;
       color: $dark-blue;
-      @include mq(xxsmall, $portrait) {
-        @if (min-height: 850px) {
-          font-size: 1.7rem;
-        }
+      @include mq(xxsmall, $portrait, "min-height: 850px") {
+        font-size: 1.7rem;
       }
       @include mq(xsmall, $portrait) {
         font-size: 1.5rem;
@@ -143,9 +142,9 @@
       }
       @include mq(medium, $portrait) {
         font-size: 2rem;
-        @if (min-height: 1279px) {
-          font-size: 2.5rem;
-        }
+      }
+      @include mq(medium, $portrait, "min-height: 1279px") {
+        font-size: 2.5rem;
       }
       @include mq(large, $landscape) {
         font-size: 2rem;
@@ -156,10 +155,8 @@
     }
     &-desc {
       font-size: 1.2rem;
-      @include mq(xxsmall, $portrait) {
-        @if (min-height: 850px) {
-          font-size: 1.5rem;
-        }
+      @include mq(xxsmall, $portrait, "min-height: 850px") {
+        font-size: 1.5rem;
       }
       @include mq(xsmall, $portrait) {
         font-size: 1.4rem;
@@ -169,9 +166,9 @@
       }
       @include mq(medium, $portrait) {
         font-size: 1.9rem;
-        @if (min-height: 1279px) {
-          font-size: 2.3rem;
-        }
+      }
+      @include mq(medium, $portrait, "min-height: 1279px") {
+        font-size: 2.3rem;
       }
       @include mq(xmedium, $landscape) {
         font-size: 1.5rem;
@@ -185,10 +182,8 @@
     }
     &-img {
       width: 65%;
-      @include mq(xxsmall, $portrait) {
-        @if (min-height: 850px) {
-          width: 80%;
-        }
+      @include mq(xxsmall, $portrait, "min-height: 850px") {
+        width: 80%;
       }
       @include mq(xsmall, $portrait) {
         width: 70%;
@@ -223,19 +218,17 @@
         color: white;
         font-size: 1.5rem;
         text-align: center;
-        @include mq(xxsmall, $portrait) {
-          @if (min-height: 850px) {
-            font-size: 1.7rem;
-          }
+        @include mq(xxsmall, $portrait, "min-height: 850px") {
+          font-size: 1.7rem;
         }
         @include mq(small, $landscape) {
           font-size: 1.6rem;
         }
         @include mq(medium, $portrait) {
           font-size: 2rem;
-          @if (min-height: 1279px) {
-            font-size: 3rem;
-          }
+        }
+        @include mq(medium, $portrait, "min-height: 1279px") {
+          font-size: 3rem;
         }
         @include mq(large, $landscape) {
           font-size: 2.5rem;

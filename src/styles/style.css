@@ -45,7 +45,7 @@ html {
       flex-basis: 10%;
 }
 
-@media (orientation: landscape) and (min-width: 410px) {
+@media (orientation: landscape) and (min-width: 410px) and (none) {
   .header {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
@@ -72,19 +72,19 @@ html {
       justify-content: space-around;
 }
 
-@media (orientation: portrait) and (min-width: 359px) {
+@media (orientation: portrait) and (min-width: 359px) and (none) {
   .header__languages {
     padding-top: 30px;
   }
 }
 
-@media (orientation: portrait) and (min-width: 410px) {
+@media (orientation: portrait) and (min-width: 410px) and (none) {
   .header__languages {
     padding-top: 40px;
   }
 }
 
-@media (orientation: landscape) and (min-width: 410px) {
+@media (orientation: landscape) and (min-width: 410px) and (none) {
   .header__languages {
     padding-top: 25px;
   }
@@ -93,21 +93,22 @@ html {
 .header__flag--img {
   -webkit-box-shadow: 0 0 4px 2px #ddd;
           box-shadow: 0 0 4px 2px #ddd;
+  height: 30px;
 }
 
-@media (orientation: portrait) and (min-width: 410px) {
+@media (orientation: portrait) and (min-width: 410px) and (none) {
   .header__flag--img {
     height: 40px;
   }
 }
 
-@media (orientation: landscape) and (min-width: 639px) {
+@media (orientation: landscape) and (min-width: 639px) and (none) {
   .header__flag--img {
     height: 35px;
   }
 }
 
-@media (orientation: portrait) and (min-width: 719px) {
+@media (orientation: portrait) and (min-width: 719px) and (none) {
   .header__flag--img {
     height: 45px;
   }
@@ -172,7 +173,7 @@ html {
   z-index: 101;
 }
 
-@media (orientation: portrait) and (min-width: 719px) {
+@media (orientation: portrait) and (min-width: 719px) and (none) {
   .header__menu-bars {
     font-size: 4rem;
   }
@@ -211,7 +212,7 @@ html {
           justify-content: center;
 }
 
-@media (orientation: landscape) and (min-width: 410px) {
+@media (orientation: landscape) and (min-width: 410px) and (none) {
   .header__menu-list {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -219,19 +220,19 @@ html {
   }
 }
 
-@media (orientation: portrait) and (min-width: 719px) {
+@media (orientation: portrait) and (min-width: 719px) and (none) {
   .header__menu-list {
     font-size: 3.2rem;
   }
 }
 
-@media (orientation: landscape) and (min-width: 845px) {
+@media (orientation: landscape) and (min-width: 845px) and (none) {
   .header__menu-list {
     font-size: 2.2rem;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1023px) {
+@media (orientation: landscape) and (min-width: 1023px) and (none) {
   .header__menu-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -250,7 +251,7 @@ html {
   }
 }
 
-@media (orientation: landscape) and (min-width: 1919px) {
+@media (orientation: landscape) and (min-width: 1919px) and (none) {
   .header__menu-list {
     font-size: 2.8rem;
   }
@@ -283,13 +284,13 @@ html {
   border: none;
 }
 
-@media (orientation: landscape) and (min-width: 410px) {
+@media (orientation: landscape) and (min-width: 410px) and (none) {
   .header__menu-list-element:nth-of-type(3) {
     border: none;
   }
 }
 
-@media (orientation: landscape) and (min-width: 410px) {
+@media (orientation: landscape) and (min-width: 410px) and (none) {
   .header__menu-list-element {
     -ms-flex-preferred-size: 30%;
         flex-basis: 30%;
@@ -328,14 +329,14 @@ html {
           box-shadow: 0 0 6px 4px #000;
 }
 
-@media (orientation: landscape) and (min-width: 1279px) {
+@media (orientation: landscape) and (min-width: 1279px) and (none) {
   .header__menu-wide {
     font-size: 2rem;
     cursor: pointer;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1439px) {
+@media (orientation: landscape) and (min-width: 1439px) and (none) {
   .header__menu-wide {
     font-size: 2.5rem;
   }
@@ -363,7 +364,7 @@ html {
   text-shadow: -4px 4px #666;
 }
 
-@media (orientation: landscape) and (min-width: 1439px) {
+@media (orientation: landscape) and (min-width: 1439px) and (none) {
   .header__menu-wide .header__menu-list-element .active {
     font-weight: bold;
     text-shadow: -4px 4px #666;
@@ -399,13 +400,13 @@ html {
       flex-wrap: nowrap;
 }
 
-@media (orientation: portrait) and (min-width: 359px) {
+@media (orientation: portrait) and (min-width: 359px) and (none) {
   .main-page {
     font-size: 2rem;
   }
 }
 
-@media (orientation: landscape) and (min-width: 410px) {
+@media (orientation: landscape) and (min-width: 410px) and (none) {
   .main-page {
     display: -ms-grid;
     display: grid;
@@ -418,7 +419,7 @@ html {
   }
 }
 
-@media (orientation: landscape) and (min-width: 1023px) {
+@media (orientation: landscape) and (min-width: 1023px) and (none) {
   .main-page {
     display: -ms-grid;
     display: grid;
@@ -438,13 +439,13 @@ html {
   text-align: center;
 }
 
-@media (orientation: portrait) and (min-width: 359px) {
+@media (orientation: portrait) and (min-width: 359px) and (none) {
   .main-page__introduction {
     width: 90%;
   }
 }
 
-@media (orientation: portrait) and (min-width: 410px) {
+@media (orientation: portrait) and (min-width: 410px) and (none) {
   .main-page__introduction {
     width: 80%;
     margin: 50px auto;
@@ -452,41 +453,46 @@ html {
   }
 }
 
-@media (orientation: landscape) and (min-width: 410px) {
+@media (orientation: landscape) and (min-width: 410px) and (none) {
   .main-page__introduction {
     font-size: 1.7rem;
     height: 90%;
   }
 }
 
-@media (orientation: landscape) and (min-width: 639px) {
+@media (orientation: landscape) and (min-width: 639px) and (none) {
   .main-page__introduction {
     font-size: 1.9rem;
     width: 85%;
   }
 }
 
-@media (orientation: landscape) and (min-width: 719px) {
+@media (orientation: landscape) and (min-width: 719px) and (none) {
   .main-page__introduction {
     font-size: 2rem;
   }
 }
 
-@media (orientation: portrait) and (min-width: 719px) {
+@media (orientation: portrait) and (min-width: 719px) and (none) {
   .main-page__introduction {
     width: 85%;
     margin-top: 4vh;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 719px) and (min-height: 1279px) {
+  .main-page__introduction {
     width: 80%;
   }
 }
 
-@media (orientation: landscape) and (min-width: 845px) {
+@media (orientation: landscape) and (min-width: 845px) and (none) {
   .main-page__introduction {
     font-size: 2.2rem;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1023px) {
+@media (orientation: landscape) and (min-width: 1023px) and (none) {
   .main-page__introduction {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
@@ -499,19 +505,19 @@ html {
   }
 }
 
-@media (orientation: landscape) and (min-width: 1279px) {
+@media (orientation: landscape) and (min-width: 1279px) and (none) {
   .main-page__introduction {
     text-align: right;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1359px) {
+@media (orientation: landscape) and (min-width: 1359px) and (none) {
   .main-page__introduction {
     padding-top: 40px;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1439px) {
+@media (orientation: landscape) and (min-width: 1439px) and (none) {
   .main-page__introduction {
     margin-top: 30vh;
   }
@@ -521,79 +527,84 @@ html {
   margin-top: 10px;
 }
 
-@media (orientation: portrait) and (min-width: 359px) {
+@media (orientation: portrait) and (min-width: 359px) and (min-height: 850px) {
   .main-page__introduction h1 {
     margin-bottom: 16px;
     font-size: 4rem;
   }
 }
 
-@media (orientation: portrait) and (min-width: 410px) {
+@media (orientation: portrait) and (min-width: 410px) and (none) {
   .main-page__introduction h1 {
     margin-bottom: 15px;
     font-size: 3.5rem;
   }
 }
 
-@media (orientation: portrait) and (min-width: 719px) {
+@media (orientation: portrait) and (min-width: 719px) and (none) {
   .main-page__introduction h1 {
     padding-bottom: 20px;
     font-size: 5rem;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 719px) and (min-height: 1279px) {
+  .main-page__introduction h1 {
     font-size: 5.5rem;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1023px) {
+@media (orientation: landscape) and (min-width: 1023px) and (none) {
   .main-page__introduction h1 {
     font-size: 5rem;
     padding-bottom: 30px;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1279px) {
+@media (orientation: landscape) and (min-width: 1279px) and (none) {
   .main-page__introduction h1 {
     font-size: 5rem;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1439px) {
+@media (orientation: landscape) and (min-width: 1439px) and (none) {
   .main-page__introduction h1 {
     font-size: 5.8rem;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1919px) {
+@media (orientation: landscape) and (min-width: 1919px) and (none) {
   .main-page__introduction h1 {
     font-size: 7rem;
     padding-bottom: 50px;
   }
 }
 
-@media (orientation: portrait) and (min-width: 359px) {
+@media (orientation: portrait) and (min-width: 359px) and (min-height: 850px) {
   .main-page__introduction h2 {
     font-size: 3.8rem;
   }
 }
 
-@media (orientation: portrait) and (min-width: 410px) {
+@media (orientation: portrait) and (min-width: 410px) and (none) {
   .main-page__introduction h2 {
     font-size: 3.2rem;
   }
 }
 
-@media (orientation: portrait) and (min-width: 719px) {
+@media (orientation: portrait) and (min-width: 719px) and (none) {
   .main-page__introduction h2 {
     font-size: 4.5rem;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1023px) {
+@media (orientation: landscape) and (min-width: 1023px) and (none) {
   .main-page__introduction h2 {
     font-size: 4.5rem;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1279px) {
+@media (orientation: landscape) and (min-width: 1279px) and (none) {
   .main-page__introduction h2 {
     font-size: 5rem;
   }
@@ -606,35 +617,40 @@ html {
   margin-bottom: 0;
 }
 
-@media (orientation: portrait) and (min-width: 359px) {
+@media (orientation: portrait) and (min-width: 359px) and (none) {
   .main-page__avatar {
     -ms-flex-preferred-size: 60%;
         flex-basis: 60%;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 359px) and (min-height: 850px) {
+  .main-page__avatar {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
   }
 }
 
-@media (orientation: portrait) and (min-width: 410px) {
+@media (orientation: portrait) and (min-width: 410px) and (none) {
   .main-page__avatar {
     width: 95%;
   }
 }
 
-@media (orientation: landscape) and (min-width: 410px) {
+@media (orientation: landscape) and (min-width: 410px) and (none) {
   .main-page__avatar {
     height: 90%;
   }
 }
 
-@media (orientation: landscape) and (min-width: 639px) {
+@media (orientation: landscape) and (min-width: 639px) and (none) {
   .main-page__avatar {
     width: 90%;
     margin: 20px 0 0;
   }
 }
 
-@media (orientation: portrait) and (min-width: 719px) {
+@media (orientation: portrait) and (min-width: 719px) and (none) {
   .main-page__avatar {
     width: 75%;
     margin-top: 35px;
@@ -643,13 +659,13 @@ html {
   }
 }
 
-@media (orientation: landscape) and (min-width: 845px) {
+@media (orientation: landscape) and (min-width: 845px) and (none) {
   .main-page__avatar {
     margin-top: 25px;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1023px) {
+@media (orientation: landscape) and (min-width: 1023px) and (none) {
   .main-page__avatar {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
@@ -671,31 +687,31 @@ html {
   margin-bottom: 0;
 }
 
-@media (orientation: landscape) and (min-width: 1023px) {
+@media (orientation: landscape) and (min-width: 1023px) and (none) {
   .main-page__avatar-img {
     width: 100%;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1279px) {
+@media (orientation: landscape) and (min-width: 1279px) and (none) {
   .main-page__avatar-img {
     width: 92%;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1359px) {
+@media (orientation: landscape) and (min-width: 1359px) and (none) {
   .main-page__avatar-img {
     width: 78%;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1439px) {
+@media (orientation: landscape) and (min-width: 1439px) and (none) {
   .main-page__avatar-img {
     width: 82%;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1919px) {
+@media (orientation: landscape) and (min-width: 1919px) and (none) {
   .main-page__avatar-img {
     width: 80%;
   }
@@ -731,26 +747,26 @@ html {
   border-radius: 15px 80px;
 }
 
-@media (orientation: portrait) and (min-width: 359px) {
+@media (orientation: portrait) and (min-width: 359px) and (min-height: 850px) {
   .about__border {
     height: 75%;
   }
 }
 
-@media (orientation: portrait) and (min-width: 410px) {
+@media (orientation: portrait) and (min-width: 410px) and (none) {
   .about__border {
     height: 75%;
   }
 }
 
-@media (orientation: portrait) and (min-width: 719px) {
+@media (orientation: portrait) and (min-width: 719px) and (none) {
   .about__border {
     width: 75%;
     height: 75%;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1023px) {
+@media (orientation: landscape) and (min-width: 1023px) and (none) {
   .about__border {
     margin-top: 16vh;
     width: 70%;
@@ -758,13 +774,13 @@ html {
   }
 }
 
-@media (orientation: landscape) and (min-width: 1279px) {
+@media (orientation: landscape) and (min-width: 1279px) and (none) {
   .about__border {
     height: 70%;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1359px) {
+@media (orientation: landscape) and (min-width: 1359px) and (none) {
   .about__border {
     height: 65%;
   }
@@ -779,13 +795,13 @@ html {
   text-align: center;
 }
 
-@media (orientation: portrait) and (min-width: 359px) {
+@media (orientation: portrait) and (min-width: 359px) and (none) {
   .about__txt {
     padding: calc((100vh - 90vh) / 2) calc((100vw - 90vw) / 2);
   }
 }
 
-@media (orientation: portrait) and (min-width: 410px) {
+@media (orientation: portrait) and (min-width: 410px) and (none) {
   .about__txt {
     padding: 50px 10px;
   }
@@ -796,33 +812,33 @@ html {
   padding: 30px;
 }
 
-@media (orientation: portrait) and (min-width: 359px) {
+@media (orientation: portrait) and (min-width: 359px) and (none) {
   .about__header {
     font-size: 2.2rem;
     padding-top: 0;
   }
 }
 
-@media (orientation: portrait) and (min-width: 410px) {
+@media (orientation: portrait) and (min-width: 410px) and (none) {
   .about__header {
     padding-top: 20px;
   }
 }
 
-@media (orientation: landscape) and (min-width: 410px) {
+@media (orientation: landscape) and (min-width: 410px) and (none) {
   .about__header {
     padding: 20px;
   }
 }
 
-@media (orientation: portrait) and (min-width: 719px) {
+@media (orientation: portrait) and (min-width: 719px) and (none) {
   .about__header {
     font-size: 3rem;
     padding-bottom: 10px;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1023px) {
+@media (orientation: landscape) and (min-width: 1023px) and (none) {
   .about__header {
     font-size: 3.4rem;
     padding-top: 40px;
@@ -836,28 +852,33 @@ html {
   font-size: 1.5rem;
 }
 
-@media (orientation: portrait) and (min-width: 359px) {
+@media (orientation: portrait) and (min-width: 359px) and (none) {
   .about__desc {
     width: 80%;
     font-size: 1.7rem;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 359px) and (min-height: 780px) {
+  .about__desc {
     font-size: 1.9rem;
   }
 }
 
-@media (orientation: portrait) and (min-width: 410px) {
+@media (orientation: portrait) and (min-width: 410px) and (none) {
   .about__desc {
     width: 75%;
     font-size: 1.8rem;
   }
 }
 
-@media (orientation: landscape) and (min-width: 719px) {
+@media (orientation: landscape) and (min-width: 719px) and (none) {
   .about__desc {
     font-size: 1.7rem;
   }
 }
 
-@media (orientation: portrait) and (min-width: 719px) {
+@media (orientation: portrait) and (min-width: 719px) and (none) {
   .about__desc {
     font-size: 2.4rem;
     padding-top: 40px;
@@ -865,13 +886,19 @@ html {
   }
 }
 
-@media (orientation: landscape) and (min-width: 845px) {
+@media (orientation: portrait) and (min-width: 719px) and (min-height: 1279px) {
+  .about__desc {
+    font-size: 2.9rem;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 845px) and (none) {
   .about__desc {
     padding-top: 10px;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1023px) {
+@media (orientation: landscape) and (min-width: 1023px) and (none) {
   .about__desc {
     font-size: 2.3rem;
     width: 70%;
@@ -879,13 +906,13 @@ html {
   }
 }
 
-@media (orientation: landscape) and (min-width: 1439px) {
+@media (orientation: landscape) and (min-width: 1439px) and (none) {
   .about__desc {
     font-size: 2.5rem;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1919px) {
+@media (orientation: landscape) and (min-width: 1919px) and (none) {
   .about__desc {
     font-size: 3rem;
   }
@@ -904,20 +931,20 @@ html {
   font-size: 2rem;
 }
 
-@media (orientation: portrait) and (min-width: 359px) {
+@media (orientation: portrait) and (min-width: 359px) and (none) {
   .technologies__title {
     font-size: 2.2rem;
   }
 }
 
-@media (orientation: portrait) and (min-width: 719px) {
+@media (orientation: portrait) and (min-width: 719px) and (none) {
   .technologies__title {
     font-size: 3rem;
     padding-top: 20px;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1023px) {
+@media (orientation: landscape) and (min-width: 1023px) and (none) {
   .technologies__title {
     padding-top: 15vh;
     font-size: 3.4rem;
@@ -939,19 +966,19 @@ html {
   text-align: center;
 }
 
-@media (orientation: portrait) and (min-width: 359px) {
+@media (orientation: portrait) and (min-width: 359px) and (none) {
   .technologies__container {
     margin-top: 30px;
   }
 }
 
-@media (orientation: portrait) and (min-width: 410px) {
+@media (orientation: portrait) and (min-width: 410px) and (none) {
   .technologies__container {
     margin-top: 50px;
   }
 }
 
-@media (orientation: landscape) and (min-width: 410px) {
+@media (orientation: landscape) and (min-width: 410px) and (none) {
   .technologies__container {
     width: 90%;
     height: 82%;
@@ -959,15 +986,20 @@ html {
   }
 }
 
-@media (orientation: portrait) and (min-width: 719px) {
+@media (orientation: portrait) and (min-width: 719px) and (none) {
   .technologies__container {
     width: 88%;
     font-size: 8rem;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 719px) and (min-height: 1279px) {
+  .technologies__container {
     font-size: 10rem;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1023px) {
+@media (orientation: landscape) and (min-width: 1023px) and (none) {
   .technologies__container {
     width: 80%;
     height: 73%;
@@ -976,13 +1008,13 @@ html {
   }
 }
 
-@media (orientation: landscape) and (min-width: 1359px) {
+@media (orientation: landscape) and (min-width: 1359px) and (none) {
   .technologies__container {
     font-size: 8rem;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1439px) {
+@media (orientation: landscape) and (min-width: 1439px) and (none) {
   .technologies__container {
     font-weight: bold;
   }
@@ -1013,19 +1045,19 @@ html {
   background-color: white;
 }
 
-@media (orientation: portrait) and (min-width: 359px) {
+@media (orientation: portrait) and (min-width: 359px) and (none) {
   .technologies__piece {
     height: 70%;
   }
 }
 
-@media (orientation: portrait) and (min-width: 410px) {
+@media (orientation: portrait) and (min-width: 410px) and (none) {
   .technologies__piece {
     height: 70%;
   }
 }
 
-@media (orientation: landscape) and (min-width: 410px) {
+@media (orientation: landscape) and (min-width: 410px) and (none) {
   .technologies__piece {
     aspect-ratio: 0/0;
     height: 90%;
@@ -1037,22 +1069,27 @@ html {
   }
 }
 
-@media (orientation: portrait) and (min-width: 719px) {
+@media (orientation: portrait) and (min-width: 719px) and (none) {
   .technologies__piece {
     width: 65%;
     height: 80%;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 719px) and (min-height: 1279px) {
+  .technologies__piece {
     width: 75%;
     height: 75%;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1023px) {
+@media (orientation: landscape) and (min-width: 1023px) and (none) {
   .technologies__piece {
     border-radius: 50px;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1439px) {
+@media (orientation: landscape) and (min-width: 1439px) and (none) {
   .technologies__piece {
     width: 65%;
   }
@@ -1062,19 +1099,19 @@ html {
   font-size: 2rem;
 }
 
-@media (orientation: landscape) and (min-width: 639px) {
+@media (orientation: landscape) and (min-width: 639px) and (none) {
   .technologies__piece-title {
     font-size: 2.2rem;
   }
 }
 
-@media (orientation: portrait) and (min-width: 719px) {
+@media (orientation: portrait) and (min-width: 719px) and (none) {
   .technologies__piece-title {
     font-size: 3rem;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1023px) {
+@media (orientation: landscape) and (min-width: 1023px) and (none) {
   .technologies__piece-title {
     font-size: 3.2rem;
   }
@@ -1117,27 +1154,27 @@ html {
   margin-bottom: 5px;
 }
 
-@media (orientation: portrait) and (min-width: 359px) {
+@media (orientation: portrait) and (min-width: 359px) and (none) {
   .projects__title {
     font-size: 2.2rem;
     margin-bottom: 5px;
   }
 }
 
-@media (orientation: portrait) and (min-width: 410px) {
+@media (orientation: portrait) and (min-width: 410px) and (none) {
   .projects__title {
     margin-bottom: 15px;
   }
 }
 
-@media (orientation: portrait) and (min-width: 719px) {
+@media (orientation: portrait) and (min-width: 719px) and (none) {
   .projects__title {
     font-size: 3rem;
     padding-top: 20px;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1023px) {
+@media (orientation: landscape) and (min-width: 1023px) and (none) {
   .projects__title {
     padding-top: 15vh;
     font-size: 3.4rem;
@@ -1151,39 +1188,44 @@ html {
   text-align: center;
 }
 
-@media (orientation: portrait) and (min-width: 359px) {
+@media (orientation: portrait) and (min-width: 359px) and (none) {
   .projects__comment {
     font-size: 1.2rem;
     width: 80%;
   }
 }
 
-@media (orientation: portrait) and (min-width: 410px) {
+@media (orientation: portrait) and (min-width: 410px) and (none) {
   .projects__comment {
     font-size: 1.3rem;
   }
 }
 
-@media (orientation: landscape) and (min-width: 639px) {
+@media (orientation: landscape) and (min-width: 639px) and (none) {
   .projects__comment {
     font-size: 1.4rem;
   }
 }
 
-@media (orientation: portrait) and (min-width: 719px) {
+@media (orientation: portrait) and (min-width: 719px) and (none) {
   .projects__comment {
     font-size: 1.7rem;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 719px) and (min-height: 1279px) {
+  .projects__comment {
     font-size: 2rem;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1023px) {
+@media (orientation: landscape) and (min-width: 1023px) and (none) {
   .projects__comment {
     font-size: 1.9rem;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1919px) {
+@media (orientation: landscape) and (min-width: 1919px) and (none) {
   .projects__comment {
     padding-top: 20px;
   }
@@ -1205,10 +1247,12 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   height: 90%;
 }
 
-@media (orientation: landscape) and (min-width: 410px) {
+@media (orientation: landscape) and (min-width: 410px) and (none) {
   .projects__container {
     display: -ms-grid;
     display: grid;
@@ -1224,52 +1268,52 @@ html {
   }
 }
 
-@media (orientation: landscape) and (min-width: 639px) {
+@media (orientation: landscape) and (min-width: 639px) and (none) {
   .projects__container {
     margin-top: -22px;
   }
 }
 
-@media (orientation: landscape) and (min-width: 719px) {
+@media (orientation: landscape) and (min-width: 719px) and (none) {
   .projects__container {
     margin-top: -15px;
   }
 }
 
-@media (orientation: portrait) and (min-width: 719px) {
+@media (orientation: portrait) and (min-width: 719px) and (none) {
   .projects__container {
     margin-top: 10px;
   }
 }
 
-@media (orientation: landscape) and (min-width: 845px) {
+@media (orientation: landscape) and (min-width: 845px) and (none) {
   .projects__container {
     margin-top: 0px;
     width: 95%;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1023px) {
+@media (orientation: landscape) and (min-width: 1023px) and (none) {
   .projects__container {
     margin-top: 50px;
     height: 60%;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1359px) {
+@media (orientation: landscape) and (min-width: 1359px) and (none) {
   .projects__container {
     -webkit-column-gap: 20px;
             column-gap: 20px;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1439px) {
+@media (orientation: landscape) and (min-width: 1439px) and (none) {
   .projects__container {
     width: 85%;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1919px) {
+@media (orientation: landscape) and (min-width: 1919px) and (none) {
   .projects__container {
     width: 80%;
     height: 65%;
@@ -1282,8 +1326,8 @@ html {
 .projects__project {
   position: relative;
   width: 90vw;
-  -ms-flex-preferred-size: 25%;
-      flex-basis: 25%;
+  -ms-flex-preferred-size: 24%;
+      flex-basis: 24%;
   display: -ms-grid;
   display: grid;
   grid: 20px 1fr/40% 60%;
@@ -1295,7 +1339,7 @@ html {
   padding: 10px 0;
 }
 
-@media (orientation: landscape) and (min-width: 410px) {
+@media (orientation: landscape) and (min-width: 410px) and (none) {
   .projects__project {
     width: 100%;
     height: auto;
@@ -1303,7 +1347,7 @@ html {
   }
 }
 
-@media (orientation: landscape) and (min-width: 1023px) {
+@media (orientation: landscape) and (min-width: 1023px) and (none) {
   .projects__project {
     height: 100%;
     margin: 0;
@@ -1314,7 +1358,7 @@ html {
   border-bottom: none;
 }
 
-@media (orientation: landscape) and (min-width: 410px) {
+@media (orientation: landscape) and (min-width: 410px) and (none) {
   .projects__project:nth-child(even) {
     display: -ms-grid;
     display: grid;
@@ -1340,7 +1384,7 @@ html {
   }
 }
 
-@media (orientation: landscape) and (min-width: 845px) {
+@media (orientation: landscape) and (min-width: 845px) and (none) {
   .projects__project:nth-child(even) {
     height: 100%;
   }
@@ -1355,38 +1399,43 @@ html {
   color: #071843;
 }
 
-@media (orientation: portrait) and (min-width: 359px) {
+@media (orientation: portrait) and (min-width: 359px) and (min-height: 850px) {
   .projects__project-title {
     font-size: 1.7rem;
   }
 }
 
-@media (orientation: portrait) and (min-width: 410px) {
+@media (orientation: portrait) and (min-width: 410px) and (none) {
   .projects__project-title {
     font-size: 1.5rem;
   }
 }
 
-@media (orientation: landscape) and (min-width: 639px) {
+@media (orientation: landscape) and (min-width: 639px) and (none) {
   .projects__project-title {
     font-size: 1.5rem;
   }
 }
 
-@media (orientation: portrait) and (min-width: 719px) {
+@media (orientation: portrait) and (min-width: 719px) and (none) {
   .projects__project-title {
     font-size: 2rem;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 719px) and (min-height: 1279px) {
+  .projects__project-title {
     font-size: 2.5rem;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1023px) {
+@media (orientation: landscape) and (min-width: 1023px) and (none) {
   .projects__project-title {
     font-size: 2rem;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1919px) {
+@media (orientation: landscape) and (min-width: 1919px) and (none) {
   .projects__project-title {
     font-size: 3rem;
   }
@@ -1396,44 +1445,49 @@ html {
   font-size: 1.2rem;
 }
 
-@media (orientation: portrait) and (min-width: 359px) {
+@media (orientation: portrait) and (min-width: 359px) and (min-height: 850px) {
   .projects__project-desc {
     font-size: 1.5rem;
   }
 }
 
-@media (orientation: portrait) and (min-width: 410px) {
+@media (orientation: portrait) and (min-width: 410px) and (none) {
   .projects__project-desc {
     font-size: 1.4rem;
   }
 }
 
-@media (orientation: landscape) and (min-width: 639px) {
+@media (orientation: landscape) and (min-width: 639px) and (none) {
   .projects__project-desc {
     font-size: 1.4rem;
   }
 }
 
-@media (orientation: portrait) and (min-width: 719px) {
+@media (orientation: portrait) and (min-width: 719px) and (none) {
   .projects__project-desc {
     font-size: 1.9rem;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 719px) and (min-height: 1279px) {
+  .projects__project-desc {
     font-size: 2.3rem;
   }
 }
 
-@media (orientation: landscape) and (min-width: 845px) {
+@media (orientation: landscape) and (min-width: 845px) and (none) {
   .projects__project-desc {
     font-size: 1.5rem;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1023px) {
+@media (orientation: landscape) and (min-width: 1023px) and (none) {
   .projects__project-desc {
     font-size: 1.9rem;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1919px) {
+@media (orientation: landscape) and (min-width: 1919px) and (none) {
   .projects__project-desc {
     font-size: 2.3rem;
   }
@@ -1443,31 +1497,31 @@ html {
   width: 65%;
 }
 
-@media (orientation: portrait) and (min-width: 359px) {
+@media (orientation: portrait) and (min-width: 359px) and (min-height: 850px) {
   .projects__project-img {
     width: 80%;
   }
 }
 
-@media (orientation: portrait) and (min-width: 410px) {
+@media (orientation: portrait) and (min-width: 410px) and (none) {
   .projects__project-img {
     width: 70%;
   }
 }
 
-@media (orientation: landscape) and (min-width: 639px) {
+@media (orientation: landscape) and (min-width: 639px) and (none) {
   .projects__project-img {
     width: 75%;
   }
 }
 
-@media (orientation: portrait) and (min-width: 719px) {
+@media (orientation: portrait) and (min-width: 719px) and (none) {
   .projects__project-img {
     width: 60%;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1359px) {
+@media (orientation: landscape) and (min-width: 1359px) and (none) {
   .projects__project-img {
     cursor: pointer;
     -webkit-transition: 0.3s;
@@ -1475,14 +1529,14 @@ html {
   }
 }
 
-@media (orientation: landscape) and (min-width: 1359px) {
+@media (orientation: landscape) and (min-width: 1359px) and (none) {
   .projects__project-img:hover {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
   }
 }
 
-@media (orientation: landscape) and (min-width: 1919px) {
+@media (orientation: landscape) and (min-width: 1919px) and (none) {
   .projects__project-img {
     width: 80%;
   }
@@ -1520,26 +1574,31 @@ html {
   text-align: center;
 }
 
-@media (orientation: portrait) and (min-width: 359px) {
+@media (orientation: portrait) and (min-width: 359px) and (min-height: 850px) {
   .projects__project-gitlink a {
     font-size: 1.7rem;
   }
 }
 
-@media (orientation: landscape) and (min-width: 639px) {
+@media (orientation: landscape) and (min-width: 639px) and (none) {
   .projects__project-gitlink a {
     font-size: 1.6rem;
   }
 }
 
-@media (orientation: portrait) and (min-width: 719px) {
+@media (orientation: portrait) and (min-width: 719px) and (none) {
   .projects__project-gitlink a {
     font-size: 2rem;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 719px) and (min-height: 1279px) {
+  .projects__project-gitlink a {
     font-size: 3rem;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1023px) {
+@media (orientation: landscape) and (min-width: 1023px) and (none) {
   .projects__project-gitlink a {
     font-size: 2.5rem;
   }
@@ -1558,20 +1617,20 @@ html {
   text-align: center;
 }
 
-@media (orientation: portrait) and (min-width: 359px) {
+@media (orientation: portrait) and (min-width: 359px) and (none) {
   .hobbies__title {
     font-size: 2.2rem;
   }
 }
 
-@media (orientation: portrait) and (min-width: 719px) {
+@media (orientation: portrait) and (min-width: 719px) and (none) {
   .hobbies__title {
     font-size: 3rem;
     padding-top: 20px;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1023px) {
+@media (orientation: landscape) and (min-width: 1023px) and (none) {
   .hobbies__title {
     font-size: 3.4rem;
     padding-top: 15vh;
@@ -1589,25 +1648,30 @@ html {
   margin: 50px calc((100vw - 2 * (var(--column-size) * 0.75)) / 2);
 }
 
-@media (orientation: portrait) and (min-width: 359px) {
+@media (orientation: portrait) and (min-width: 359px) and (none) {
   .hobbies__container {
     --row-size: 160px;
     --column-size: 145px;
     margin-top: calc((100vh - 3.5 * var(--row-size)) / 2);
-    --column-size: 170px;
-    --row-size: 200px;
-    margin-top: calc((100vh - 3.3 * var(--row-size)) / 2);
   }
 }
 
-@media (orientation: portrait) and (min-width: 410px) {
+@media (orientation: portrait) and (min-width: 359px) and (min-height: 850px) {
+  .hobbies__container {
+    --column-size: 170px;
+    --row-size: 200px;
+    margin-top: calc((100vh - 3.5 * var(--row-size)) / 2);
+  }
+}
+
+@media (orientation: portrait) and (min-width: 410px) and (none) {
   .hobbies__container {
     --row-size: 190px;
     --column-size: 170px;
   }
 }
 
-@media (orientation: landscape) and (min-width: 410px) {
+@media (orientation: landscape) and (min-width: 410px) and (none) {
   .hobbies__container {
     display: -ms-grid;
     display: grid;
@@ -1620,36 +1684,41 @@ html {
   }
 }
 
-@media (orientation: landscape) and (min-width: 639px) {
+@media (orientation: landscape) and (min-width: 639px) and (none) {
   .hobbies__container {
     --row-size-l: 140px;
     --column-size-l: 160px;
   }
 }
 
-@media (orientation: portrait) and (min-width: 719px) {
+@media (orientation: portrait) and (min-width: 719px) and (none) {
   .hobbies__container {
     --row-size: 240px;
     --column-size: 220px;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 719px) and (min-height: 1279px) {
+  .hobbies__container {
     --row-size: 280px;
     --column-size: 260px;
   }
 }
 
-@media (orientation: landscape) and (min-width: 719px) {
+@media (orientation: landscape) and (min-width: 719px) and (none) {
   .hobbies__container {
     margin-left: calc((100vw - 3.4 * var(--column-size-l)) / 2);
   }
 }
 
-@media (orientation: landscape) and (min-width: 845px) {
+@media (orientation: landscape) and (min-width: 845px) and (none) {
   .hobbies__container {
     --row-size-l: 155px;
     --column-size-l: 180px;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1023px) {
+@media (orientation: landscape) and (min-width: 1023px) and (none) {
   .hobbies__container {
     --row-size-l: 200px;
     --column-size-l: 235px;
@@ -1657,7 +1726,7 @@ html {
   }
 }
 
-@media (orientation: landscape) and (min-width: 1279px) {
+@media (orientation: landscape) and (min-width: 1279px) and (none) {
   .hobbies__container {
     --row-size-l: 230px;
     --column-size-l: 265px;
@@ -1665,7 +1734,7 @@ html {
   }
 }
 
-@media (orientation: landscape) and (min-width: 1359px) {
+@media (orientation: landscape) and (min-width: 1359px) and (none) {
   .hobbies__container {
     --row-size-l: 240px;
     --column-size-l: 280px;
@@ -1673,7 +1742,7 @@ html {
   }
 }
 
-@media (orientation: landscape) and (min-width: 1359px) {
+@media (orientation: landscape) and (min-width: 1359px) and (none) {
   .hobbies__container {
     --row-size-l: 260px;
     --column-size-l: 300px;
@@ -1681,7 +1750,7 @@ html {
   }
 }
 
-@media (orientation: landscape) and (min-width: 1919px) {
+@media (orientation: landscape) and (min-width: 1919px) and (none) {
   .hobbies__container {
     --row-size-l: 365px;
     --column-size-l: 420px;
@@ -1715,7 +1784,7 @@ html {
           filter: drop-shadow(0 0 6px white);
 }
 
-@media (orientation: landscape) and (min-width: 410px) {
+@media (orientation: landscape) and (min-width: 410px) and (none) {
   .hobbies__hobby {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1725,7 +1794,7 @@ html {
   }
 }
 
-@media (orientation: portrait) and (min-width: 719px) {
+@media (orientation: portrait) and (min-width: 719px) and (none) {
   .hobbies__hobby {
     margin: 0;
   }
@@ -1740,7 +1809,7 @@ html {
   top: 0;
 }
 
-@media (orientation: landscape) and (min-width: 410px) {
+@media (orientation: landscape) and (min-width: 410px) and (none) {
   .hobbies__hobby:nth-child(even) {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1754,38 +1823,38 @@ html {
   padding-left: 0;
 }
 
-@media (orientation: landscape) and (min-width: 410px) {
+@media (orientation: landscape) and (min-width: 410px) and (none) {
   .hobbies__hobby:nth-child(even) .hobbies__hobby-text {
     padding: 0 15%;
   }
 }
 
-@media (orientation: landscape) and (min-width: 639px) {
+@media (orientation: landscape) and (min-width: 639px) and (none) {
   .hobbies__hobby:nth-child(even) .hobbies__hobby-text {
     padding: 0 20%;
     min-width: 160px;
   }
 }
 
-@media (orientation: landscape) and (min-width: 845px) {
+@media (orientation: landscape) and (min-width: 845px) and (none) {
   .hobbies__hobby:nth-child(even) .hobbies__hobby-text {
     min-width: 180px;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1023px) {
+@media (orientation: landscape) and (min-width: 1023px) and (none) {
   .hobbies__hobby:nth-child(even) .hobbies__hobby-text {
     min-width: 235px;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1279px) {
+@media (orientation: landscape) and (min-width: 1279px) and (none) {
   .hobbies__hobby:nth-child(even) .hobbies__hobby-text {
     min-width: 265px;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1919px) {
+@media (orientation: landscape) and (min-width: 1919px) and (none) {
   .hobbies__hobby:nth-child(even) .hobbies__hobby-text {
     min-width: 420px;
   }
@@ -1795,7 +1864,7 @@ html {
   right: 190%;
 }
 
-@media (orientation: landscape) and (min-width: 410px) {
+@media (orientation: landscape) and (min-width: 410px) and (none) {
   .hobbies__hobby:nth-child(even) .hobbies__hobby-text--showTxt {
     right: 0;
     -webkit-transform: translate(20%, -55%);
@@ -1803,13 +1872,13 @@ html {
   }
 }
 
-@media (orientation: landscape) and (min-width: 639px) {
+@media (orientation: landscape) and (min-width: 639px) and (none) {
   .hobbies__hobby:nth-child(even) .hobbies__hobby-text--showTxt {
     top: 30%;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1023px) {
+@media (orientation: landscape) and (min-width: 1023px) and (none) {
   .hobbies__hobby:nth-child(even) .hobbies__hobby-text--showTxt {
     top: -160%;
   }
@@ -1819,7 +1888,7 @@ html {
   top: 40%;
 }
 
-@media (orientation: landscape) and (min-width: 410px) {
+@media (orientation: landscape) and (min-width: 410px) and (none) {
   .hobbies__hobby:nth-child(3) {
     top: 0;
   }
@@ -1829,7 +1898,7 @@ html {
   top: 80%;
 }
 
-@media (orientation: landscape) and (min-width: 410px) {
+@media (orientation: landscape) and (min-width: 410px) and (none) {
   .hobbies__hobby:nth-child(4) {
     top: 0;
   }
@@ -1848,18 +1917,23 @@ html {
   z-index: 1;
 }
 
-@media (orientation: portrait) and (min-width: 359px) {
+@media (orientation: portrait) and (min-width: 359px) and (none) {
   .hobbies__hobby-hexagon {
     min-width: 145px;
     width: 145px;
     height: 160px;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 359px) and (min-height: 850px) {
+  .hobbies__hobby-hexagon {
     min-width: 170px;
     width: 170px;
     height: 200px;
   }
 }
 
-@media (orientation: portrait) and (min-width: 410px) {
+@media (orientation: portrait) and (min-width: 410px) and (none) {
   .hobbies__hobby-hexagon {
     min-width: 170px;
     width: 170px;
@@ -1867,7 +1941,7 @@ html {
   }
 }
 
-@media (orientation: landscape) and (min-width: 410px) {
+@media (orientation: landscape) and (min-width: 410px) and (none) {
   .hobbies__hobby-hexagon {
     -webkit-clip-path: polygon(0 50%, 25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
             clip-path: polygon(0 50%, 25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
@@ -1877,7 +1951,7 @@ html {
   }
 }
 
-@media (orientation: landscape) and (min-width: 639px) {
+@media (orientation: landscape) and (min-width: 639px) and (none) {
   .hobbies__hobby-hexagon {
     min-width: 160px;
     width: 160px;
@@ -1885,18 +1959,23 @@ html {
   }
 }
 
-@media (orientation: portrait) and (min-width: 719px) {
+@media (orientation: portrait) and (min-width: 719px) and (none) {
   .hobbies__hobby-hexagon {
     min-width: 220px;
     width: 220px;
     height: 240px;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 719px) and (min-height: 1279px) {
+  .hobbies__hobby-hexagon {
     min-width: 260px;
     width: 260px;
     height: 280px;
   }
 }
 
-@media (orientation: landscape) and (min-width: 845px) {
+@media (orientation: landscape) and (min-width: 845px) and (none) {
   .hobbies__hobby-hexagon {
     min-width: 180px;
     width: 180px;
@@ -1904,7 +1983,7 @@ html {
   }
 }
 
-@media (orientation: landscape) and (min-width: 1023px) {
+@media (orientation: landscape) and (min-width: 1023px) and (none) {
   .hobbies__hobby-hexagon {
     min-width: 235px;
     width: 235px;
@@ -1912,7 +1991,7 @@ html {
   }
 }
 
-@media (orientation: landscape) and (min-width: 1279px) {
+@media (orientation: landscape) and (min-width: 1279px) and (none) {
   .hobbies__hobby-hexagon {
     min-width: 265px;
     width: 265px;
@@ -1920,7 +1999,7 @@ html {
   }
 }
 
-@media (orientation: landscape) and (min-width: 1359px) {
+@media (orientation: landscape) and (min-width: 1359px) and (none) {
   .hobbies__hobby-hexagon {
     min-width: 280px;
     width: 280px;
@@ -1935,7 +2014,7 @@ html {
   }
 }
 
-@media (orientation: landscape) and (min-width: 1439px) {
+@media (orientation: landscape) and (min-width: 1439px) and (none) {
   .hobbies__hobby-hexagon {
     min-width: 300px;
     width: 300px;
@@ -1943,7 +2022,7 @@ html {
   }
 }
 
-@media (orientation: landscape) and (min-width: 1919px) {
+@media (orientation: landscape) and (min-width: 1919px) and (none) {
   .hobbies__hobby-hexagon {
     min-width: 420px;
     width: 420px;
@@ -1963,89 +2042,93 @@ html {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-@media (orientation: portrait) and (min-width: 359px) {
+@media (orientation: portrait) and (min-width: 359px) and (none) {
   .hobbies__hobby-darkHover {
     width: 145px;
     height: 160px;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 359px) and (min-height: 850px) {
+  .hobbies__hobby-darkHover {
     width: 170px;
     height: 200px;
   }
 }
 
-@media (orientation: portrait) and (min-width: 410px) {
+@media (orientation: portrait) and (min-width: 410px) and (none) {
   .hobbies__hobby-darkHover {
     width: 170px;
     height: 190px;
   }
 }
 
-@media (orientation: landscape) and (min-width: 410px) {
+@media (orientation: landscape) and (min-width: 410px) and (none) {
   .hobbies__hobby-darkHover {
     -webkit-clip-path: polygon(0 50%, 25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
             clip-path: polygon(0 50%, 25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
     width: 140px;
     height: 120px;
-    width: 140px;
-    height: 120px;
   }
 }
 
-@media (orientation: landscape) and (min-width: 639px) {
+@media (orientation: landscape) and (min-width: 639px) and (none) {
   .hobbies__hobby-darkHover {
     width: 160px;
     height: 140px;
   }
 }
 
-@media (orientation: portrait) and (min-width: 719px) {
+@media (orientation: portrait) and (min-width: 719px) and (none) {
   .hobbies__hobby-darkHover {
     width: 220px;
     height: 240px;
-    width: 220px;
-    height: 240px;
-    width: 260px;
-    height: 280px;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 719px) and (min-height: 1279px) {
+  .hobbies__hobby-darkHover {
     width: 260px;
     height: 280px;
   }
 }
 
-@media (orientation: landscape) and (min-width: 845px) {
+@media (orientation: landscape) and (min-width: 845px) and (none) {
   .hobbies__hobby-darkHover {
     width: 180px;
     height: 155px;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1023px) {
+@media (orientation: landscape) and (min-width: 1023px) and (none) {
   .hobbies__hobby-darkHover {
     width: 235px;
     height: 200px;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1279px) {
+@media (orientation: landscape) and (min-width: 1279px) and (none) {
   .hobbies__hobby-darkHover {
     width: 265px;
     height: 230px;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1359px) {
+@media (orientation: landscape) and (min-width: 1359px) and (none) {
   .hobbies__hobby-darkHover {
     width: 280px;
     height: 240px;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1439px) {
+@media (orientation: landscape) and (min-width: 1439px) and (none) {
   .hobbies__hobby-darkHover {
     width: 300px;
     height: 260px;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1919px) {
+@media (orientation: landscape) and (min-width: 1919px) and (none) {
   .hobbies__hobby-darkHover {
     width: 420px;
     height: 365px;
@@ -2079,7 +2162,7 @@ html {
   grid-row: 3/4;
 }
 
-@media (orientation: landscape) and (min-width: 410px) {
+@media (orientation: landscape) and (min-width: 410px) and (none) {
   .hobbies__hobby-fantasyBooks {
     -ms-grid-column: 3;
     -ms-grid-column-span: 1;
@@ -2099,7 +2182,7 @@ html {
   grid-row: 4/5;
 }
 
-@media (orientation: landscape) and (min-width: 410px) {
+@media (orientation: landscape) and (min-width: 410px) and (none) {
   .hobbies__hobby-jigsaw {
     -ms-grid-column: 4;
     -ms-grid-column-span: 1;
@@ -2123,13 +2206,13 @@ html {
   transition: 0.3s;
 }
 
-@media (orientation: portrait) and (min-width: 359px) {
+@media (orientation: portrait) and (min-width: 359px) and (none) {
   .hobbies__hobby-text {
     top: 100%;
   }
 }
 
-@media (orientation: landscape) and (min-width: 410px) {
+@media (orientation: landscape) and (min-width: 410px) and (none) {
   .hobbies__hobby-text {
     text-align: center;
     padding: 0 15%;
@@ -2141,38 +2224,38 @@ html {
   }
 }
 
-@media (orientation: landscape) and (min-width: 639px) {
+@media (orientation: landscape) and (min-width: 639px) and (none) {
   .hobbies__hobby-text {
     padding: 0 20%;
     min-width: 160px;
   }
 }
 
-@media (orientation: landscape) and (min-width: 845px) {
+@media (orientation: landscape) and (min-width: 845px) and (none) {
   .hobbies__hobby-text {
     min-width: 180px;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1023px) {
+@media (orientation: landscape) and (min-width: 1023px) and (none) {
   .hobbies__hobby-text {
     min-width: 235px;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1279px) {
+@media (orientation: landscape) and (min-width: 1279px) and (none) {
   .hobbies__hobby-text {
     min-width: 265px;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1439px) {
+@media (orientation: landscape) and (min-width: 1439px) and (none) {
   .hobbies__hobby-text {
     min-width: 300px;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1919px) {
+@media (orientation: landscape) and (min-width: 1919px) and (none) {
   .hobbies__hobby-text {
     min-width: 420px;
   }
@@ -2182,39 +2265,44 @@ html {
   font-size: 1.3rem;
 }
 
-@media (orientation: portrait) and (min-width: 359px) {
+@media (orientation: portrait) and (min-width: 359px) and (min-height: 850px) {
   .hobbies__hobby-text-title {
     font-size: 1.6rem;
   }
 }
 
-@media (orientation: portrait) and (min-width: 410px) {
+@media (orientation: portrait) and (min-width: 410px) and (none) {
   .hobbies__hobby-text-title {
     font-size: 1.5rem;
   }
 }
 
-@media (orientation: portrait) and (min-width: 719px) {
+@media (orientation: portrait) and (min-width: 719px) and (none) {
   .hobbies__hobby-text-title {
     font-size: 2rem;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 719px) and (min-height: 1279px) {
+  .hobbies__hobby-text-title {
     font-size: 2.5rem;
   }
 }
 
-@media (orientation: landscape) and (min-width: 845px) {
+@media (orientation: landscape) and (min-width: 845px) and (none) {
   .hobbies__hobby-text-title {
     font-size: 1.4rem;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1023px) {
+@media (orientation: landscape) and (min-width: 1023px) and (none) {
   .hobbies__hobby-text-title {
     font-size: 1.8rem;
     padding-bottom: 10px;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1919px) {
+@media (orientation: landscape) and (min-width: 1919px) and (none) {
   .hobbies__hobby-text-title {
     font-size: 2.2rem;
   }
@@ -2224,38 +2312,43 @@ html {
   font-size: 1.2rem;
 }
 
-@media (orientation: portrait) and (min-width: 359px) {
+@media (orientation: portrait) and (min-width: 359px) and (min-height: 850px) {
   .hobbies__hobby-text-desc {
     font-size: 1.4rem;
   }
 }
 
-@media (orientation: portrait) and (min-width: 410px) {
+@media (orientation: portrait) and (min-width: 410px) and (none) {
   .hobbies__hobby-text-desc {
     font-size: 1.3rem;
   }
 }
 
-@media (orientation: portrait) and (min-width: 719px) {
+@media (orientation: portrait) and (min-width: 719px) and (none) {
   .hobbies__hobby-text-desc {
     font-size: 1.8rem;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 719px) and (min-height: 1279px) {
+  .hobbies__hobby-text-desc {
     font-size: 2.2rem;
   }
 }
 
-@media (orientation: landscape) and (min-width: 845px) {
+@media (orientation: landscape) and (min-width: 845px) and (none) {
   .hobbies__hobby-text-desc {
     font-size: 1.3rem;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1023px) {
+@media (orientation: landscape) and (min-width: 1023px) and (none) {
   .hobbies__hobby-text-desc {
     font-size: 1.8rem;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1919px) {
+@media (orientation: landscape) and (min-width: 1919px) and (none) {
   .hobbies__hobby-text-desc {
     font-size: 2rem;
   }
@@ -2265,7 +2358,7 @@ html {
   right: -90%;
 }
 
-@media (orientation: landscape) and (min-width: 410px) {
+@media (orientation: landscape) and (min-width: 410px) and (none) {
   .hobbies__hobby-text--showTxt {
     right: 0;
     -webkit-transform: translate(20%, 95%);
@@ -2273,37 +2366,37 @@ html {
   }
 }
 
-@media (orientation: landscape) and (min-width: 639px) {
+@media (orientation: landscape) and (min-width: 639px) and (none) {
   .hobbies__hobby-text--showTxt {
     top: 220%;
   }
 }
 
-@media (orientation: portrait) and (min-width: 719px) {
+@media (orientation: portrait) and (min-width: 719px) and (none) {
   .hobbies__hobby-text--showTxt {
     right: -100%;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1023px) {
+@media (orientation: landscape) and (min-width: 1023px) and (none) {
   .hobbies__hobby-text--showTxt {
     top: 350%;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1279px) {
+@media (orientation: landscape) and (min-width: 1279px) and (none) {
   .hobbies__hobby-text--showTxt {
     top: 430%;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1359px) {
+@media (orientation: landscape) and (min-width: 1359px) and (none) {
   .hobbies__hobby-text--showTxt {
     top: 500%;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1919px) {
+@media (orientation: landscape) and (min-width: 1919px) and (none) {
   .hobbies__hobby-text--showTxt {
     top: 620%;
   }
@@ -2337,20 +2430,20 @@ html {
       flex-basis: 8%;
 }
 
-@media (orientation: portrait) and (min-width: 359px) {
+@media (orientation: portrait) and (min-width: 359px) and (none) {
   .contact__title {
     font-size: 2.2rem;
   }
 }
 
-@media (orientation: portrait) and (min-width: 719px) {
+@media (orientation: portrait) and (min-width: 719px) and (none) {
   .contact__title {
     font-size: 3rem;
     padding-top: 20px;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1023px) {
+@media (orientation: landscape) and (min-width: 1023px) and (none) {
   .contact__title {
     padding-top: 15vh;
     font-size: 3.4rem;
@@ -2379,7 +2472,7 @@ html {
           justify-content: flex-start;
 }
 
-@media (orientation: landscape) and (min-width: 1023px) {
+@media (orientation: landscape) and (min-width: 1023px) and (none) {
   .contact__container {
     -webkit-box-flex: 0;
         -ms-flex-positive: 0;
@@ -2418,7 +2511,7 @@ html {
   transition: 0.3s;
 }
 
-@media (orientation: landscape) and (min-width: 410px) {
+@media (orientation: landscape) and (min-width: 410px) and (none) {
   .contact__piece {
     -ms-flex-preferred-size: 48%;
         flex-basis: 48%;
@@ -2429,25 +2522,25 @@ html {
   font-size: 1.5rem;
 }
 
-@media (orientation: portrait) and (min-width: 359px) {
+@media (orientation: portrait) and (min-width: 359px) and (none) {
   .contact__piece-title {
     font-size: 1.7rem;
   }
 }
 
-@media (orientation: landscape) and (min-width: 845px) {
+@media (orientation: landscape) and (min-width: 845px) and (none) {
   .contact__piece-title {
     font-size: 1.8rem;
   }
 }
 
-@media (orientation: portrait) and (min-width: 719px) {
+@media (orientation: portrait) and (min-width: 719px) and (none) {
   .contact__piece-title {
     font-size: 2.5rem;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1023px) {
+@media (orientation: landscape) and (min-width: 1023px) and (none) {
   .contact__piece-title {
     font-size: 2.6rem;
   }
@@ -2457,19 +2550,19 @@ html {
   font-size: 3rem;
 }
 
-@media (orientation: portrait) and (min-width: 719px) {
+@media (orientation: portrait) and (min-width: 719px) and (none) {
   .contact__piece-icon {
     font-size: 4rem;
   }
 }
 
-@media (orientation: landscape) and (min-width: 845px) {
+@media (orientation: landscape) and (min-width: 845px) and (none) {
   .contact__piece-icon {
     font-size: 3.5rem;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1023px) {
+@media (orientation: landscape) and (min-width: 1023px) and (none) {
   .contact__piece-icon {
     font-size: 5rem;
   }
@@ -2479,25 +2572,25 @@ html {
   font-size: 1.4rem;
 }
 
-@media (orientation: portrait) and (min-width: 359px) {
+@media (orientation: portrait) and (min-width: 359px) and (none) {
   .contact__piece-data {
     font-size: 1.6rem;
   }
 }
 
-@media (orientation: portrait) and (min-width: 719px) {
+@media (orientation: portrait) and (min-width: 719px) and (none) {
   .contact__piece-data {
     font-size: 2rem;
   }
 }
 
-@media (orientation: landscape) and (min-width: 845px) {
+@media (orientation: landscape) and (min-width: 845px) and (none) {
   .contact__piece-data {
     font-size: 1.8rem;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1023px) {
+@media (orientation: landscape) and (min-width: 1023px) and (none) {
   .contact__piece-data {
     font-size: 2.2rem;
   }
@@ -2542,13 +2635,13 @@ html {
   color: #fff;
 }
 
-@media (orientation: landscape) and (min-width: 410px) {
+@media (orientation: landscape) and (min-width: 410px) and (none) {
   .footer {
     height: 28vh;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1919px) {
+@media (orientation: landscape) and (min-width: 1919px) and (none) {
   .footer {
     height: 20vh;
   }
@@ -2580,25 +2673,25 @@ html {
   font-size: 1.2rem;
 }
 
-@media (orientation: portrait) and (min-width: 359px) {
+@media (orientation: portrait) and (min-width: 359px) and (none) {
   .footer__credits-title {
     font-size: 1.4rem;
   }
 }
 
-@media (orientation: portrait) and (min-width: 719px) {
+@media (orientation: portrait) and (min-width: 719px) and (none) {
   .footer__credits-title {
     font-size: 1.8rem;
   }
 }
 
-@media (orientation: landscape) and (min-width: 845px) {
+@media (orientation: landscape) and (min-width: 845px) and (none) {
   .footer__credits-title {
     font-size: 1.6rem;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1023px) {
+@media (orientation: landscape) and (min-width: 1023px) and (none) {
   .footer__credits-title {
     font-size: 2rem;
   }
@@ -2608,31 +2701,31 @@ html {
   font-size: 1.2rem;
 }
 
-@media (orientation: portrait) and (min-width: 359px) {
+@media (orientation: portrait) and (min-width: 359px) and (none) {
   .footer__credits-desc, .footer__credits-link {
     font-size: 1.3rem;
   }
 }
 
-@media (orientation: portrait) and (min-width: 410px) {
+@media (orientation: portrait) and (min-width: 410px) and (none) {
   .footer__credits-desc, .footer__credits-link {
     font-size: 1.4rem;
   }
 }
 
-@media (orientation: portrait) and (min-width: 719px) {
+@media (orientation: portrait) and (min-width: 719px) and (none) {
   .footer__credits-desc, .footer__credits-link {
     font-size: 1.6rem;
   }
 }
 
-@media (orientation: landscape) and (min-width: 845px) {
+@media (orientation: landscape) and (min-width: 845px) and (none) {
   .footer__credits-desc, .footer__credits-link {
     font-size: 1.4rem;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1023px) {
+@media (orientation: landscape) and (min-width: 1023px) and (none) {
   .footer__credits-desc, .footer__credits-link {
     font-size: 1.8rem;
   }

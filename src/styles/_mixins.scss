@@ -22,10 +22,10 @@
   justify-items: $justify-items;
 }
 
-@mixin mq($breakpoint, $orientation) {
+@mixin mq($breakpoint, $orientation, $height: none) {
   $size: map-get($breakpoints, $breakpoint);
   @if ($size) {
-    @media ($orientation) and ($size) {
+    @media ($orientation) and ($size) and ($height) {
       @content;
     }
   } @else {
