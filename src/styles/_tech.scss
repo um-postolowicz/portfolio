@@ -33,7 +33,9 @@
       margin-top: 50px;
     }
     @include mq(xsmall, $landscape) {
-      @include size(90%, 82%, 15px auto 0);
+      width: 90%;
+      height: 82%;
+      margin: 15px auto 0;
     }
     @include mq(medium, $portrait) {
       width: 88%;

@@ -55,7 +55,8 @@
       }
       &-element {
         @include flex(row, center, center);
-        @include size($width: 90%, $margin: 0 auto);
+        width: 90%;
+        margin: 0 auto;
         flex-basis: 15%;
         border-bottom: 1px solid white;
         &:nth-last-of-type(1) {

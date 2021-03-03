@@ -3,7 +3,10 @@
   max-height: 100vh;
   @include flex(column, center, center);
   &__border {
-    @include size(85%, 90%, 30px auto, 0);
+    width: 85%;
+    height: 90%;
+    margin: 30px auto;
+    padding: 0;
     background: rgb(248, 248, 255);
     background: linear-gradient(
       135deg,

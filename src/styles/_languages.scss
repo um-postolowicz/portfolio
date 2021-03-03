@@ -6,7 +6,8 @@
     grid-column: 1/3;
   }
   &__languages {
-    @include size($width: 100%, $padding: 15px 0 0);
+    width: 100%;
+    padding-top: 15px;
     @include flex($justify-content: space-around);
     @include mq(xxsmall, $portrait) {
       padding-top: 30px;
@@ -28,7 +29,7 @@
       @include mq(small, $landscape) {
         height: 35px;
       }
-      @include mq(medium,$portrait){
+      @include mq(medium, $portrait) {
         height: 45px;
       }
     }
