@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import LanguageContext, { Consumer } from "../data/LanguageContext";
+import { Consumer } from "../data/LanguageContext";
 import LanguageChoice from "./LanguageChoice";
 
 import { Link } from "react-scroll";
@@ -75,6 +75,7 @@ const Menu = () => {
                     spy={true}
                     smooth={true}
                     onClick={closeMenu}
+                    offset={2}
                   >
                     {listWelcome}
                   </Link>
@@ -92,6 +93,7 @@ const Menu = () => {
                     spy={true}
                     smooth={true}
                     onClick={closeMenu}
+                    offset={2}
                   >
                     {listAbout}
                   </Link>
@@ -109,6 +111,7 @@ const Menu = () => {
                     spy={true}
                     smooth={true}
                     onClick={closeMenu}
+                    offset={2}
                   >
                     {listTech}
                   </Link>
@@ -126,6 +129,7 @@ const Menu = () => {
                     spy={true}
                     smooth={true}
                     onClick={closeMenu}
+                    offset={2}
                   >
                     {listProjects}
                   </Link>
@@ -144,6 +148,7 @@ const Menu = () => {
                     spy={true}
                     smooth={true}
                     onClick={closeMenu}
+                    offset={2}
                   >
                     {listHobbies}
                   </Link>
@@ -160,6 +165,7 @@ const Menu = () => {
                     spy={true}
                     smooth={true}
                     onClick={closeMenu}
+                    offset={2}
                   >
                     {listContact}
                   </Link>
