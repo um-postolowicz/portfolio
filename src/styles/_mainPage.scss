@@ -44,13 +44,15 @@
     @include mq(medium, $landscape) {
       font-size: 2rem;
     }
+    @include mq(medium, $portrait) {
+      width: 85%;
+      margin-top: 4vh;
+      @if (min-height: 1279px) {
+        width: 80%;
+      }
+    }
     @include mq(xmedium, $landscape) {
       font-size: 2.2rem;
-    }
-    @include mq(medium, $portrait) {
-      font-size: 3.3rem;
-      width: 70%;
-      margin-top: 7px;
     }
     @include mq(large, $landscape) {
       grid-column: 1/2;
@@ -77,7 +79,11 @@
         font-size: 3.5rem;
       }
       @include mq(medium, $portrait) {
-        padding-bottom: 15px;
+        padding-bottom: 20px;
+        font-size: 5rem;
+        @if (min-height: 1279px) {
+          font-size: 5.5rem;
+        }
       }
       @include mq(large, $landscape) {
         font-size: 5rem;
@@ -102,6 +108,12 @@
       }
       @include mq(xsmall, $portrait) {
         font-size: 3.2rem;
+      }
+      @include mq(medium, $portrait) {
+        font-size: 4.5rem;
+      }
+      @include mq(large, $landscape) {
+        font-size: 4.5rem;
       }
       @include mq(xlarge, $landscape) {
         font-size: 5rem;
@@ -132,6 +144,7 @@
     @include mq(medium, $portrait) {
       width: 75%;
       margin-top: 35px;
+      flex-basis: 65%;
     }
     @include mq(xmedium, $landscape) {
       margin-top: 25px;
@@ -141,12 +154,12 @@
       grid-row: 1/2;
       align-self: end;
       justify-self: end;
+      width: 90%;
     }
 
     &-img {
       height: 100%;
       margin-bottom: 0;
-
       @include mq(large, $landscape) {
         width: 100%;
       }

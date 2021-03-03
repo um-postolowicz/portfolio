@@ -40,6 +40,9 @@
     }
     @include mq(medium, $portrait) {
       font-size: 1.7rem;
+      @if (min-height: 1279px) {
+        font-size: 2rem;
+      }
     }
     @include mq(large, $landscape) {
       font-size: 1.9rem;
@@ -64,7 +67,7 @@
       margin-top: -15px;
     }
     @include mq(medium, $portrait) {
-      margin-top: 30px;
+      margin-top: 10px;
     }
     @include mq(xmedium, $landscape) {
       margin-top: 0px;
@@ -136,6 +139,9 @@
       }
       @include mq(medium, $portrait) {
         font-size: 2rem;
+        @if (min-height: 1279px) {
+          font-size: 2.5rem;
+        }
       }
       @include mq(large, $landscape) {
         font-size: 2rem;
@@ -159,6 +165,9 @@
       }
       @include mq(medium, $portrait) {
         font-size: 1.9rem;
+        @if (min-height: 1279px) {
+          font-size: 2.3rem;
+        }
       }
       @include mq(xmedium, $landscape) {
         font-size: 1.5rem;
@@ -221,6 +230,9 @@
         }
         @include mq(medium, $portrait) {
           font-size: 2rem;
+          @if (min-height: 1279px) {
+            font-size: 3rem;
+          }
         }
         @include mq(large, $landscape) {
           font-size: 2.5rem;

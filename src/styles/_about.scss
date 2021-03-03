@@ -65,7 +65,7 @@
     }
     @include mq(medium, $portrait) {
       font-size: $title-size-medium;
-      padding-top: 10px;
+      padding-bottom: 10px;
     }
     @include mq(large, $landscape) {
       font-size: $title-size-large;
@@ -94,12 +94,15 @@
     @include mq(medium, $portrait) {
       font-size: 2.4rem;
       padding-top: 40px;
+      @if (min-height: 1279px) {
+        font-size: 2.9rem;
+      }
     }
     @include mq(xmedium, $landscape) {
       padding-top: 10px;
     }
     @include mq(large, $landscape) {
-      font-size: 2rem;
+      font-size: 2.3rem;
       width: 70%;
       padding-top: 20px;
     }

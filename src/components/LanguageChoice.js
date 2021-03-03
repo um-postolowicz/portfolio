@@ -14,14 +14,18 @@ const LanguageChoice = () => {
               <img
                 src={polishFlag}
                 alt="Polish flag"
-                className="header__flag--poland"
+                className="header__flag--poland header__flag--img"
               />
             </div>
             <div
               className="header__flag"
               onClick={() => setLanguage("english")}
             >
-              <img src={ukFlag} alt="UK flag" className="header__flag--uk" />
+              <img
+                src={ukFlag}
+                alt="UK flag"
+                className="header__flag--uk header__flag--img"
+              />
             </div>
           </div>
         );

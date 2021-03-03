@@ -1,8 +1,2 @@
 .header {
-  @include position($position: relative);
-  width: 100vw;
-  flex-basis: 10%;
-  @include mq(xsmall, $landscape) {
-    grid-column: 1/3;
-  }
 }

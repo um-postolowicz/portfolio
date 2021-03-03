@@ -38,6 +38,9 @@
     @include mq(medium, $portrait) {
       width: 88%;
       font-size: 8rem;
+      @if (min-height: 1279px) {
+        font-size: 10rem;
+      }
     }
     @include mq(large, $landscape) {
       width: 80%;
@@ -72,6 +75,10 @@
     @include mq(medium, $portrait) {
       width: 65%;
       height: 80%;
+      @if (min-height: 1279px) {
+        height: 75%;
+        width: 75%;
+      }
     }
     @include mq(large, $landscape) {
       border-radius: 50px;

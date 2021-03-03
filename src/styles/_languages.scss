@@ -1,4 +1,10 @@
 .header {
+  @include position($position: relative);
+  width: 100vw;
+  flex-basis: 10%;
+  @include mq(xsmall, $landscape) {
+    grid-column: 1/3;
+  }
   &__languages {
     @include size($width: 100%, $padding: 15px 0 0);
     @include flex($justify-content: space-around);
@@ -14,29 +20,24 @@
   }
 
   &__flag {
-    img {
+    &--img {
       box-shadow: 0 0 4px 2px #ddd;
+      @include mq(xsmall, $portrait) {
+        height: 40px;
+      }
+      @include mq(small, $landscape) {
+        height: 35px;
+      }
+      @include mq(medium,$portrait){
+        height: 45px;
+      }
     }
     &--poland {
       flex-basis: 50%;
-      height: 30px;
-      @include mq(xsmall, $portrait) {
-        height: 40px;
-      }
-      @include mq(small, $landscape) {
-        height: 35px;
-      }
     }
     &--uk {
       flex-grow: 1;
-      height: 30px;
       background-color: white;
-      @include mq(xsmall, $portrait) {
-        height: 40px;
-      }
-      @include mq(small, $landscape) {
-        height: 35px;
-      }
     }
   }
 }

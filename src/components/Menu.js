@@ -61,16 +61,7 @@ const Menu = () => {
               }
             >
               <LanguageChoice />
-              <ul
-                className="header__menu-list"
-                // className={
-                //   size
-                //     ? "header__menu-wide"
-                //     : isMenuOpen
-                //     ? "header__menu-list header__menu-list--open"
-                //     : "header__menu-list"
-                // }
-              >
+              <ul className="header__menu-list">
                 <li
                   className={
                     size
