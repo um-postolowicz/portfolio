@@ -12,8 +12,13 @@
       rgba(7, 24, 67, 1) 100%
     );
     border-radius: 15px 80px;
+    @include mq(xxsmall, $portrait) {
+      @if (min-height: 850px) {
+        height: 75%;
+      }
+    }
     @include mq(xsmall, $portrait) {
-      height: 80%;
+      height: 75%;
     }
     @include mq(medium, $portrait) {
       height: 75%;
@@ -38,6 +43,9 @@
     background-color: white;
     border-radius: 11px 72px;
     text-align: center;
+    @include mq(xxsmall, $portrait) {
+      padding: calc((100vh - 90vh) / 2) calc((100vw - 90vw) / 2);
+    }
     @include mq(xsmall, $portrait) {
       padding: 50px 10px;
     }
@@ -47,6 +55,10 @@
     padding: 30px;
     @include mq(xxsmall, $portrait) {
       font-size: $title-size-xxsmall;
+      padding-top: 0;
+    }
+    @include mq(xsmall, $portrait) {
+      padding-top: 20px;
     }
     @include mq(xsmall, $landscape) {
       padding: 20px;
@@ -66,10 +78,15 @@
     padding: 0 0 20px 0;
     font-size: 1.5rem;
     @include mq(xxsmall, $portrait) {
-      font-size: 1.6rem;
+      width: 80%;
+      font-size: 1.7rem;
+      @if (min-height: 780px) {
+        font-size: 1.9rem;
+      }
     }
     @include mq(xsmall, $portrait) {
       width: 75%;
+      font-size: 1.8rem;
     }
     @include mq(medium, $landscape) {
       font-size: 1.7rem;

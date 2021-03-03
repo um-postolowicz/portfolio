@@ -7,6 +7,7 @@
   color: $light-blue;
   letter-spacing: 2px;
   text-shadow: 3px 3px black;
+  overflow: hidden;
   @include flex(column, center, flex-start);
   flex-wrap: nowrap;
   @include mq(xxsmall, $portrait) {
@@ -24,6 +25,9 @@
     flex-basis: 50%;
     margin: 0 auto;
     text-align: center;
+    @include mq(xxsmall, $portrait) {
+      width: 90%;
+    }
     @include mq(xsmall, $portrait) {
       width: 80%;
       margin: 50px auto;
@@ -62,8 +66,15 @@
     }
     h1 {
       margin-top: 10px;
+      @include mq(xxsmall, $portrait) {
+        @if (min-height: 850px) {
+          margin-bottom: 16px;
+          font-size: 4rem;
+        }
+      }
       @include mq(xsmall, $portrait) {
         margin-bottom: 15px;
+        font-size: 3.5rem;
       }
       @include mq(medium, $portrait) {
         padding-bottom: 15px;
@@ -84,6 +95,14 @@
       }
     }
     h2 {
+      @include mq(xxsmall, $portrait) {
+        @if (min-height: 850px) {
+          font-size: 3.8rem;
+        }
+      }
+      @include mq(xsmall, $portrait) {
+        font-size: 3.2rem;
+      }
       @include mq(xlarge, $landscape) {
         font-size: 5rem;
       }
@@ -95,12 +114,13 @@
     text-align: center;
     margin-bottom: 0;
     @include mq(xxsmall, $portrait) {
-      margin-top: 32px;
-      height: 50%;
+      flex-basis: 60%;
+      @if (min-height: 850px) {
+        flex-basis: 50%;
+      }
     }
     @include mq(xsmall, $portrait) {
       width: 95%;
-      margin: 37px auto 0;
     }
     @include mq(xsmall, $landscape) {
       height: 90%;
@@ -126,10 +146,7 @@
     &-img {
       height: 100%;
       margin-bottom: 0;
-      @include mq(xxsmall, $portrait) {
-        height: 80%;
-        width: auto;
-      }
+
       @include mq(large, $landscape) {
         width: 100%;
       }

@@ -123,6 +123,11 @@
       text-align: center;
       font-size: 1.3rem;
       color: $dark-blue;
+      @include mq(xxsmall, $portrait) {
+        @if (min-height: 850px) {
+          font-size: 1.7rem;
+        }
+      }
       @include mq(xsmall, $portrait) {
         font-size: 1.5rem;
       }
@@ -141,6 +146,11 @@
     }
     &-desc {
       font-size: 1.2rem;
+      @include mq(xxsmall, $portrait) {
+        @if (min-height: 850px) {
+          font-size: 1.5rem;
+        }
+      }
       @include mq(xsmall, $portrait) {
         font-size: 1.4rem;
       }
@@ -162,6 +172,11 @@
     }
     &-img {
       width: 65%;
+      @include mq(xxsmall, $portrait) {
+        @if (min-height: 850px) {
+          width: 80%;
+        }
+      }
       @include mq(xsmall, $portrait) {
         width: 70%;
       }
@@ -195,6 +210,12 @@
       a {
         color: white;
         font-size: 1.5rem;
+        text-align: center;
+        @include mq(xxsmall, $portrait) {
+          @if (min-height: 850px) {
+            font-size: 1.7rem;
+          }
+        }
         @include mq(small, $landscape) {
           font-size: 1.6rem;
         }

@@ -10,3 +10,9 @@ html {
   font-weight: 300;
   overflow-x: hidden;
 }
+:root {
+  --row-size: #{$basic-height};
+  --column-size: #{$basic-width};
+  --row-size-l: #{$basic-height-l};
+  --column-size-l: #{$basic-width-l};
+}

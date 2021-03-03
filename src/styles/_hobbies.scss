@@ -20,40 +20,49 @@
     }
   }
   &__container {
-    $row-size: $basic-height;
-    $column-size: $basic-width;
     @include grid(
-      repeat(4, calc(#{$row-size} * 0.577)),
-      repeat(2, calc(#{$column-size} * 0.75)),
+      repeat(4, calc(var(--row-size) * 0.577)),
+      repeat(2, calc(var(--column-size) * 0.75)),
       start,
       center
     );
-    margin: 40px calc((100vw - 2 * (#{$column-size} * 0.75)) / 2);
+    margin: 50px calc((100vw - 2 * (var(--column-size) * 0.75)) / 2);
     @include mq(xxsmall, $portrait) {
-      margin-top: -98px;
+      --row-size: #{$xxsmall-height};
+      --column-size: #{$xxsmall-width};
+      margin-top: calc((100vh - 3.5 * var(--row-size)) / 2);
+      @if (min-height: 850px) {
+        --column-size: #{$x393-width};
+        --row-size: #{$x393-height};
+        margin-top: calc((100vh - 3.3 * var(--row-size)) / 2);
+      }
     }
     @include mq(xsmall, $portrait) {
-      padding-top: 30px;
+      --row-size: #{$xsmall-height};
+      --column-size: #{$xsmall-width};
     }
     @include mq(xsmall, $landscape) {
-      $row-size-l: $basic-height-l;
-      $column-size-l: $basic-width-l;
       @include grid(
-        repeat(2, calc(#{$row-size-l}* 0.5)),
-        repeat(4, calc(#{$column-size-l}* 0.8)),
+        repeat(2, calc(var(--row-size-l) * 0.5)),
+        repeat(4, calc(var(--column-size-l) * 0.8)),
         start,
         center
       );
-      margin: calc((100vh - 3 * (#{$row-size} * 0.5)) / 2) 50px;
+      margin: calc((100vh - 4 * (var(--row-size-l) * 0.5)) / 2) 50px;
     }
     @include mq(small, $landscape) {
-      margin: 20px auto 0;
+      --row-size-l: #{$small-height-l};
+      --column-size-l: #{$small-width-l};
     }
     @include mq(medium, $portrait) {
       margin-top: -50px;
     }
+    @include mq(medium, $landscape) {
+      margin-left: calc((100vw - 3.4 * var(--column-size-l)) / 2);
+    }
     @include mq(xmedium, $landscape) {
-      margin: 25px 35px;
+      --row-size-l: #{$xmedium-height-l};
+      --column-size-l: #{$xmedium-width-l};
     }
     @include mq(tremendous, $landscape) {
       margin: 25px auto;
@@ -84,28 +93,32 @@
         padding-right: 5%;
         padding-left: 0;
         @include mq(xsmall, $landscape) {
-          padding: 0 10%;
+          padding: 0 15%;
+        }
+        @include mq(small, $landscape) {
+          padding: 0 20%;
+          min-width: $small-width-l;
         }
         @include mq(medium, $portrait) {
           right: -15vw;
+        }
+        @include mq(xmedium, $landscape) {
+          min-width: $xmedium-width-l;
         }
         @include mq(tremendous, $landscape) {
           right: 125px;
         }
         &--showTxt {
           right: 190%;
-          @include mq(xxsmall, $portrait) {
-            right: 85%;
-          }
           @include mq(xsmall, $landscape) {
             right: 0;
-            transform: translate(20%, -150%);
+            transform: translate(20%, -55%);
+          }
+          @include mq(small, $landscape) {
+            top: 30%;
           }
           @include mq(medium, $portrait) {
             left: -11.5vw;
-          }
-          @include mq(xmedium, $landscape) {
-            right: 40px;
           }
           @include mq(large, $landscape) {
             top: -130px;
@@ -143,12 +156,19 @@
       background-size: cover;
       z-index: 1;
       @include mq(xxsmall, $portrait) {
-        width: 130px;
-        height: 145px;
+        width: $xxsmall-width;
+        min-width: $xxsmall-width;
+        height: $xxsmall-height;
+        @if (min-height: 850px) {
+          width: $x393-width;
+          min-width: $x393-width;
+          height: $x393-height;
+        }
       }
       @include mq(xsmall, $portrait) {
-        width: 170px;
-        height: 190px;
+        width: $xsmall-width;
+        min-width: $xsmall-width;
+        height: $xsmall-height;
       }
       @include mq(xsmall, $landscape) {
         clip-path: $polygon-rotate;
@@ -157,16 +177,18 @@
         height: $basic-height-l;
       }
       @include mq(small, $landscape) {
-        width: 150px;
-        height: 130px;
+        width: $small-width-l;
+        min-width: $small-width-l;
+        height: $small-height-l;
       }
       @include mq(medium, $portrait) {
         width: 220px;
         height: 240px;
       }
       @include mq(xmedium, $landscape) {
-        width: 180px;
-        height: 155px;
+        min-width: $xmedium-width-l;
+        width: $xmedium-width-l;
+        height: $xmedium-height-l;
       }
       @include mq(large, $landscape) {
         width: 235px;
@@ -194,10 +216,16 @@
       z-index: 2;
       background-color: rgba(0, 0, 0, 0.7);
       @include mq(xxsmall, $portrait) {
-        @include size($width: 130px, $height: 145px, $margin: 0);
+        width: $xxsmall-width;
+        height: $xxsmall-height;
+        @if (min-height: 850px) {
+          width: $x393-width;
+          height: $x393-height;
+        }
       }
       @include mq(xsmall, $portrait) {
-        @include size($width: 170px, $height: 190px, $margin: 0);
+        width: $xsmall-width;
+        height: $xsmall-height;
       }
       @include mq(xsmall, $landscape) {
         clip-path: $polygon-rotate;
@@ -205,13 +233,15 @@
         height: $basic-height-l;
       }
       @include mq(small, $landscape) {
-        @include size($width: 150px, $height: 130px, $margin: 0);
+        width: $small-width-l;
+        height: $small-height-l;
       }
       @include mq(medium, $portrait) {
         @include size($width: 220px, $height: 240px, $margin: 0);
       }
       @include mq(xmedium, $landscape) {
-        @include size($width: 180px, $height: 155px, $margin: 0);
+        width: $xmedium-width-l;
+        height: $xmedium-height-l;
       }
       @include mq(large, $landscape) {
         @include size($width: 235px, $height: 200px, $margin: 0);
@@ -249,32 +279,32 @@
     }
     &-text {
       @include position(absolute, 50%, 50%);
-      transform: translate(50%, 50%);
+      transform: translate(50%, 20%);
       width: 100%;
+      height: $basic-height;
       padding-left: 5%;
       transition: 0.3s;
       @include mq(xxsmall, $portrait) {
-        padding: 0 15px;
-        right: 10%;
+        top: 100%;
       }
       @include mq(xsmall, $landscape) {
         text-align: center;
         padding: 0 15%;
         right: 0;
         top: 50%;
-        transform: translate(20%, 50%);
+        transform: translate(20%, 20%);
         min-width: $basic-width-l;
       }
-      @include mq(medium, $landscape) {
-        right: 7vh;
+      @include mq(small, $landscape) {
+        padding: 0 20%;
+        min-width: $small-width-l;
       }
       @include mq(medium, $portrait) {
         width: 60%;
         left: -4vw;
       }
       @include mq(xmedium, $landscape) {
-        width: 65%;
-        right: 40px;
+        min-width: $xmedium-width-l;
       }
       @include mq(large, $landscape) {
         right: 80px;
@@ -288,6 +318,11 @@
       }
       &-title {
         font-size: 1.3rem;
+        @include mq(xxsmall, $portrait) {
+          @if (min-height: 850px) {
+            font-size: 1.6rem;
+          }
+        }
         @include mq(xsmall, $portrait) {
           font-size: 1.5rem;
         }
@@ -307,6 +342,11 @@
       }
       &-desc {
         font-size: 1.2rem;
+        @include mq(xxsmall, $portrait) {
+          @if (min-height: 850px) {
+            font-size: 1.4rem;
+          }
+        }
         @include mq(xsmall, $portrait) {
           font-size: 1.3rem;
         }
@@ -325,25 +365,15 @@
       }
       &--showTxt {
         right: -90%;
-        @include mq(xxsmall, $portrait) {
-          right: -65%;
-        }
         @include mq(xsmall, $landscape) {
           right: 0;
-          transform: translate(20%, 200%);
+          transform: translate(20%, 95%);
         }
         @include mq(small, $landscape) {
-          top: 150px;
-        }
-        @include mq(medium, $landscape) {
-          right: 18px;
+          top: 220%;
         }
         @include mq(medium, $portrait) {
           right: -100%;
-        }
-        @include mq(xmedium, $landscape) {
-          right: 40px;
-          top: 180px;
         }
         @include mq(large, $landscape) {
           top: 230px;

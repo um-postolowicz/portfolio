@@ -57,6 +57,9 @@
     border-radius: 30%;
     box-shadow: -4px 4px 4px 2px #000;
     background-color: white;
+    @include mq(xxsmall, $portrait) {
+      height: 70%;
+    }
     @include mq(xsmall, $portrait) {
       height: 70%;
     }
