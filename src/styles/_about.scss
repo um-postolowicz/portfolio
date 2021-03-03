@@ -14,8 +14,10 @@
       rgba(7, 24, 67, 1) 100%
     );
     border-radius: 15px 80px;
-    @include mq(xxsmall, $portrait, "min-height: 850px") {
-      height: 75%;
+    @include mq(xxsmall, $portrait) {
+      @media (min-height: 850px) {
+        height: 75%;
+      }
     }
     @include mq(xsmall, $portrait) {
       height: 75%;
@@ -78,9 +80,9 @@
     @include mq(xxsmall, $portrait) {
       width: 80%;
       font-size: 1.7rem;
-    }
-    @include mq(xxsmall, $portrait, "min-height:780px") {
-      font-size: 1.9rem;
+      @media (min-height: 780px) {
+        font-size: 1.9rem;
+      }
     }
     @include mq(xsmall, $portrait) {
       width: 75%;
@@ -92,12 +94,9 @@
     @include mq(medium, $portrait) {
       font-size: 2.4rem;
       padding-top: 40px;
-      @if (min-height: 1279px) {
+      @media (min-height: 1279px) {
         font-size: 2.9rem;
       }
-    }
-    @include mq(medium, $portrait, "min-height: 1279px") {
-      font-size: 2.9rem;
     }
     @include mq(xmedium, $landscape) {
       padding-top: 10px;
