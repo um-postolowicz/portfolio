@@ -6,12 +6,13 @@ import { FaFacebookSquare, FaLinkedin, FaGithubSquare } from "react-icons/fa";
 import { HiOutlineMailOpen } from "react-icons/hi";
 
 const Contact = () => {
+  const height = window.screen.height;
   return (
     <Consumer>
       {({ label }) => {
         const { contactTitle } = label;
         return (
-          <section className="contact">
+          <section className="contact" style={{ height: height }}>
             <h3 className="contact__title">{contactTitle}</h3>
             <div className="contact__container">
               <ContactPiece

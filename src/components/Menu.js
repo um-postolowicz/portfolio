@@ -75,7 +75,6 @@ const Menu = () => {
                     spy={true}
                     smooth={true}
                     onClick={closeMenu}
-                    offset={2}
                   >
                     {listWelcome}
                   </Link>

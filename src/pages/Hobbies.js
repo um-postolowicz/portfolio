@@ -8,6 +8,7 @@ import fantasy from "../images/fantasy.jpg";
 import jigsaw from "../images/jigsaw.jpg";
 
 const Hobbies = () => {
+  const height = window.screen.height;
   return (
     <Consumer>
       {({ label }) => {
@@ -23,7 +24,7 @@ const Hobbies = () => {
           jigsawTxt,
         } = label;
         return (
-          <section className="hobbies">
+          <section className="hobbies" style={{ height: height }}>
             <h3 className="hobbies__title">{hobbiesTitle}</h3>
             <div className="hobbies__container">
               <Hobby

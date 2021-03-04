@@ -7,11 +7,12 @@ import { FaReact } from "react-icons/fa";
 import { SiJavascript } from "react-icons/si";
 
 const Technologies = () => {
+  const height = window.screen.height;
   return (
     <Consumer>
       {({ label }) => {
         return (
-          <section className="technologies">
+          <section className="technologies" style={{ height: height }}>
             <h3 className="technologies__title">{label.technologies}</h3>
             <div className="technologies__container">
               <TechPiece

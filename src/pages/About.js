@@ -2,12 +2,13 @@ import React from "react";
 import { Consumer } from "../data/LanguageContext";
 
 const About = () => {
+  const height = window.screen.height;
   return (
     <Consumer>
       {({ label }) => {
         const { aboutProf, aboutDev, aboutFree, aboutTitle } = label;
         return (
-          <section className="about">
+          <section className="about" style={{ height: height }}>
             <div className="about__border">
               <div className="about__txt">
                 <h3 className="about__header">{aboutTitle}</h3>

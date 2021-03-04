@@ -8,6 +8,7 @@ import toDoImg from "../images/todoFav.png";
 import calculatorImg from "../images/calculatorFav.png";
 
 const Projects = () => {
+  const height = window.screen.height;
   return (
     <Consumer>
       {({ label }) => {
@@ -28,7 +29,7 @@ const Projects = () => {
           calculatorTxt,
         } = label;
         return (
-          <section className="projects">
+          <section className="projects" style={{ height: height }}>
             <h3 className="projects__title">{projectsTitle}</h3>
             <p className="projects__comment">{projectsComment}</p>
             <div className="projects__container">
