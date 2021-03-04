@@ -7,7 +7,7 @@ import { FaReact } from "react-icons/fa";
 import { SiJavascript } from "react-icons/si";
 
 const Technologies = () => {
-  const height = window.outerHeight;
+  const height = window.screen.height;
   return (
     <Consumer>
       {({ label }) => {

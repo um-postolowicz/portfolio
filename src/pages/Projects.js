@@ -8,7 +8,7 @@ import toDoImg from "../images/todoFav.png";
 import calculatorImg from "../images/calculatorFav.png";
 
 const Projects = () => {
-  const height = window.outerHeight;
+  const height = window.screen.height;
   return (
     <Consumer>
       {({ label }) => {
