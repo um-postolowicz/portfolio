@@ -527,7 +527,7 @@ html {
   margin-top: 10px;
 }
 
-@media (orientation: portrait) and (min-width: 359px) and (min-height: 850px) {
+@media (orientation: portrait) and (min-width: 359px) and (min-height: 800px) {
   .main-page__introduction h1 {
     margin-bottom: 16px;
     font-size: 4rem;
@@ -580,7 +580,7 @@ html {
   }
 }
 
-@media (orientation: portrait) and (min-width: 359px) and (min-height: 850px) {
+@media (orientation: portrait) and (min-width: 359px) and (min-height: 800px) {
   .main-page__introduction h2 {
     font-size: 3.8rem;
   }
@@ -624,7 +624,7 @@ html {
   }
 }
 
-@media (orientation: portrait) and (min-width: 359px) and (min-height: 850px) {
+@media (orientation: portrait) and (min-width: 359px) and (min-height: 800px) {
   .main-page__avatar {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
@@ -747,7 +747,7 @@ html {
   border-radius: 15px 80px;
 }
 
-@media (orientation: portrait) and (min-width: 359px) and (min-height: 850px) {
+@media (orientation: portrait) and (min-width: 359px) and (min-height: 800px) {
   .about__border {
     height: 75%;
   }
@@ -1398,7 +1398,7 @@ html {
   color: #071843;
 }
 
-@media (orientation: portrait) and (min-width: 359px) and (min-height: 850px) {
+@media (orientation: portrait) and (min-width: 359px) and (min-height: 800px) {
   .projects__project-title {
     font-size: 1.7rem;
   }
@@ -1444,7 +1444,7 @@ html {
   font-size: 1.2rem;
 }
 
-@media (orientation: portrait) and (min-width: 359px) and (min-height: 850px) {
+@media (orientation: portrait) and (min-width: 359px) and (min-height: 800px) {
   .projects__project-desc {
     font-size: 1.5rem;
   }
@@ -1496,7 +1496,7 @@ html {
   width: 65%;
 }
 
-@media (orientation: portrait) and (min-width: 359px) and (min-height: 850px) {
+@media (orientation: portrait) and (min-width: 359px) and (min-height: 800px) {
   .projects__project-img {
     width: 80%;
   }
@@ -1573,7 +1573,7 @@ html {
   text-align: center;
 }
 
-@media (orientation: portrait) and (min-width: 359px) and (min-height: 850px) {
+@media (orientation: portrait) and (min-width: 359px) and (min-height: 800px) {
   .projects__project-gitlink a {
     font-size: 1.7rem;
   }
@@ -1654,7 +1654,7 @@ html {
   }
 }
 
-@media (orientation: portrait) and (min-width: 359px) and (min-height: 850px) {
+@media (orientation: portrait) and (min-width: 359px) and (min-height: 800px) {
   .hobbies__container {
     --column-size: 170px;
     --row-size: 200px;
@@ -1923,7 +1923,7 @@ html {
   }
 }
 
-@media (orientation: portrait) and (min-width: 359px) and (min-height: 850px) {
+@media (orientation: portrait) and (min-width: 359px) and (min-height: 800px) {
   .hobbies__hobby-hexagon {
     min-width: 170px;
     width: 170px;
@@ -2047,7 +2047,7 @@ html {
   }
 }
 
-@media (orientation: portrait) and (min-width: 359px) and (min-height: 850px) {
+@media (orientation: portrait) and (min-width: 359px) and (min-height: 800px) {
   .hobbies__hobby-darkHover {
     width: 170px;
     height: 200px;
@@ -2263,7 +2263,7 @@ html {
   font-size: 1.3rem;
 }
 
-@media (orientation: portrait) and (min-width: 359px) and (min-height: 850px) {
+@media (orientation: portrait) and (min-width: 359px) and (min-height: 800px) {
   .hobbies__hobby-text-title {
     font-size: 1.6rem;
   }
@@ -2310,7 +2310,7 @@ html {
   font-size: 1.2rem;
 }
 
-@media (orientation: portrait) and (min-width: 359px) and (min-height: 850px) {
+@media (orientation: portrait) and (min-width: 359px) and (min-height: 800px) {
   .hobbies__hobby-text-desc {
     font-size: 1.4rem;
   }
