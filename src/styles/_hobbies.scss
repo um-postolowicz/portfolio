@@ -30,7 +30,6 @@
     @include mq(xxsmall, $portrait) {
       --row-size: #{$xxsmall-height};
       --column-size: #{$xxsmall-width};
-      margin-top: calc((100vh - 3.5 * var(--row-size)) / 2);
       @media (min-height: 850px) {
         --column-size: #{$x393-width};
         --row-size: #{$x393-height};

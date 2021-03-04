@@ -29,7 +29,7 @@ const Projects = () => {
           calculatorTxt,
         } = label;
         return (
-          <section className="projects" style={{ height: height }}>
+          <section className="projects" style={{ minHeight: height }}>
             <h3 className="projects__title">{projectsTitle}</h3>
             <p className="projects__comment">{projectsComment}</p>
             <div className="projects__container">

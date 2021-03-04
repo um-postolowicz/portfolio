@@ -12,7 +12,7 @@ const Technologies = () => {
     <Consumer>
       {({ label }) => {
         return (
-          <section className="technologies" style={{ height: height }}>
+          <section className="technologies" style={{ minHeight: height }}>
             <h3 className="technologies__title">{label.technologies}</h3>
             <div className="technologies__container">
               <TechPiece

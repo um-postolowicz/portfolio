@@ -24,7 +24,7 @@ const Hobbies = () => {
           jigsawTxt,
         } = label;
         return (
-          <section className="hobbies" style={{ height: height }}>
+          <section className="hobbies" style={{ minHeight: height }}>
             <h3 className="hobbies__title">{hobbiesTitle}</h3>
             <div className="hobbies__container">
               <Hobby

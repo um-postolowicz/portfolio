@@ -8,7 +8,7 @@ const About = () => {
       {({ label }) => {
         const { aboutProf, aboutDev, aboutFree, aboutTitle } = label;
         return (
-          <section className="about" style={{ height: height }}>
+          <section className="about" style={{ minHeight: height }}>
             <div className="about__border">
               <div className="about__txt">
                 <h3 className="about__header">{aboutTitle}</h3>

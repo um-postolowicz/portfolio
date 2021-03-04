@@ -12,7 +12,7 @@ const Contact = () => {
       {({ label }) => {
         const { contactTitle } = label;
         return (
-          <section className="contact" style={{ height: height }}>
+          <section className="contact" style={{ minHeight: height }}>
             <h3 className="contact__title">{contactTitle}</h3>
             <div className="contact__container">
               <ContactPiece
