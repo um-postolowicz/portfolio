@@ -2,7 +2,7 @@ import React from "react";
 import { Consumer } from "../data/LanguageContext";
 
 const About = () => {
-  const height = window.screen.height;
+  const height = window.outerHeight;
   return (
     <Consumer>
       {({ label }) => {

@@ -4,7 +4,7 @@ import Header from "../components/Header";
 import avatar from "../images/avatar.svg";
 
 const MainPage = () => {
-  const height = window.screen.height;
+  const height = window.outerHeight;
   return (
     <Consumer>
       {({ label }) => {

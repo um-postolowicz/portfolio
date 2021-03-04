@@ -8,7 +8,7 @@ import fantasy from "../images/fantasy.jpg";
 import jigsaw from "../images/jigsaw.jpg";
 
 const Hobbies = () => {
-  const height = window.screen.height;
+  const height = window.outerHeight;
   return (
     <Consumer>
       {({ label }) => {

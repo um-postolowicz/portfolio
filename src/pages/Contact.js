@@ -6,7 +6,7 @@ import { FaFacebookSquare, FaLinkedin, FaGithubSquare } from "react-icons/fa";
 import { HiOutlineMailOpen } from "react-icons/hi";
 
 const Contact = () => {
-  const height = window.screen.height;
+  const height = window.outerHeight;
   return (
     <Consumer>
       {({ label }) => {
