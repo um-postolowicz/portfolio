@@ -132,7 +132,7 @@
       font-size: 1.3rem;
       color: $dark-blue;
       @include mq(xxsmall, $portrait) {
-        @media (min-height: 850px) {
+        @media (min-height: 800px) {
           font-size: 1.7rem;
         }
       }
@@ -158,7 +158,7 @@
     &-desc {
       font-size: 1.2rem;
       @include mq(xxsmall, $portrait) {
-        @media (min-height: 850px) {
+        @media (min-height: 800px) {
           font-size: 1.5rem;
         }
       }
@@ -187,7 +187,7 @@
     &-img {
       width: 65%;
       @include mq(xxsmall, $portrait) {
-        @media (min-height: 850px) {
+        @media (min-height: 800px) {
           width: 80%;
         }
       }
@@ -225,7 +225,7 @@
         font-size: 1.5rem;
         text-align: center;
         @include mq(xxsmall, $portrait) {
-          @media (min-height: 850px) {
+          @media (min-height: 800px) {
             font-size: 1.7rem;
           }
         }

@@ -72,7 +72,7 @@
     h1 {
       margin-top: 10px;
       @include mq(xxsmall, $portrait) {
-        @media (min-height: 850px) {
+        @media (min-height: 800px) {
           margin-bottom: 16px;
           font-size: 4rem;
         }
@@ -107,7 +107,7 @@
     }
     h2 {
       @include mq(xxsmall, $portrait) {
-        @media (min-height: 850px) {
+        @media (min-height: 800px) {
           font-size: 3.8rem;
         }
       }
@@ -133,7 +133,7 @@
       flex-basis: 60%;
     }
     @include mq(xxsmall, $portrait) {
-      @media (min-height: 850px) {
+      @media (min-height: 800px) {
         flex-basis: 50%;
       }
     }

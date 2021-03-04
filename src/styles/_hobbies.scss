@@ -30,7 +30,7 @@
     @include mq(xxsmall, $portrait) {
       --row-size: #{$xxsmall-height};
       --column-size: #{$xxsmall-width};
-      @media (min-height: 850px) {
+      @media (min-height: 800px) {
         --column-size: #{$x393-width};
         --row-size: #{$x393-height};
         margin-top: calc((100vh - 3.5 * var(--row-size)) / 2);
@@ -173,7 +173,7 @@
       @include mq(xxsmall, $portrait) {
         min-width: $xxsmall-width;
         @include size($xxsmall-width, $xxsmall-height);
-        @media (min-height: 850px) {
+        @media (min-height: 800px) {
           min-width: $x393-width;
           @include size($x393-width, $x393-height);
         }
@@ -237,7 +237,7 @@
       background-color: rgba(0, 0, 0, 0.7);
       @include mq(xxsmall, $portrait) {
         @include size($xxsmall-width, $xxsmall-height);
-        @media (min-height: 850px) {
+        @media (min-height: 800px) {
           @include size($x393-width, $x393-height);
         }
       }
@@ -339,7 +339,7 @@
       &-title {
         font-size: 1.3rem;
         @include mq(xxsmall, $portrait) {
-          @media (min-height: 850px) {
+          @media (min-height: 800px) {
             font-size: 1.6rem;
           }
         }
@@ -366,7 +366,7 @@
       &-desc {
         font-size: 1.2rem;
         @include mq(xxsmall, $portrait) {
-          @media (min-height: 850px) {
+          @media (min-height: 800px) {
             font-size: 1.4rem;
           }
         }
