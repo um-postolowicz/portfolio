@@ -480,7 +480,7 @@ html {
   }
 }
 
-@media (orientation: portrait) and (min-width: 719px) and (min-height: 1279px) {
+@media (orientation: portrait) and (min-width: 719px) and (min-height: 1079px) {
   .main-page__introduction {
     width: 80%;
   }
@@ -527,7 +527,7 @@ html {
   margin-top: 10px;
 }
 
-@media (orientation: portrait) and (min-width: 359px) and (min-height: 800px) {
+@media (orientation: portrait) and (min-width: 359px) and (min-height: 670px) {
   .main-page__introduction h1 {
     margin-bottom: 16px;
     font-size: 4rem;
@@ -548,7 +548,7 @@ html {
   }
 }
 
-@media (orientation: portrait) and (min-width: 719px) and (min-height: 1279px) {
+@media (orientation: portrait) and (min-width: 719px) and (min-height: 1079px) {
   .main-page__introduction h1 {
     font-size: 5.5rem;
   }
@@ -580,7 +580,7 @@ html {
   }
 }
 
-@media (orientation: portrait) and (min-width: 359px) and (min-height: 800px) {
+@media (orientation: portrait) and (min-width: 359px) and (min-height: 670px) {
   .main-page__introduction h2 {
     font-size: 3.8rem;
   }
@@ -624,7 +624,7 @@ html {
   }
 }
 
-@media (orientation: portrait) and (min-width: 359px) and (min-height: 800px) {
+@media (orientation: portrait) and (min-width: 359px) and (min-height: 670px) {
   .main-page__avatar {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
@@ -747,7 +747,7 @@ html {
   border-radius: 15px 80px;
 }
 
-@media (orientation: portrait) and (min-width: 359px) and (min-height: 800px) {
+@media (orientation: portrait) and (min-width: 359px) and (min-height: 670px) {
   .about__border {
     height: 75%;
   }
@@ -859,7 +859,7 @@ html {
   }
 }
 
-@media (orientation: portrait) and (min-width: 359px) and (min-height: 780px) {
+@media (orientation: portrait) and (min-width: 359px) and (min-height: 670px) {
   .about__desc {
     font-size: 1.9rem;
   }
@@ -885,7 +885,7 @@ html {
   }
 }
 
-@media (orientation: portrait) and (min-width: 719px) and (min-height: 1279px) {
+@media (orientation: portrait) and (min-width: 719px) and (min-height: 1079px) {
   .about__desc {
     font-size: 2.9rem;
   }
@@ -992,7 +992,7 @@ html {
   }
 }
 
-@media (orientation: portrait) and (min-width: 719px) and (min-height: 1279px) {
+@media (orientation: portrait) and (min-width: 719px) and (min-height: 1079px) {
   .technologies__container {
     font-size: 10rem;
   }
@@ -1075,7 +1075,7 @@ html {
   }
 }
 
-@media (orientation: portrait) and (min-width: 719px) and (min-height: 1279px) {
+@media (orientation: portrait) and (min-width: 719px) and (min-height: 1079px) {
   .technologies__piece {
     width: 75%;
     height: 75%;
@@ -1398,7 +1398,7 @@ html {
   color: #071843;
 }
 
-@media (orientation: portrait) and (min-width: 359px) and (min-height: 800px) {
+@media (orientation: portrait) and (min-width: 359px) and (min-height: 670px) {
   .projects__project-title {
     font-size: 1.7rem;
   }
@@ -1422,7 +1422,7 @@ html {
   }
 }
 
-@media (orientation: portrait) and (min-width: 719px) and (min-height: 1279px) {
+@media (orientation: portrait) and (min-width: 719px) and (min-height: 1079px) {
   .projects__project-title {
     font-size: 2.5rem;
   }
@@ -1444,7 +1444,7 @@ html {
   font-size: 1.2rem;
 }
 
-@media (orientation: portrait) and (min-width: 359px) and (min-height: 800px) {
+@media (orientation: portrait) and (min-width: 359px) and (min-height: 670px) {
   .projects__project-desc {
     font-size: 1.5rem;
   }
@@ -1468,7 +1468,7 @@ html {
   }
 }
 
-@media (orientation: portrait) and (min-width: 719px) and (min-height: 1279px) {
+@media (orientation: portrait) and (min-width: 719px) and (min-height: 1079px) {
   .projects__project-desc {
     font-size: 2.3rem;
   }
@@ -1496,7 +1496,7 @@ html {
   width: 65%;
 }
 
-@media (orientation: portrait) and (min-width: 359px) and (min-height: 800px) {
+@media (orientation: portrait) and (min-width: 359px) and (min-height: 670px) {
   .projects__project-img {
     width: 80%;
   }
@@ -1573,7 +1573,7 @@ html {
   text-align: center;
 }
 
-@media (orientation: portrait) and (min-width: 359px) and (min-height: 800px) {
+@media (orientation: portrait) and (min-width: 359px) and (min-height: 670px) {
   .projects__project-gitlink a {
     font-size: 1.7rem;
   }
@@ -1591,7 +1591,7 @@ html {
   }
 }
 
-@media (orientation: portrait) and (min-width: 719px) and (min-height: 1279px) {
+@media (orientation: portrait) and (min-width: 719px) and (min-height: 1079px) {
   .projects__project-gitlink a {
     font-size: 3rem;
   }
@@ -1654,7 +1654,7 @@ html {
   }
 }
 
-@media (orientation: portrait) and (min-width: 359px) and (min-height: 800px) {
+@media (orientation: portrait) and (min-width: 359px) and (min-height: 670px) {
   .hobbies__container {
     --column-size: 170px;
     --row-size: 200px;
@@ -1696,7 +1696,7 @@ html {
   }
 }
 
-@media (orientation: portrait) and (min-width: 719px) and (min-height: 1279px) {
+@media (orientation: portrait) and (min-width: 719px) and (min-height: 1079px) {
   .hobbies__container {
     --row-size: 280px;
     --column-size: 260px;
@@ -1923,7 +1923,7 @@ html {
   }
 }
 
-@media (orientation: portrait) and (min-width: 359px) and (min-height: 800px) {
+@media (orientation: portrait) and (min-width: 359px) and (min-height: 670px) {
   .hobbies__hobby-hexagon {
     min-width: 170px;
     width: 170px;
@@ -1965,7 +1965,7 @@ html {
   }
 }
 
-@media (orientation: portrait) and (min-width: 719px) and (min-height: 1279px) {
+@media (orientation: portrait) and (min-width: 719px) and (min-height: 1079px) {
   .hobbies__hobby-hexagon {
     min-width: 260px;
     width: 260px;
@@ -2047,7 +2047,7 @@ html {
   }
 }
 
-@media (orientation: portrait) and (min-width: 359px) and (min-height: 800px) {
+@media (orientation: portrait) and (min-width: 359px) and (min-height: 670px) {
   .hobbies__hobby-darkHover {
     width: 170px;
     height: 200px;
@@ -2084,7 +2084,7 @@ html {
   }
 }
 
-@media (orientation: portrait) and (min-width: 719px) and (min-height: 1279px) {
+@media (orientation: portrait) and (min-width: 719px) and (min-height: 1079px) {
   .hobbies__hobby-darkHover {
     width: 260px;
     height: 280px;
@@ -2263,7 +2263,7 @@ html {
   font-size: 1.3rem;
 }
 
-@media (orientation: portrait) and (min-width: 359px) and (min-height: 800px) {
+@media (orientation: portrait) and (min-width: 359px) and (min-height: 670px) {
   .hobbies__hobby-text-title {
     font-size: 1.6rem;
   }
@@ -2281,7 +2281,7 @@ html {
   }
 }
 
-@media (orientation: portrait) and (min-width: 719px) and (min-height: 1279px) {
+@media (orientation: portrait) and (min-width: 719px) and (min-height: 1079px) {
   .hobbies__hobby-text-title {
     font-size: 2.5rem;
   }
@@ -2310,7 +2310,7 @@ html {
   font-size: 1.2rem;
 }
 
-@media (orientation: portrait) and (min-width: 359px) and (min-height: 800px) {
+@media (orientation: portrait) and (min-width: 359px) and (min-height: 670px) {
   .hobbies__hobby-text-desc {
     font-size: 1.4rem;
   }
@@ -2328,7 +2328,7 @@ html {
   }
 }
 
-@media (orientation: portrait) and (min-width: 719px) and (min-height: 1279px) {
+@media (orientation: portrait) and (min-width: 719px) and (min-height: 1079px) {
   .hobbies__hobby-text-desc {
     font-size: 2.2rem;
   }

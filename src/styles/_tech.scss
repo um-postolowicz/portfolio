@@ -38,7 +38,7 @@
     @include mq(medium, $portrait) {
       width: 88%;
       font-size: 8rem;
-      @media (min-height: 1279px) {
+      @media (min-height: 1079px) {
         font-size: 10rem;
       }
     }
@@ -75,7 +75,7 @@
     }
     @include mq(medium, $portrait) {
       @include size(65%, 80%);
-      @media (min-height: 1279px) {
+      @media (min-height: 1079px) {
         @include size(75%, 75%);
       }
     }

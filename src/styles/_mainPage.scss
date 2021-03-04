@@ -47,7 +47,7 @@
     @include mq(medium, $portrait) {
       width: 85%;
       margin-top: 4vh;
-      @media (min-height: 1279px) {
+      @media (min-height: 1079px) {
         width: 80%;
       }
     }
@@ -72,7 +72,7 @@
     h1 {
       margin-top: 10px;
       @include mq(xxsmall, $portrait) {
-        @media (min-height: 800px) {
+        @media (min-height: 670px) {
           margin-bottom: 16px;
           font-size: 4rem;
         }
@@ -86,7 +86,7 @@
         font-size: 5rem;
       }
       @include mq(medium, $portrait) {
-        @media (min-height: 1279px) {
+        @media (min-height: 1079px) {
           font-size: 5.5rem;
         }
       }
@@ -107,7 +107,7 @@
     }
     h2 {
       @include mq(xxsmall, $portrait) {
-        @media (min-height: 800px) {
+        @media (min-height: 670px) {
           font-size: 3.8rem;
         }
       }
@@ -133,7 +133,7 @@
       flex-basis: 60%;
     }
     @include mq(xxsmall, $portrait) {
-      @media (min-height: 800px) {
+      @media (min-height: 670px) {
         flex-basis: 50%;
       }
     }

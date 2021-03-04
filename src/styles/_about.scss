@@ -15,7 +15,7 @@
     );
     border-radius: 15px 80px;
     @include mq(xxsmall, $portrait) {
-      @media (min-height: 800px) {
+      @media (min-height: 670px) {
         height: 75%;
       }
     }
@@ -80,7 +80,7 @@
     @include mq(xxsmall, $portrait) {
       width: 80%;
       font-size: 1.7rem;
-      @media (min-height: 780px) {
+      @media (min-height: 670px) {
         font-size: 1.9rem;
       }
     }
@@ -94,7 +94,7 @@
     @include mq(medium, $portrait) {
       font-size: 2.4rem;
       padding-top: 40px;
-      @media (min-height: 1279px) {
+      @media (min-height: 1079px) {
         font-size: 2.9rem;
       }
     }
