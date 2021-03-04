@@ -4,13 +4,14 @@ import Header from "../components/Header";
 import avatar from "../images/avatar.svg";
 
 const MainPage = () => {
+  const height = window.screen.height;
   return (
     <Consumer>
       {({ label }) => {
         const { welcome, name, profession, invitation, avatarAlt } = label;
         return (
           <>
-            <section className="main-page">
+            <section className="main-page" style={{ height: height }}>
               <Header />
               <div className="main-page__introduction">
                 <h1 className="main-page__welcome">{welcome}</h1>
