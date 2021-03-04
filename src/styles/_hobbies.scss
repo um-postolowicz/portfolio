@@ -33,7 +33,7 @@
       @media (min-height: 670px) {
         --column-size: #{$x393-width};
         --row-size: #{$x393-height};
-        margin-top: calc((100vh - 3.5 * var(--row-size)) / 2);
+        margin-top: calc((100vh - 3 * var(--row-size)) / 2);
       }
     }
     @include mq(xsmall, $portrait) {

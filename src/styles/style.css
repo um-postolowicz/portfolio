@@ -1658,7 +1658,7 @@ html {
   .hobbies__container {
     --column-size: 170px;
     --row-size: 200px;
-    margin-top: calc((100vh - 3.5 * var(--row-size)) / 2);
+    margin-top: calc((100vh - 3 * var(--row-size)) / 2);
   }
 }
 
